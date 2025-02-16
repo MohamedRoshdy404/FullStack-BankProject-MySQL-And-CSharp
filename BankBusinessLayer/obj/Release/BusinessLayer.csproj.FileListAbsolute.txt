@@ -1,0 +1,9 @@
+C:\Users\Programming\source\repos\FullStackBankProject\BankBusinessLayer\bin\Release\BankBusinessLayer.dll
+C:\Users\Programming\source\repos\FullStackBankProject\BankBusinessLayer\bin\Release\BankBusinessLayer.pdb
+C:\Users\Programming\source\repos\FullStackBankProject\BankBusinessLayer\bin\Release\BankDataAccessLayer.dll
+C:\Users\Programming\source\repos\FullStackBankProject\BankBusinessLayer\bin\Release\BankDataAccessLayer.pdb
+C:\Users\Programming\source\repos\FullStackBankProject\BankBusinessLayer\obj\Release\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\Programming\source\repos\FullStackBankProject\BankBusinessLayer\obj\Release\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Programming\source\repos\FullStackBankProject\BankBusinessLayer\obj\Release\Business.EA331CBA.Up2Date
+C:\Users\Programming\source\repos\FullStackBankProject\BankBusinessLayer\obj\Release\BankBusinessLayer.dll
+C:\Users\Programming\source\repos\FullStackBankProject\BankBusinessLayer\obj\Release\BankBusinessLayer.pdb
