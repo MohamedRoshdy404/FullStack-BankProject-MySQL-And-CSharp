@@ -45,11 +45,11 @@
             this.BtnclientUpdatetingSave = new Guna.UI2.WinForms.Guna2Button();
             this.labUpdateClient = new System.Windows.Forms.Label();
             this.picAddImgeClient = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picDeleteimageClient = new System.Windows.Forms.PictureBox();
             this.picImgeClient = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picSearchClient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAddImgeClient)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDeleteimageClient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImgeClient)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,7 +119,6 @@
             this.TboxFirstName.Size = new System.Drawing.Size(256, 58);
             this.TboxFirstName.TabIndex = 18;
             this.TboxFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
             // 
             // TboxLastName
             // 
@@ -145,7 +144,6 @@
             this.TboxLastName.Size = new System.Drawing.Size(256, 58);
             this.TboxLastName.TabIndex = 19;
             this.TboxLastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
             // 
             // TboxGender
             // 
@@ -171,7 +169,6 @@
             this.TboxGender.Size = new System.Drawing.Size(256, 58);
             this.TboxGender.TabIndex = 20;
             this.TboxGender.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
             // 
             // TboxDateOfBirth
             // 
@@ -197,7 +194,6 @@
             this.TboxDateOfBirth.Size = new System.Drawing.Size(256, 58);
             this.TboxDateOfBirth.TabIndex = 21;
             this.TboxDateOfBirth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
             // 
             // TboxCountry
             // 
@@ -223,7 +219,6 @@
             this.TboxCountry.Size = new System.Drawing.Size(256, 58);
             this.TboxCountry.TabIndex = 22;
             this.TboxCountry.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
             // 
             // TboxEmail
             // 
@@ -249,7 +244,6 @@
             this.TboxEmail.Size = new System.Drawing.Size(256, 58);
             this.TboxEmail.TabIndex = 23;
             this.TboxEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
             // 
             // BtnBack
             // 
@@ -299,7 +293,6 @@
             this.TboxCity.Size = new System.Drawing.Size(256, 58);
             this.TboxCity.TabIndex = 25;
             this.TboxCity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
             // 
             // TboxPhone
             // 
@@ -325,7 +318,6 @@
             this.TboxPhone.Size = new System.Drawing.Size(256, 58);
             this.TboxPhone.TabIndex = 26;
             this.TboxPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
             // 
             // TboxCreateDate
             // 
@@ -351,7 +343,6 @@
             this.TboxCreateDate.Size = new System.Drawing.Size(256, 58);
             this.TboxCreateDate.TabIndex = 27;
             this.TboxCreateDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
             // 
             // BtnclientUpdatetingSave
             // 
@@ -386,14 +377,13 @@
             this.labUpdateClient.Size = new System.Drawing.Size(175, 29);
             this.labUpdateClient.TabIndex = 29;
             this.labUpdateClient.Text = "Update Client";
-
             // 
             // picAddImgeClient
             // 
             this.picAddImgeClient.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picAddImgeClient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picAddImgeClient.Image = ((System.Drawing.Image)(resources.GetObject("picAddImgeClient.Image")));
-            this.picAddImgeClient.Location = new System.Drawing.Point(784, 293);
+            this.picAddImgeClient.Location = new System.Drawing.Point(773, 291);
             this.picAddImgeClient.Name = "picAddImgeClient";
             this.picAddImgeClient.Size = new System.Drawing.Size(41, 40);
             this.picAddImgeClient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -401,25 +391,25 @@
             this.picAddImgeClient.TabStop = false;
             this.picAddImgeClient.Click += new System.EventHandler(this.picAddImgeClient_Click);
             // 
-            // pictureBox2
+            // picDeleteimageClient
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(850, 293);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 40);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 50;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.picDeleteimageClient.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picDeleteimageClient.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picDeleteimageClient.Image = ((System.Drawing.Image)(resources.GetObject("picDeleteimageClient.Image")));
+            this.picDeleteimageClient.Location = new System.Drawing.Point(839, 291);
+            this.picDeleteimageClient.Name = "picDeleteimageClient";
+            this.picDeleteimageClient.Size = new System.Drawing.Size(41, 40);
+            this.picDeleteimageClient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDeleteimageClient.TabIndex = 50;
+            this.picDeleteimageClient.TabStop = false;
+            this.picDeleteimageClient.Click += new System.EventHandler(this.picDeleteimageClient_Click);
             // 
             // picImgeClient
             // 
             this.picImgeClient.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picImgeClient.BackColor = System.Drawing.Color.Transparent;
             this.picImgeClient.ImageRotate = 0F;
-            this.picImgeClient.Location = new System.Drawing.Point(767, 137);
+            this.picImgeClient.Location = new System.Drawing.Point(756, 135);
             this.picImgeClient.Name = "picImgeClient";
             this.picImgeClient.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.picImgeClient.Size = new System.Drawing.Size(150, 150);
@@ -433,7 +423,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.picImgeClient);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.picDeleteimageClient);
             this.Controls.Add(this.picAddImgeClient);
             this.Controls.Add(this.labUpdateClient);
             this.Controls.Add(this.BtnclientUpdatetingSave);
@@ -453,7 +443,7 @@
             this.Size = new System.Drawing.Size(1042, 564);
             ((System.ComponentModel.ISupportInitialize)(this.picSearchClient)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAddImgeClient)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDeleteimageClient)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImgeClient)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -477,7 +467,7 @@
         private Guna.UI2.WinForms.Guna2Button BtnclientUpdatetingSave;
         private System.Windows.Forms.Label labUpdateClient;
         private System.Windows.Forms.PictureBox picAddImgeClient;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox picDeleteimageClient;
         private Guna.UI2.WinForms.Guna2CirclePictureBox picImgeClient;
     }
 }

@@ -61,12 +61,6 @@
     <Compile Include="AddNewClient.Designer.cs">
       <DependentUpon>AddNewClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClientList.Designer.cs">
-      <DependentUpon>ClientList.cs</DependentUpon>
-    </Compile>
     <Compile Include="ctrlAddNewClient.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -120,9 +114,6 @@
     </Compile>
     <EmbeddedResource Include="AddNewClient.resx">
       <DependentUpon>AddNewClient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClientList.resx">
-      <DependentUpon>ClientList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ctrlAddNewClient.resx">
       <DependentUpon>ctrlAddNewClient.cs</DependentUpon>

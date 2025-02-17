@@ -267,7 +267,7 @@
             // 
             // mainPanel
             // 
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mainPanel.Location = new System.Drawing.Point(251, 36);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(990, 612);

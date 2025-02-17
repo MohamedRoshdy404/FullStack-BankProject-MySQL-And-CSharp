@@ -211,22 +211,9 @@ namespace FullStackBankProject
         }
 
 
-        public void LoadForm(object form)
-        {
-
-            Form frm = form as Form;
-
-            frm.TopLevel = false;
-            frm.Dock = DockStyle.Fill;
-            this.Controls.Add(frm);
-            this.Tag = frm;
-            frm.Show();
-            frm.BringToFront();
-        }
-
         private void BtnClientList_Click(object sender, EventArgs e)
         {
-            LoadForm(new GetAllClients());
+            Form1.loadForm(new GetAllClients());
         }
                 
         private void panManageClient_Paint(object sender, PaintEventArgs e)
@@ -236,22 +223,23 @@ namespace FullStackBankProject
 
         private void BtnFindClient_Click(object sender, EventArgs e)
         {
-            LoadForm( new FindClient());
+            Form1.loadForm( new FindClient());
         }
 
         private void BtnUpdateClient_Click(object sender, EventArgs e)
         {
-            LoadForm(new UpdateClient());
+            //LoadForm(new UpdateClient());
+            Form1.loadForm(new UpdateClient());
         }
 
         private void BtnAddClient_Click(object sender, EventArgs e)
         {
-            LoadForm(new AddNewClient());
+            Form1.loadForm(new AddNewClient());
         }
 
         private void BtnDeleteClient_Click(object sender, EventArgs e)
         {
-            LoadForm(new DeleteClient());
+            Form1.loadForm(new DeleteClient());
         }
     }
 }

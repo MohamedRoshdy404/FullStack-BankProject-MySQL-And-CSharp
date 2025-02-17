@@ -7,7 +7,6 @@ C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\bin\
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\bin\Release\BankBusinessLayer.pdb
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\bin\Release\BankDataAccessLayer.pdb
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.csproj.AssemblyReference.cache
-C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.ClientList.resources
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.FindClient.resources
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.Form1.resources
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.Login.resources

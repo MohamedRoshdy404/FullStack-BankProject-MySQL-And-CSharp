@@ -59,6 +59,7 @@ namespace FullStackBankProject
                 TboxCity.Text          = "";
                 TboxCountry.Text       = "";
                 BtnDateOfBirth.Text    = "";
+                picImgeClient.Image = null;
 
             }
             else
@@ -90,6 +91,12 @@ namespace FullStackBankProject
                 // ...
             }
 
+        }
+
+        private void picDeleteimageClient_Click(object sender, EventArgs e)
+        {
+            picImgeClient.Image = null;
+            Client.Image = "";
         }
     }
 }

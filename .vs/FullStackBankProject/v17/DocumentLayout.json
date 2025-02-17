@@ -3,16 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C59EA3CF-8988-4F4B-AA38-39D7FC11D640}|BankDataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\bankdataaccesslayer\\clientdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C59EA3CF-8988-4F4B-AA38-39D7FC11D640}|BankDataAccessLayer\\DataAccessLayer.csproj|solutionrelative:bankdataaccesslayer\\clientdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\fullstackbankproject\\updateclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\updateclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\fullstackbankproject\\findclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\findclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\fullstackbankproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\fullstackbankproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\fullstackbankproject\\ctrlupdateperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\ctrlupdateperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\fullstackbankproject\\manageclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\manageclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\fullstackbankproject\\manageclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\manageclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\fullstackbankproject\\addnewclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\addnewclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\fullstackbankproject\\ctrladdnewclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\ctrladdnewclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD4ECF44-6A11-4F88-BFBB-0DC94607202D}|BankBusinessLayer\\BusinessLayer.csproj|C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\bankbusinesslayer\\clientbusinesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD4ECF44-6A11-4F88-BFBB-0DC94607202D}|BankBusinessLayer\\BusinessLayer.csproj|solutionrelative:bankbusinesslayer\\clientbusinesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\fullstackbankproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C59EA3CF-8988-4F4B-AA38-39D7FC11D640}|BankDataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\bankdataaccesslayer\\clientdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C59EA3CF-8988-4F4B-AA38-39D7FC11D640}|BankDataAccessLayer\\DataAccessLayer.csproj|solutionrelative:bankdataaccesslayer\\clientdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +54,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FindClient.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\FindClient.cs",
+              "RelativeDocumentMoniker": "FullStackBankProject\\FindClient.cs",
+              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\FindClient.cs [Design]",
+              "RelativeToolTip": "FullStackBankProject\\FindClient.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T09:56:46.577Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UpdateClient.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\UpdateClient.cs",
+              "RelativeDocumentMoniker": "FullStackBankProject\\UpdateClient.cs",
+              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\UpdateClient.cs [Design]",
+              "RelativeToolTip": "FullStackBankProject\\UpdateClient.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T09:50:28.656Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ctrlUpdatePerson.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\ctrlUpdatePerson.cs",
+              "RelativeDocumentMoniker": "FullStackBankProject\\ctrlUpdatePerson.cs",
+              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\ctrlUpdatePerson.cs [Design]",
+              "RelativeToolTip": "FullStackBankProject\\ctrlUpdatePerson.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T09:02:39.281Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\Form1.cs",
+              "RelativeDocumentMoniker": "FullStackBankProject\\Form1.cs",
+              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\Form1.cs",
+              "RelativeToolTip": "FullStackBankProject\\Form1.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwCAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T09:26:02.456Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -33,34 +114,81 @@
               "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\Form1.cs [Design]",
               "RelativeToolTip": "FullStackBankProject\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T19:37:18.852Z",
+              "WhenOpened": "2025-02-17T09:23:26.483Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "ManageClients.cs",
+              "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\ManageClients.cs",
+              "RelativeDocumentMoniker": "FullStackBankProject\\ManageClients.cs",
+              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\ManageClients.cs",
+              "RelativeToolTip": "FullStackBankProject\\ManageClients.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wNMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T09:22:43.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManageClients.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\ManageClients.cs",
+              "RelativeDocumentMoniker": "FullStackBankProject\\ManageClients.cs",
+              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\ManageClients.cs [Design]",
+              "RelativeToolTip": "FullStackBankProject\\ManageClients.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T09:22:41.294Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddNewClient.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\AddNewClient.cs",
+              "RelativeDocumentMoniker": "FullStackBankProject\\AddNewClient.cs",
+              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\AddNewClient.cs [Design]",
+              "RelativeToolTip": "FullStackBankProject\\AddNewClient.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T23:14:44.225Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ctrlAddNewClient.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\ctrlAddNewClient.cs",
+              "RelativeDocumentMoniker": "FullStackBankProject\\ctrlAddNewClient.cs",
+              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\ctrlAddNewClient.cs [Design]",
+              "RelativeToolTip": "FullStackBankProject\\ctrlAddNewClient.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T23:14:33.127Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ClientBusinessLayer.cs",
               "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\BankBusinessLayer\\ClientBusinessLayer.cs",
               "RelativeDocumentMoniker": "BankBusinessLayer\\ClientBusinessLayer.cs",
               "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\BankBusinessLayer\\ClientBusinessLayer.cs",
               "RelativeToolTip": "BankBusinessLayer\\ClientBusinessLayer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAIA9wHMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T12:18:15.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T12:18:15.835Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "ClientDataAccess.cs",
               "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\BankDataAccessLayer\\ClientDataAccess.cs",
               "RelativeDocumentMoniker": "BankDataAccessLayer\\ClientDataAccess.cs",
               "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\BankDataAccessLayer\\ClientDataAccess.cs",
               "RelativeToolTip": "BankDataAccessLayer\\ClientDataAccess.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAewGgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T22:26:53.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T22:26:53.542Z"
             }
           ]
         }

@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.MainPanAddNewClient = new System.Windows.Forms.Panel();
             this.ctrlAddNewClient1 = new FullStackBankProject.ctrlAddNewClient();
             this.SuspendLayout();
             // 
@@ -42,20 +41,13 @@
             this.guna2BorderlessForm1.HasFormShadow = false;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // MainPanAddNewClient
-            // 
-            this.MainPanAddNewClient.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainPanAddNewClient.Location = new System.Drawing.Point(0, 0);
-            this.MainPanAddNewClient.Name = "MainPanAddNewClient";
-            this.MainPanAddNewClient.Size = new System.Drawing.Size(1128, 621);
-            this.MainPanAddNewClient.TabIndex = 0;
-            // 
             // ctrlAddNewClient1
             // 
+            this.ctrlAddNewClient1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ctrlAddNewClient1.Location = new System.Drawing.Point(0, 0);
             this.ctrlAddNewClient1.Name = "ctrlAddNewClient1";
-            this.ctrlAddNewClient1.Size = new System.Drawing.Size(859, 632);
-            this.ctrlAddNewClient1.TabIndex = 1;
+            this.ctrlAddNewClient1.Size = new System.Drawing.Size(1127, 609);
+            this.ctrlAddNewClient1.TabIndex = 0;
             // 
             // AddNewClient
             // 
@@ -63,7 +55,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1128, 621);
             this.Controls.Add(this.ctrlAddNewClient1);
-            this.Controls.Add(this.MainPanAddNewClient);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddNewClient";
             this.Text = "AddNewClient";
@@ -75,7 +66,6 @@
 
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private System.Windows.Forms.Panel MainPanAddNewClient;
         private ctrlAddNewClient ctrlAddNewClient1;
     }
 }

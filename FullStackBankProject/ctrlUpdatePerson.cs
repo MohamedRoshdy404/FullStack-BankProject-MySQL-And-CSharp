@@ -91,9 +91,18 @@ namespace FullStackBankProject
                 Client.DateOfBirth = DateTime.TryParse(TboxDateOfBirth.Text, out DateTime dob) ? dob : DateTime.MinValue;
                 Client.CreateDate = DateTime.TryParse(TboxCreateDate.Text, out DateTime createDate) ? createDate : DateTime.Now;
 
-                string selectedFilePath = openFileDialog1.FileName;
-                Client.Image = selectedFilePath;
-                picImgeClient.Load(selectedFilePath);
+
+
+                if (picImgeClient.ImageLocation != null)
+                {
+                    string selectedFilePath = openFileDialog1.FileName;
+                    Client.Image = selectedFilePath;
+                    picImgeClient.Load(selectedFilePath);
+                }
+                else
+                {
+                   Client.Image = "";
+                }
 
 
                 if (Client.Save())
@@ -118,12 +127,7 @@ namespace FullStackBankProject
         }
 
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
 
-            //picAddImgeClient.ImageLocation = "";
-            //MessageBox.Show("Client image has been deleted." , "Delete Image" , MessageBoxButtons.OK , MessageBoxIcon.Information);
-        }
 
 
 
@@ -141,7 +145,10 @@ namespace FullStackBankProject
             }
         }
 
-
-
+        private void picDeleteimageClient_Click(object sender, EventArgs e)
+        {
+            picImgeClient.Image = null;
+            Client.Image = "";
+        }
     }
 }

@@ -14,7 +14,6 @@ C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Debug\FullStackBankProject.exe
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Debug\FullStackBankProject.pdb
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\bin\Debug\Guna.UI2.dll
-C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Debug\FullStackBankProject.ClientList.resources
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Debug\FullStackBankProject.ManageClients.resources
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Debug\FullStackBankProject.FindClient.resources
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Debug\FullStackBankProject.Login.resources
