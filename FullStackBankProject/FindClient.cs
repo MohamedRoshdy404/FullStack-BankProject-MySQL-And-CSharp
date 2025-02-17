@@ -82,7 +82,7 @@ namespace FullStackBankProject
 
         private void BtnBack_Click(object sender, EventArgs e)
         {
-            LoadForm(new ManageClients());
+            Form1.loadForm(new ManageClients());
         }
     }
 }

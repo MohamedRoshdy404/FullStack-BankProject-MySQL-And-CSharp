@@ -28,5 +28,14 @@ namespace FullStackBankProject
 
         }
 
+        private void dgvGetAllClients_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            Form1.loadForm(new ManageClients());
+        }
     }
 }

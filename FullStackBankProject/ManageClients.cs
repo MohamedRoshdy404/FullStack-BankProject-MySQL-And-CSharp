@@ -54,7 +54,7 @@ namespace FullStackBankProject
             this.panManageClient.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panManageClient.Location = new System.Drawing.Point(0, 0);
             this.panManageClient.Name = "panManageClient";
-            this.panManageClient.Size = new System.Drawing.Size(846, 504);
+            this.panManageClient.Size = new System.Drawing.Size(1140, 675);
             this.panManageClient.TabIndex = 9;
             this.panManageClient.Paint += new System.Windows.Forms.PaintEventHandler(this.panManageClient_Paint);
             // 
@@ -77,7 +77,7 @@ namespace FullStackBankProject
             this.BtnFindClient.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnFindClient.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnFindClient.IndicateFocus = true;
-            this.BtnFindClient.Location = new System.Drawing.Point(66, 123);
+            this.BtnFindClient.Location = new System.Drawing.Point(213, 208);
             this.BtnFindClient.Name = "BtnFindClient";
             this.BtnFindClient.Size = new System.Drawing.Size(251, 63);
             this.BtnFindClient.TabIndex = 4;
@@ -104,7 +104,7 @@ namespace FullStackBankProject
             this.BtnAddClient.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnAddClient.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnAddClient.IndicateFocus = true;
-            this.BtnAddClient.Location = new System.Drawing.Point(66, 210);
+            this.BtnAddClient.Location = new System.Drawing.Point(213, 295);
             this.BtnAddClient.Name = "BtnAddClient";
             this.BtnAddClient.Size = new System.Drawing.Size(251, 63);
             this.BtnAddClient.TabIndex = 5;
@@ -131,7 +131,7 @@ namespace FullStackBankProject
             this.BtnUpdateClient.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnUpdateClient.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnUpdateClient.IndicateFocus = true;
-            this.BtnUpdateClient.Location = new System.Drawing.Point(66, 288);
+            this.BtnUpdateClient.Location = new System.Drawing.Point(213, 373);
             this.BtnUpdateClient.Name = "BtnUpdateClient";
             this.BtnUpdateClient.Size = new System.Drawing.Size(251, 63);
             this.BtnUpdateClient.TabIndex = 6;
@@ -158,7 +158,7 @@ namespace FullStackBankProject
             this.BtnClientList.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnClientList.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnClientList.IndicateFocus = true;
-            this.BtnClientList.Location = new System.Drawing.Point(383, 123);
+            this.BtnClientList.Location = new System.Drawing.Point(530, 208);
             this.BtnClientList.Name = "BtnClientList";
             this.BtnClientList.Size = new System.Drawing.Size(251, 63);
             this.BtnClientList.TabIndex = 7;
@@ -185,7 +185,7 @@ namespace FullStackBankProject
             this.BtnDeleteClient.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnDeleteClient.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnDeleteClient.IndicateFocus = true;
-            this.BtnDeleteClient.Location = new System.Drawing.Point(383, 210);
+            this.BtnDeleteClient.Location = new System.Drawing.Point(530, 295);
             this.BtnDeleteClient.Name = "BtnDeleteClient";
             this.BtnDeleteClient.Size = new System.Drawing.Size(251, 63);
             this.BtnDeleteClient.TabIndex = 8;
@@ -195,7 +195,7 @@ namespace FullStackBankProject
             // 
             // ManageClients
             // 
-            this.ClientSize = new System.Drawing.Size(846, 504);
+            this.ClientSize = new System.Drawing.Size(1140, 675);
             this.Controls.Add(this.BtnDeleteClient);
             this.Controls.Add(this.BtnClientList);
             this.Controls.Add(this.BtnUpdateClient);
