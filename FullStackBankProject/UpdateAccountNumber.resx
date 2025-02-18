@@ -127,7 +127,7 @@
   <data name="BtnSerach.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAD1QSURBVHhe7Z0J
+        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAD1QSURBVHhe7Z0J
         uF1Veb8NCDLJpII4IyIoiFakVkCJFf03tc7u5u611j45RnvVKoJ1wKK1tw6VatWCrRW1CqhoUbEFhyJq
         sVBwQBwRZZAZZJ4CIYTc/n/r3C8Q9llJ7nCGfc563+d5n5vESO79rbW+9e199vAAAJgdRVFs2Wq1Hum9
         f0pVlgfp68sq514dQnibPDI49yn92VflacH7H1Xen6M/P1e/vjiq31+urzeZK+X/reOtMv75DbLz9+Wv
@@ -395,7 +395,7 @@
   <data name="BtnUpdateAccountNumber.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADsOSURBVHhe7Z0J
+        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADsOSURBVHhe7Z0J
         nGVFebdt2QUBQdkUFdxXXFATY0xHcRl3xePcW1XnchmwUeOImIWoUVtBxQ2DcYEQ0aAEg0STgLjgxuY6
         giJEEJFNZHWEYR2Yme/7V8872Jyu6enu6eWequf5/R67GWe673lred86S537AMDgMzIycr9er/fQuq73
         9t4vqp2r5SHBufeHEI6pvf+svp6k//6q/v/T9f339WfLgvfny0vl7+Ryebv8f2b8Pv7ZPerfXqav8e+v

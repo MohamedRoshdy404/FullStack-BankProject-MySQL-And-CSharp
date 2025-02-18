@@ -36,36 +36,30 @@ namespace FullStackBankProject
 
         private void BtnUpdateAccountNumber_Click(object sender, EventArgs e)
         {
+            /*
+                TboxAccountNumber.Text لسة محتاج اهندل ال 
+                عشان دا المفروض معرف فريد بمسك منو الاكونت
+                لكن في نفس الوقت عشان لو عايز بعدين احدث ال  AccountNumber
+                محتاج اعمل فنكشن بترجع ال 
+                AccountID
+                AccountNumber مش ال 
+                لان لو حبيت اغير ونا لسة علي الوضع دا لما اجي اخزن قيمة ال
+                Account.AccountNumber =  TboxAccountNumber.Text
+                Account.AccountNumber هيروح يبعت البيانات لحد ما يوصل للداتابيز للكويري يبحث عن ال
+                اللي مبعوت في الاوبجيت الحالي هيدور عليه في الداتابيز مش هيلاقيه عشان انا غيرت القديم بالجديد لما علمت كدة
+                Account.AccountNumber =  TboxAccountNumber.Text
+             */
+            clsAccountBusinessLayer Account =  clsAccountBusinessLayer.FindAccountByAccountNumber(TboxAccountNumber.Text);
 
-            //clsAccountBusinessLayer AccountNumber = clsAccountBusinessLayer.isExist(TboxAccountNumber.Text);
-
-            clsAccountBusinessLayer Account = clsAccountBusinessLayer.FindAccountByAccountNumber(TboxSearchAccountNumber.Text);
-
-            TboxSearchAccountNumber.Visible = false;
-
-            Account.AccountNumber = TboxAccountNumber.Text;
+           
             Account.Password = TboxPasswordAccountNumber.Text;
             Account.AccountBalance = Convert.ToDecimal(TboxAccountBalance.Text);
             Account.ClientID = Convert.ToInt32(TboxClientID.Text);
 
-            //if ((clsAccountBusinessLayer.isExist(TboxAccountNumber.Text)) && (clsClient.isExist(Convert.ToInt32(TboxClientID.Text))))
-            //{
-
-            //    if (Account.Save())
-            //    {
-            //        MessageBox.Show("Account updated successfully.", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Account update failed.", "Oops", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-
-
-
-            if (clsAccountBusinessLayer.isExist(TboxAccountNumber.Text) && int.TryParse(TboxClientID.Text , out int CoientID))
+            if ((clsAccountBusinessLayer.isExist(TboxAccountNumber.Text)))
             {
 
-
+                MessageBox.Show("Dooooooooone");
 
                 if (Account.Save())
                 {
@@ -94,7 +88,6 @@ namespace FullStackBankProject
         public void BtnSerach_Click(object sender, EventArgs e)
         {
             clsAccountBusinessLayer Account = clsAccountBusinessLayer.FindAccountByAccountNumber(TboxAccountNumber.Text);
-
 
             if (Account != null)
             {

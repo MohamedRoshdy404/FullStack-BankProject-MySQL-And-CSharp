@@ -42,7 +42,6 @@
             this.labUpdateAccountNumber = new System.Windows.Forms.Label();
             this.BtnDateOfBirth = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.BtnSerach = new Guna.UI2.WinForms.Guna2Button();
-            this.TboxSearchAccountNumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -281,36 +280,11 @@
             this.BtnSerach.UseTransparentBackground = true;
             this.BtnSerach.Click += new System.EventHandler(this.BtnSerach_Click);
             // 
-            // TboxSearchAccountNumber
-            // 
-            this.TboxSearchAccountNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TboxSearchAccountNumber.Animated = true;
-            this.TboxSearchAccountNumber.BorderRadius = 10;
-            this.TboxSearchAccountNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxSearchAccountNumber.DefaultText = "";
-            this.TboxSearchAccountNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TboxSearchAccountNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TboxSearchAccountNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxSearchAccountNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxSearchAccountNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxSearchAccountNumber.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TboxSearchAccountNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TboxSearchAccountNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxSearchAccountNumber.Location = new System.Drawing.Point(210, 165);
-            this.TboxSearchAccountNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TboxSearchAccountNumber.Name = "TboxSearchAccountNumber";
-            this.TboxSearchAccountNumber.PasswordChar = '\0';
-            this.TboxSearchAccountNumber.PlaceholderText = "Search Account Number";
-            this.TboxSearchAccountNumber.SelectedText = "";
-            this.TboxSearchAccountNumber.Size = new System.Drawing.Size(508, 62);
-            this.TboxSearchAccountNumber.TabIndex = 57;
-            // 
             // UpdateAccountNumber
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 675);
-            this.Controls.Add(this.TboxSearchAccountNumber);
             this.Controls.Add(this.BtnSerach);
             this.Controls.Add(this.BtnDateOfBirth);
             this.Controls.Add(this.BtnUpdateAccountNumber);
@@ -343,6 +317,5 @@
         private System.Windows.Forms.Label labUpdateAccountNumber;
         private Guna.UI2.WinForms.Guna2DateTimePicker BtnDateOfBirth;
         private Guna.UI2.WinForms.Guna2Button BtnSerach;
-        private Guna.UI2.WinForms.Guna2TextBox TboxSearchAccountNumber;
     }
 }
