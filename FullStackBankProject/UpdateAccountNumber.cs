@@ -51,38 +51,36 @@ namespace FullStackBankProject
              */
             clsAccountBusinessLayer Account =  clsAccountBusinessLayer.FindAccountByAccountNumber(TboxAccountNumber.Text);
 
-           
-            Account.Password = TboxPasswordAccountNumber.Text;
-            Account.AccountBalance = Convert.ToDecimal(TboxAccountBalance.Text);
-            Account.ClientID = Convert.ToInt32(TboxClientID.Text);
 
-            if ((clsAccountBusinessLayer.isExist(TboxAccountNumber.Text)))
+            if (Account != null)
             {
+                Account.Password = TboxPasswordAccountNumber.Text;
+                Account.AccountBalance = Convert.ToDecimal(TboxAccountBalance.Text);
+                Account.ClientID = Convert.ToInt32(TboxClientID.Text);
 
-                MessageBox.Show("Dooooooooone");
 
-                if (Account.Save())
+                if ((clsAccountBusinessLayer.isExist(TboxAccountNumber.Text))  && (clsClient.isExist(Convert.ToInt32(TboxClientID.Text))) )
                 {
-                    MessageBox.Show("Account updated successfully.", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    if (Account.Save())
+                    {
+                        MessageBox.Show("Account updated successfully.", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Account update failed.", "Oops", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Account update failed.", "Oops", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Account not found. Please make sure the account number is correct.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
-
 
             }
             else
             {
                 MessageBox.Show("The addition process has failed. Make sure that the account number already exists and that the client number associated with this account also exists.", "Oops", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
-
-
-
-
-
         }
 
         public void BtnSerach_Click(object sender, EventArgs e)

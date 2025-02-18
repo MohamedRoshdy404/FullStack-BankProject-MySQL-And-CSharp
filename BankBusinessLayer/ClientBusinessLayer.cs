@@ -112,7 +112,7 @@ namespace BankBusinessLayer
             
         }
                 
-        public static bool isExist(int ClientID)
+        public static bool isExist( int ClientID)
         {
             return ClientDataAccess.isExist(ClientID);
             

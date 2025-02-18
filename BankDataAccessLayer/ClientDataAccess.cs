@@ -111,7 +111,7 @@ namespace BankDataAccessLayer
 
             using (SqlConnection connection = new SqlConnection(clsSettingsConnectoinStrinng.connectionString))
             {
-                string query = @" Select isExist = 1 Clients where ClientID = @ClientID ";
+                string query = @" Select isExist = 1 from Clients where ClientID = @ClientID ";
 
 
                 using (SqlCommand command = new SqlCommand(query, connection))
