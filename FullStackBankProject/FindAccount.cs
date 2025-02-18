@@ -50,7 +50,7 @@ namespace FullStackBankProject
             }
             else
             {
-                MessageBox.Show("Account data retrieval failed. Please enter a valid account number", "Error The account data retrieval process failed");
+                MessageBox.Show("Account data retrieval failed. Please enter a valid account number", "Error The account data retrieval process failed" , MessageBoxButtons.OK , MessageBoxIcon.Error);
             }
 
 

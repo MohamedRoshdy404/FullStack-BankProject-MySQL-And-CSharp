@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Security.Policy;
@@ -13,6 +14,52 @@ namespace BankDataAccessLayer
     {
 
 
+
+
+
+        public static DataTable GetAllAcoounts()
+        {
+            DataTable dtAllAccounts = new DataTable();
+
+
+            using (SqlConnection connection = new SqlConnection(clsSettingsConnectoinStrinng.connectionString))
+            {
+
+                string query = "select * from Accounts";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                  
+
+                    try
+                    {
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                           if (reader.HasRows)
+                            {
+                                dtAllAccounts.Load(reader);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error: {ex.Message}");
+                    }
+
+
+                }
+            }
+
+
+            return dtAllAccounts;
+
+        }
+
+
+
+
+        
 
 
         public static bool FindAccountByAccountNumber(string AccountNumber, ref int ClientID, ref DateTime AccountCreationDate, ref Decimal AccountBalance, ref string Password)

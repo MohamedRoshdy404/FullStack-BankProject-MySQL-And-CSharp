@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GetAllAccountList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetAllAccountList.Designer.cs">
+      <DependentUpon>GetAllAccountList.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddAcoount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     <Compile Include="UpdateClient.Designer.cs">
       <DependentUpon>UpdateClient.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GetAllAccountList.resx">
+      <DependentUpon>GetAllAccountList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddAcoount.resx">
       <DependentUpon>AddAcoount.cs</DependentUpon>
     </EmbeddedResource>

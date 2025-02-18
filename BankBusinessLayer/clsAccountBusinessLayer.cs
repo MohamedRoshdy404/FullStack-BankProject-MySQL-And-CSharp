@@ -1,6 +1,7 @@
 ﻿using BankDataAccessLayer;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -56,6 +57,13 @@ namespace BankBusinessLayer
         }
 
 
+
+
+
+        public static DataTable GetAllAcoounts()
+        {
+            return clsAccountsDataAccessLayer.GetAllAcoounts();
+        }
 
 
         public static clsAccountBusinessLayer FindAccountByAccountNumber(string AccountNumber)

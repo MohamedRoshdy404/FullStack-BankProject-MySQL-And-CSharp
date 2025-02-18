@@ -36,5 +36,10 @@ namespace FullStackBankProject
         {
             Form1.loadForm(new UpdateAccountNumber());
         }
+
+        private void BtnAccountsList_Click(object sender, EventArgs e)
+        {
+            Form1.loadForm(new GetAllAccountList());
+        }
     }
 }

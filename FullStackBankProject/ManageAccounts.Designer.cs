@@ -179,6 +179,7 @@
             this.BtnAccountsList.TabIndex = 9;
             this.BtnAccountsList.Text = "Accounts List";
             this.BtnAccountsList.UseTransparentBackground = true;
+            this.BtnAccountsList.Click += new System.EventHandler(this.BtnAccountsList_Click);
             // 
             // ManageAccounts
             // 
