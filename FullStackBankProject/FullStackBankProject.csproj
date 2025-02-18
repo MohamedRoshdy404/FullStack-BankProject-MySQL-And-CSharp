@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddAcoount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAcoount.Designer.cs">
+      <DependentUpon>AddAcoount.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddNewClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,11 +79,23 @@
     <Compile Include="ctrlUpdatePerson.Designer.cs">
       <DependentUpon>ctrlUpdatePerson.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteAccount.Designer.cs">
+      <DependentUpon>DeleteAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeleteClient.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DeleteClient.Designer.cs">
       <DependentUpon>DeleteClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindAccount.Designer.cs">
+      <DependentUpon>FindAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="FindClient.cs">
       <SubType>Form</SubType>
@@ -104,6 +122,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageAccounts.Designer.cs">
+      <DependentUpon>ManageAccounts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UpdateClient.cs">
@@ -112,6 +136,9 @@
     <Compile Include="UpdateClient.Designer.cs">
       <DependentUpon>UpdateClient.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddAcoount.resx">
+      <DependentUpon>AddAcoount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddNewClient.resx">
       <DependentUpon>AddNewClient.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,8 +148,14 @@
     <EmbeddedResource Include="ctrlUpdatePerson.resx">
       <DependentUpon>ctrlUpdatePerson.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DeleteAccount.resx">
+      <DependentUpon>DeleteAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DeleteClient.resx">
       <DependentUpon>DeleteClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindAccount.resx">
+      <DependentUpon>FindAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FindClient.resx">
       <DependentUpon>FindClient.cs</DependentUpon>
@@ -135,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageAccounts.resx">
+      <DependentUpon>ManageAccounts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageClients.resx">
       <DependentUpon>ManageClients.cs</DependentUpon>

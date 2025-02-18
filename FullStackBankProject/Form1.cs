@@ -16,21 +16,14 @@ namespace FullStackBankProject
 {
     public partial class Form1 : Form
     {
-        //public Form1(string UserName)
-        //{
-        //    InitializeComponent();
 
-        //    labINameUser.Text = UserName.ToUpper();
-
-        //}        
-
-
-        public static Panel myPanel; // تغيير الاسم عشان ميحصلش تضارب
+        public static Panel myPanel; 
 
         public Form1()
         {
             InitializeComponent();
-            myPanel = mainPanel; // دلوقتي بقى اسمه مختلف عن اللي في `Designer.cs`
+            myPanel = mainPanel;
+            Form1.loadForm(new ManageClients());
         }
 
         public static void loadForm(Form form)
@@ -45,23 +38,6 @@ namespace FullStackBankProject
             myPanel.Tag = form;
             form.Show();
         }
-
-
-        //public  void loadForm(object form)
-        //{
-        //    if (this.mainPanel.Controls.Count > 0)
-        //    {
-        //        this.mainPanel.Controls.RemoveAt(0);
-        //    }
-
-        //    Form frm1 = form as Form;
-        //    frm1.TopLevel = false;
-        //    frm1.Dock = DockStyle.Fill;
-        //    this.mainPanel.Controls.Add(frm1);
-        //    this.mainPanel.Tag = frm1;
-        //    frm1.Show();
-        //}
-
         private void guna2Button5_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -77,9 +53,9 @@ namespace FullStackBankProject
            
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void BtnAccounts_Click(object sender, EventArgs e)
         {
-
+            Form1.loadForm(new ManageAccounts());
         }
     }
 }

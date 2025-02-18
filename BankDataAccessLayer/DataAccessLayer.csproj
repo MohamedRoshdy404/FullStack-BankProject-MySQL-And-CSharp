@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsAccountsDataAccessLayer.cs" />
     <Compile Include="clsSettingsConnectoinStrinng.cs" />
     <Compile Include="ClientDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

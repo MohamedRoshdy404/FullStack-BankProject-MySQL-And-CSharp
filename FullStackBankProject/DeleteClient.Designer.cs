@@ -33,9 +33,9 @@
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.MainPanelDelete = new System.Windows.Forms.Panel();
+            this.BtnBack = new Guna.UI2.WinForms.Guna2Button();
             this.picSearchClient = new Guna.UI2.WinForms.Guna2PictureBox();
             this.TbxFindCleint = new Guna.UI2.WinForms.Guna2TextBox();
-            this.BtnBack = new Guna.UI2.WinForms.Guna2Button();
             this.MainPanelDelete.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSearchClient)).BeginInit();
             this.SuspendLayout();
@@ -55,8 +55,33 @@
             this.MainPanelDelete.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainPanelDelete.Location = new System.Drawing.Point(0, 0);
             this.MainPanelDelete.Name = "MainPanelDelete";
-            this.MainPanelDelete.Size = new System.Drawing.Size(800, 450);
+            this.MainPanelDelete.Size = new System.Drawing.Size(1140, 675);
             this.MainPanelDelete.TabIndex = 0;
+            // 
+            // BtnBack
+            // 
+            this.BtnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnBack.Animated = true;
+            this.BtnBack.AutoRoundedCorners = true;
+            this.BtnBack.BackColor = System.Drawing.Color.Transparent;
+            this.BtnBack.BorderRadius = 21;
+            this.BtnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BtnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnBack.ForeColor = System.Drawing.Color.Black;
+            this.BtnBack.Image = ((System.Drawing.Image)(resources.GetObject("BtnBack.Image")));
+            this.BtnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BtnBack.Location = new System.Drawing.Point(221, 495);
+            this.BtnBack.Name = "BtnBack";
+            this.BtnBack.Size = new System.Drawing.Size(180, 45);
+            this.BtnBack.TabIndex = 22;
+            this.BtnBack.Text = "Back";
+            this.BtnBack.UseTransparentBackground = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // picSearchClient
             // 
@@ -96,36 +121,11 @@
             this.TbxFindCleint.TabIndex = 20;
             this.TbxFindCleint.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // BtnBack
-            // 
-            this.BtnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnBack.Animated = true;
-            this.BtnBack.AutoRoundedCorners = true;
-            this.BtnBack.BackColor = System.Drawing.Color.Transparent;
-            this.BtnBack.BorderRadius = 21;
-            this.BtnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.BtnBack.ForeColor = System.Drawing.Color.Black;
-            this.BtnBack.Image = ((System.Drawing.Image)(resources.GetObject("BtnBack.Image")));
-            this.BtnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BtnBack.Location = new System.Drawing.Point(51, 383);
-            this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(180, 45);
-            this.BtnBack.TabIndex = 22;
-            this.BtnBack.Text = "Back";
-            this.BtnBack.UseTransparentBackground = true;
-            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
-            // 
             // DeleteClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1140, 675);
             this.Controls.Add(this.MainPanelDelete);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DeleteClient";

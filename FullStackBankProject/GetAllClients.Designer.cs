@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GetAllClients));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GetAllClients));
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.MainPanleGetAllClients = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnBack = new Guna.UI2.WinForms.Guna2Button();
             this.dgvGetAllClients = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panelHeaderText = new System.Windows.Forms.Panel();
             this.labGetAllClients = new System.Windows.Forms.Label();
-            this.BtnBack = new Guna.UI2.WinForms.Guna2Button();
             this.MainPanleGetAllClients.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGetAllClients)).BeginInit();
@@ -74,6 +74,31 @@
             this.panel1.Size = new System.Drawing.Size(1179, 525);
             this.panel1.TabIndex = 4;
             // 
+            // BtnBack
+            // 
+            this.BtnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnBack.Animated = true;
+            this.BtnBack.AutoRoundedCorners = true;
+            this.BtnBack.BackColor = System.Drawing.Color.Transparent;
+            this.BtnBack.BorderRadius = 21;
+            this.BtnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BtnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnBack.ForeColor = System.Drawing.Color.Black;
+            this.BtnBack.Image = ((System.Drawing.Image)(resources.GetObject("BtnBack.Image")));
+            this.BtnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BtnBack.Location = new System.Drawing.Point(146, 468);
+            this.BtnBack.Name = "BtnBack";
+            this.BtnBack.Size = new System.Drawing.Size(180, 45);
+            this.BtnBack.TabIndex = 11;
+            this.BtnBack.Text = "Back";
+            this.BtnBack.UseTransparentBackground = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
+            // 
             // dgvGetAllClients
             // 
             this.dgvGetAllClients.AllowUserToAddRows = false;
@@ -103,13 +128,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvGetAllClients.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvGetAllClients.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
-            this.dgvGetAllClients.Location = new System.Drawing.Point(0, 3);
+            this.dgvGetAllClients.Location = new System.Drawing.Point(14, 3);
             this.dgvGetAllClients.Margin = new System.Windows.Forms.Padding(5);
             this.dgvGetAllClients.Name = "dgvGetAllClients";
             this.dgvGetAllClients.ReadOnly = true;
             this.dgvGetAllClients.RowHeadersVisible = false;
             this.dgvGetAllClients.RowTemplate.ReadOnly = true;
-            this.dgvGetAllClients.Size = new System.Drawing.Size(1177, 446);
+            this.dgvGetAllClients.Size = new System.Drawing.Size(1151, 446);
             this.dgvGetAllClients.StandardTab = true;
             this.dgvGetAllClients.TabIndex = 1;
             this.dgvGetAllClients.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightGrid;
@@ -155,31 +180,6 @@
             this.labGetAllClients.Size = new System.Drawing.Size(131, 29);
             this.labGetAllClients.TabIndex = 3;
             this.labGetAllClients.Text = "All Clients";
-            // 
-            // BtnBack
-            // 
-            this.BtnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnBack.Animated = true;
-            this.BtnBack.AutoRoundedCorners = true;
-            this.BtnBack.BackColor = System.Drawing.Color.Transparent;
-            this.BtnBack.BorderRadius = 21;
-            this.BtnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.BtnBack.ForeColor = System.Drawing.Color.Black;
-            this.BtnBack.Image = ((System.Drawing.Image)(resources.GetObject("BtnBack.Image")));
-            this.BtnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BtnBack.Location = new System.Drawing.Point(146, 468);
-            this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(180, 45);
-            this.BtnBack.TabIndex = 11;
-            this.BtnBack.Text = "Back";
-            this.BtnBack.UseTransparentBackground = true;
-            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // GetAllClients
             // 

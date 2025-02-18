@@ -51,7 +51,7 @@ namespace FullStackBankProject
                 TboxPhone.Text = Client.Phone ?? "";
                 TboxCity.Text = Client.City ?? "";
                 TboxCountry.Text = Client.Country ?? "";
-                TboxDateOfBirth.Text = Client.DateOfBirth.ToString();
+                BtnDateOfBirth.Text = Client.DateOfBirth.ToString();
                 TboxCreateDate.Text = Client.CreateDate.ToString();
 
                 if (!string.IsNullOrEmpty(Client.Image) && System.IO.File.Exists(Client.Image))
@@ -88,14 +88,16 @@ namespace FullStackBankProject
                 Client.Phone = TboxPhone.Text ?? "";
                 Client.City = TboxCity.Text ?? "";
                 Client.Country = TboxCountry.Text ?? "";
-                Client.DateOfBirth = DateTime.TryParse(TboxDateOfBirth.Text, out DateTime dob) ? dob : DateTime.MinValue;
+                Client.DateOfBirth = DateTime.TryParse(BtnDateOfBirth.Text, out DateTime dob) ? dob : DateTime.MinValue;
                 Client.CreateDate = DateTime.TryParse(TboxCreateDate.Text, out DateTime createDate) ? createDate : DateTime.Now;
 
-
+                string selectedFilePath = openFileDialog1.FileName;
+                Client.Image = selectedFilePath;
+                picImgeClient.Load(selectedFilePath);
 
                 if (picImgeClient.ImageLocation != null)
                 {
-                    string selectedFilePath = openFileDialog1.FileName;
+                   // string selectedFilePath = openFileDialog1.FileName;
                     Client.Image = selectedFilePath;
                     picImgeClient.Load(selectedFilePath);
                 }
@@ -125,12 +127,6 @@ namespace FullStackBankProject
         {
             LoadForm(new ManageClients());
         }
-
-
-
-
-
-
         private void picAddImgeClient_Click(object sender, EventArgs e)
         {
             openFileDialog1.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";

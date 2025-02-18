@@ -35,7 +35,6 @@
             this.TboxFirstName = new Guna.UI2.WinForms.Guna2TextBox();
             this.TboxLastName = new Guna.UI2.WinForms.Guna2TextBox();
             this.TboxGender = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TboxDateOfBirth = new Guna.UI2.WinForms.Guna2TextBox();
             this.TboxCountry = new Guna.UI2.WinForms.Guna2TextBox();
             this.TboxEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.BtnBack = new Guna.UI2.WinForms.Guna2Button();
@@ -47,6 +46,7 @@
             this.picAddImgeClient = new System.Windows.Forms.PictureBox();
             this.picDeleteimageClient = new System.Windows.Forms.PictureBox();
             this.picImgeClient = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.BtnDateOfBirth = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.picSearchClient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAddImgeClient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDeleteimageClient)).BeginInit();
@@ -170,31 +170,6 @@
             this.TboxGender.TabIndex = 20;
             this.TboxGender.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TboxDateOfBirth
-            // 
-            this.TboxDateOfBirth.Animated = true;
-            this.TboxDateOfBirth.AutoRoundedCorners = true;
-            this.TboxDateOfBirth.BorderRadius = 28;
-            this.TboxDateOfBirth.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxDateOfBirth.DefaultText = "";
-            this.TboxDateOfBirth.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TboxDateOfBirth.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TboxDateOfBirth.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxDateOfBirth.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxDateOfBirth.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxDateOfBirth.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TboxDateOfBirth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TboxDateOfBirth.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxDateOfBirth.Location = new System.Drawing.Point(481, 345);
-            this.TboxDateOfBirth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TboxDateOfBirth.Name = "TboxDateOfBirth";
-            this.TboxDateOfBirth.PasswordChar = '\0';
-            this.TboxDateOfBirth.PlaceholderText = "DateOfBirth";
-            this.TboxDateOfBirth.SelectedText = "";
-            this.TboxDateOfBirth.Size = new System.Drawing.Size(256, 58);
-            this.TboxDateOfBirth.TabIndex = 21;
-            this.TboxDateOfBirth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // TboxCountry
             // 
             this.TboxCountry.Animated = true;
@@ -235,7 +210,7 @@
             this.TboxEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TboxEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxEmail.Location = new System.Drawing.Point(481, 205);
+            this.TboxEmail.Location = new System.Drawing.Point(479, 205);
             this.TboxEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TboxEmail.Name = "TboxEmail";
             this.TboxEmail.PasswordChar = '\0';
@@ -284,7 +259,7 @@
             this.TboxCity.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxCity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TboxCity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxCity.Location = new System.Drawing.Point(481, 275);
+            this.TboxCity.Location = new System.Drawing.Point(479, 275);
             this.TboxCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TboxCity.Name = "TboxCity";
             this.TboxCity.PasswordChar = '\0';
@@ -418,10 +393,31 @@
             this.picImgeClient.TabStop = false;
             this.picImgeClient.UseTransparentBackground = true;
             // 
+            // BtnDateOfBirth
+            // 
+            this.BtnDateOfBirth.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnDateOfBirth.Animated = true;
+            this.BtnDateOfBirth.AutoRoundedCorners = true;
+            this.BtnDateOfBirth.BackColor = System.Drawing.Color.Transparent;
+            this.BtnDateOfBirth.BorderRadius = 25;
+            this.BtnDateOfBirth.Checked = true;
+            this.BtnDateOfBirth.FillColor = System.Drawing.Color.White;
+            this.BtnDateOfBirth.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.BtnDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.BtnDateOfBirth.Location = new System.Drawing.Point(476, 350);
+            this.BtnDateOfBirth.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.BtnDateOfBirth.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.BtnDateOfBirth.Name = "BtnDateOfBirth";
+            this.BtnDateOfBirth.Size = new System.Drawing.Size(259, 53);
+            this.BtnDateOfBirth.TabIndex = 54;
+            this.BtnDateOfBirth.UseTransparentBackground = true;
+            this.BtnDateOfBirth.Value = new System.DateTime(2025, 2, 15, 13, 4, 57, 991);
+            // 
             // ctrlUpdateClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.BtnDateOfBirth);
             this.Controls.Add(this.picImgeClient);
             this.Controls.Add(this.picDeleteimageClient);
             this.Controls.Add(this.picAddImgeClient);
@@ -433,7 +429,6 @@
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.TboxEmail);
             this.Controls.Add(this.TboxCountry);
-            this.Controls.Add(this.TboxDateOfBirth);
             this.Controls.Add(this.TboxGender);
             this.Controls.Add(this.TboxLastName);
             this.Controls.Add(this.TboxFirstName);
@@ -457,7 +452,6 @@
         private Guna.UI2.WinForms.Guna2TextBox TboxFirstName;
         private Guna.UI2.WinForms.Guna2TextBox TboxLastName;
         private Guna.UI2.WinForms.Guna2TextBox TboxGender;
-        private Guna.UI2.WinForms.Guna2TextBox TboxDateOfBirth;
         private Guna.UI2.WinForms.Guna2TextBox TboxCountry;
         private Guna.UI2.WinForms.Guna2TextBox TboxEmail;
         private Guna.UI2.WinForms.Guna2Button BtnBack;
@@ -469,5 +463,6 @@
         private System.Windows.Forms.PictureBox picAddImgeClient;
         private System.Windows.Forms.PictureBox picDeleteimageClient;
         private Guna.UI2.WinForms.Guna2CirclePictureBox picImgeClient;
+        private Guna.UI2.WinForms.Guna2DateTimePicker BtnDateOfBirth;
     }
 }

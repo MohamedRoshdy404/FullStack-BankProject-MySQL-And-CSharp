@@ -46,7 +46,7 @@
             this.ctrlAddNewClient1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ctrlAddNewClient1.Location = new System.Drawing.Point(0, 0);
             this.ctrlAddNewClient1.Name = "ctrlAddNewClient1";
-            this.ctrlAddNewClient1.Size = new System.Drawing.Size(1127, 609);
+            this.ctrlAddNewClient1.Size = new System.Drawing.Size(1140, 675);
             this.ctrlAddNewClient1.TabIndex = 0;
             // 
             // AddNewClient
