@@ -82,6 +82,13 @@ namespace BankBusinessLayer
         }
 
 
+                        
+        public static bool DeleteAccount(string AccountNumber)
+        {
+            return (clsAccountsDataAccessLayer.DeleteAccount(AccountNumber));
+        }
+
+
 
 
 

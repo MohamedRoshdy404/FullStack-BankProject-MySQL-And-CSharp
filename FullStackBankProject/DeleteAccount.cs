@@ -22,11 +22,28 @@ namespace FullStackBankProject
         {
             if (clsAccountBusinessLayer.isExist(TboxAccountNumber.Text))
             {
-                MessageBox.Show($"Are you sure you want to delete the account {TboxAccountNumber} ?" , "Sure ?" , MessageBoxButtons.OKCancel , MessageBoxIcon.Warning);
+                if (MessageBox.Show($"Are you sure you want to delete the account {TboxAccountNumber.Text} ?", "Sure ?", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                {
+                    if (clsAccountBusinessLayer.DeleteAccount(TboxAccountNumber.Text))
+                    {
+                        MessageBox.Show("The account has been successfully deleted." , "Done" , MessageBoxButtons.OK , MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("The account deletion process has failed.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("The account deletion process has been canceled.", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+
+
             }
             else
             {
-                MessageBox.Show($"The account does not exist. Please enter an existing account number. {TboxAccountNumber} ?", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"The account does not exist. Please enter an existing account number. {TboxAccountNumber.Text} ?", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

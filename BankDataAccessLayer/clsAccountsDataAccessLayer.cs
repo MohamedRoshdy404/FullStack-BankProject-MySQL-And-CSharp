@@ -89,6 +89,37 @@ namespace BankDataAccessLayer
 
 
 
+        public static bool DeleteAccount(string AccountNumber)
+        {
+            int rowsAffeted = 0;
+
+            using (SqlConnection connection = new SqlConnection(clsSettingsConnectoinStrinng.connectionString))
+            {
+                string query = @" delete Accounts where AccountNumber =  @AccountNumber ";
+
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
+                    try
+                    {
+                        connection.Open();
+                        rowsAffeted = command.ExecuteNonQuery();
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error: {ex.Message}");
+                    }
+                }
+            }
+
+            return (rowsAffeted > 0);
+        }
+
+
+
 
 
         public static int AddAccountNumber(string AccountNumber,  int ClientID,  DateTime AccountCreationDate,  Decimal AccountBalance,  string Password)
