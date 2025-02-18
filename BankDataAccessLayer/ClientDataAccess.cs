@@ -102,6 +102,51 @@ namespace BankDataAccessLayer
         }
 
 
+
+
+
+        public static bool isExist(int ClientID)
+        {
+            bool isFound = false;
+
+            using (SqlConnection connection = new SqlConnection(clsSettingsConnectoinStrinng.connectionString))
+            {
+                string query = @" Select isExist = 1 Clients where ClientID = @ClientID ";
+
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@ClientID", ClientID);
+
+
+
+                    try
+                    {
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            isFound = reader.HasRows;
+                        }
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error: {ex.Message}");
+                    }
+                }
+            }
+
+            return isFound;
+        }
+
+
+
+
+
+
+
+
         public static int AddNewClient(string FirstName, string LastName, string Gender, string Email, string Phone, string City, string Country, DateTime DateOfBirth, DateTime CreateDate, string Image)
         {
             int ClinetID = 0;

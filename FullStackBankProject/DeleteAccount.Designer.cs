@@ -34,6 +34,7 @@
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.BtnSerach = new Guna.UI2.WinForms.Guna2Button();
             this.TboxAccountNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            this.BtnBack = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -92,11 +93,37 @@
             this.TboxAccountNumber.Size = new System.Drawing.Size(508, 62);
             this.TboxAccountNumber.TabIndex = 16;
             // 
+            // BtnBack
+            // 
+            this.BtnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnBack.Animated = true;
+            this.BtnBack.AutoRoundedCorners = true;
+            this.BtnBack.BackColor = System.Drawing.Color.Transparent;
+            this.BtnBack.BorderRadius = 26;
+            this.BtnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BtnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnBack.ForeColor = System.Drawing.Color.Black;
+            this.BtnBack.Image = ((System.Drawing.Image)(resources.GetObject("BtnBack.Image")));
+            this.BtnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BtnBack.Location = new System.Drawing.Point(203, 524);
+            this.BtnBack.Name = "BtnBack";
+            this.BtnBack.Size = new System.Drawing.Size(155, 55);
+            this.BtnBack.TabIndex = 29;
+            this.BtnBack.Text = "Back";
+            this.BtnBack.UseTransparentBackground = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
+            // 
             // DeleteAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 675);
+            this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.TboxAccountNumber);
             this.Controls.Add(this.BtnSerach);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -112,5 +139,6 @@
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2Button BtnSerach;
         private Guna.UI2.WinForms.Guna2TextBox TboxAccountNumber;
+        private Guna.UI2.WinForms.Guna2Button BtnBack;
     }
 }

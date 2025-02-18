@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace BankDataAccessLayer
 {
@@ -52,10 +54,6 @@ namespace BankDataAccessLayer
         }
 
 
-
-
-
-
         public static bool isExist(string AccountNumber)
         {
             bool isFound = false;
@@ -87,8 +85,6 @@ namespace BankDataAccessLayer
         }
 
 
-
-
         public static bool DeleteAccount(string AccountNumber)
         {
             int rowsAffeted = 0;
@@ -117,8 +113,6 @@ namespace BankDataAccessLayer
 
             return (rowsAffeted > 0);
         }
-
-
 
 
 
@@ -162,6 +156,47 @@ namespace BankDataAccessLayer
 
 
 
+        public static bool UpdateAccountNumber(string AccountNumber, int ClientID, Decimal AccountBalance, string Password)
+        {
+            int rowsAffected = 0;
+
+            using (SqlConnection connection = new SqlConnection(clsSettingsConnectoinStrinng.connectionString))
+            {
+                string query = @"
+                                    UPDATE Accounts 
+                                    SET AccountNumber   = @AccountNumber, 
+                                        ClientID        = @ClientID, 
+                                        AccountBalance  = @AccountBalance, 
+                                        Password        = @Password
+
+                                    WHERE AccountNumber = @AccountNumber";
+
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    
+                    command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
+                    command.Parameters.AddWithValue("@ClientID", ClientID);
+                    command.Parameters.AddWithValue("@AccountBalance", AccountBalance);
+                    command.Parameters.AddWithValue("@Password", Password);
+
+
+
+                    try
+                    {
+                        connection.Open();
+                        rowsAffected = command.ExecuteNonQuery();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error: {ex.Message}");
+                    }
+                }
+            }
+
+            return (rowsAffected > 0);
+        }
 
 
 

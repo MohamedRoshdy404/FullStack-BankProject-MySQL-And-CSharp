@@ -46,6 +46,18 @@ namespace BankBusinessLayer
         }
 
 
+        private clsAccountBusinessLayer(string AccountNumber, int ClientID, Decimal AccountBalance, string Password)
+        {
+            this.AccountNumber = AccountNumber;
+            this.ClientID = ClientID;
+            this.AccountBalance = AccountBalance;
+            this.Password = Password;
+            Mode = enMode.Update;
+        }
+
+
+
+
         public static clsAccountBusinessLayer FindAccountByAccountNumber(string AccountNumber)
         {
             int ClientID = -1;
@@ -75,7 +87,15 @@ namespace BankBusinessLayer
 
         }
 
-                
+
+
+        private bool _UpdateAccountNumber()
+        { 
+            return clsAccountsDataAccessLayer.UpdateAccountNumber(this.AccountNumber, this.ClientID,  this.AccountBalance, this.Password);
+        }
+
+
+
         public static bool isExist(string AccountNumber)
         {
             return (clsAccountsDataAccessLayer.isExist(AccountNumber));
@@ -109,7 +129,10 @@ namespace BankBusinessLayer
                         return false;
                     }
 
-                //case enMode.Update:
+                case enMode.Update:
+
+                    return _UpdateAccountNumber();
+
 
                 default:
                     return false;

@@ -31,5 +31,10 @@ namespace FullStackBankProject
         {
             Form1.loadForm(new DeleteAccount());
         }
+
+        private void BtnUpdateAccount_Click(object sender, EventArgs e)
+        {
+            Form1.loadForm(new UpdateAccountNumber());
+        }
     }
 }

@@ -46,5 +46,10 @@ namespace FullStackBankProject
                 MessageBox.Show($"The account does not exist. Please enter an existing account number. {TboxAccountNumber.Text} ?", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            Form1.loadForm(new ManageAccounts());
+        }
     }
 }

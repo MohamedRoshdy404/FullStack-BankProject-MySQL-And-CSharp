@@ -27,3 +27,4 @@ C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.ManageAccounts.resources
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.AddAcoount.resources
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.DeleteAccount.resources
+C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.UpdateAccountNumber.resources

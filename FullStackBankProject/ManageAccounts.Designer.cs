@@ -125,6 +125,7 @@
             this.BtnUpdateAccount.TabIndex = 11;
             this.BtnUpdateAccount.Text = "Update Account";
             this.BtnUpdateAccount.UseTransparentBackground = true;
+            this.BtnUpdateAccount.Click += new System.EventHandler(this.BtnUpdateAccount_Click);
             // 
             // BtnAddAccount
             // 

@@ -111,6 +111,12 @@ namespace BankBusinessLayer
             return ClientDataAccess.DeleteClient(ClientID);
             
         }
+                
+        public static bool isExist(int ClientID)
+        {
+            return ClientDataAccess.isExist(ClientID);
+            
+        }
 
 
 
