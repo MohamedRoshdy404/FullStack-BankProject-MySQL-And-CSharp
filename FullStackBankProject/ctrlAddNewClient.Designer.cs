@@ -57,8 +57,7 @@
             // 
             this.TboxFirstName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TboxFirstName.Animated = true;
-            this.TboxFirstName.AutoRoundedCorners = true;
-            this.TboxFirstName.BorderRadius = 28;
+            this.TboxFirstName.BorderRadius = 10;
             this.TboxFirstName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TboxFirstName.DefaultText = "";
             this.TboxFirstName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -83,8 +82,7 @@
             // 
             this.TboxLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TboxLastName.Animated = true;
-            this.TboxLastName.AutoRoundedCorners = true;
-            this.TboxLastName.BorderRadius = 28;
+            this.TboxLastName.BorderRadius = 10;
             this.TboxLastName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TboxLastName.DefaultText = "";
             this.TboxLastName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -109,8 +107,7 @@
             // 
             this.TboxGender.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TboxGender.Animated = true;
-            this.TboxGender.AutoRoundedCorners = true;
-            this.TboxGender.BorderRadius = 28;
+            this.TboxGender.BorderRadius = 10;
             this.TboxGender.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TboxGender.DefaultText = "";
             this.TboxGender.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -135,8 +132,7 @@
             // 
             this.TboxCountry.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TboxCountry.Animated = true;
-            this.TboxCountry.AutoRoundedCorners = true;
-            this.TboxCountry.BorderRadius = 28;
+            this.TboxCountry.BorderRadius = 10;
             this.TboxCountry.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TboxCountry.DefaultText = "";
             this.TboxCountry.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -161,8 +157,7 @@
             // 
             this.TboxEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TboxEmail.Animated = true;
-            this.TboxEmail.AutoRoundedCorners = true;
-            this.TboxEmail.BorderRadius = 28;
+            this.TboxEmail.BorderRadius = 10;
             this.TboxEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TboxEmail.DefaultText = "";
             this.TboxEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -212,8 +207,7 @@
             // 
             this.TboxCity.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TboxCity.Animated = true;
-            this.TboxCity.AutoRoundedCorners = true;
-            this.TboxCity.BorderRadius = 28;
+            this.TboxCity.BorderRadius = 10;
             this.TboxCity.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TboxCity.DefaultText = "";
             this.TboxCity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -238,8 +232,7 @@
             // 
             this.TboxPhone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TboxPhone.Animated = true;
-            this.TboxPhone.AutoRoundedCorners = true;
-            this.TboxPhone.BorderRadius = 28;
+            this.TboxPhone.BorderRadius = 10;
             this.TboxPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TboxPhone.DefaultText = "";
             this.TboxPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -300,9 +293,8 @@
             // 
             this.BtnDateOfBirth.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnDateOfBirth.Animated = true;
-            this.BtnDateOfBirth.AutoRoundedCorners = true;
             this.BtnDateOfBirth.BackColor = System.Drawing.Color.Transparent;
-            this.BtnDateOfBirth.BorderRadius = 25;
+            this.BtnDateOfBirth.BorderRadius = 10;
             this.BtnDateOfBirth.Checked = true;
             this.BtnDateOfBirth.FillColor = System.Drawing.Color.White;
             this.BtnDateOfBirth.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);

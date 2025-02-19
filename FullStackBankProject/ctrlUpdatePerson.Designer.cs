@@ -60,6 +60,7 @@
             // TbxFindCleint
             // 
             this.TbxFindCleint.Animated = true;
+            this.TbxFindCleint.BorderRadius = 10;
             this.TbxFindCleint.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TbxFindCleint.DefaultText = "";
             this.TbxFindCleint.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -70,7 +71,7 @@
             this.TbxFindCleint.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TbxFindCleint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TbxFindCleint.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TbxFindCleint.Location = new System.Drawing.Point(562, 48);
+            this.TbxFindCleint.Location = new System.Drawing.Point(431, 49);
             this.TbxFindCleint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TbxFindCleint.Name = "TbxFindCleint";
             this.TbxFindCleint.PasswordChar = '\0';
@@ -86,7 +87,7 @@
             this.picSearchClient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picSearchClient.Image = ((System.Drawing.Image)(resources.GetObject("picSearchClient.Image")));
             this.picSearchClient.ImageRotate = 0F;
-            this.picSearchClient.Location = new System.Drawing.Point(742, 48);
+            this.picSearchClient.Location = new System.Drawing.Point(611, 49);
             this.picSearchClient.Name = "picSearchClient";
             this.picSearchClient.Size = new System.Drawing.Size(37, 42);
             this.picSearchClient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -98,8 +99,7 @@
             // TboxFirstName
             // 
             this.TboxFirstName.Animated = true;
-            this.TboxFirstName.AutoRoundedCorners = true;
-            this.TboxFirstName.BorderRadius = 28;
+            this.TboxFirstName.BorderRadius = 10;
             this.TboxFirstName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TboxFirstName.DefaultText = "";
             this.TboxFirstName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -110,7 +110,7 @@
             this.TboxFirstName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TboxFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxFirstName.Location = new System.Drawing.Point(204, 135);
+            this.TboxFirstName.Location = new System.Drawing.Point(117, 136);
             this.TboxFirstName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TboxFirstName.Name = "TboxFirstName";
             this.TboxFirstName.PasswordChar = '\0';
@@ -123,8 +123,7 @@
             // TboxLastName
             // 
             this.TboxLastName.Animated = true;
-            this.TboxLastName.AutoRoundedCorners = true;
-            this.TboxLastName.BorderRadius = 28;
+            this.TboxLastName.BorderRadius = 10;
             this.TboxLastName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TboxLastName.DefaultText = "";
             this.TboxLastName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -135,7 +134,7 @@
             this.TboxLastName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TboxLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxLastName.Location = new System.Drawing.Point(479, 135);
+            this.TboxLastName.Location = new System.Drawing.Point(392, 136);
             this.TboxLastName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TboxLastName.Name = "TboxLastName";
             this.TboxLastName.PasswordChar = '\0';
@@ -148,8 +147,7 @@
             // TboxGender
             // 
             this.TboxGender.Animated = true;
-            this.TboxGender.AutoRoundedCorners = true;
-            this.TboxGender.BorderRadius = 28;
+            this.TboxGender.BorderRadius = 10;
             this.TboxGender.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TboxGender.DefaultText = "";
             this.TboxGender.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -160,7 +158,7 @@
             this.TboxGender.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TboxGender.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxGender.Location = new System.Drawing.Point(204, 205);
+            this.TboxGender.Location = new System.Drawing.Point(117, 206);
             this.TboxGender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TboxGender.Name = "TboxGender";
             this.TboxGender.PasswordChar = '\0';
@@ -173,8 +171,7 @@
             // TboxCountry
             // 
             this.TboxCountry.Animated = true;
-            this.TboxCountry.AutoRoundedCorners = true;
-            this.TboxCountry.BorderRadius = 28;
+            this.TboxCountry.BorderRadius = 10;
             this.TboxCountry.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TboxCountry.DefaultText = "";
             this.TboxCountry.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -185,7 +182,7 @@
             this.TboxCountry.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxCountry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TboxCountry.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxCountry.Location = new System.Drawing.Point(204, 345);
+            this.TboxCountry.Location = new System.Drawing.Point(117, 346);
             this.TboxCountry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TboxCountry.Name = "TboxCountry";
             this.TboxCountry.PasswordChar = '\0';
@@ -198,8 +195,7 @@
             // TboxEmail
             // 
             this.TboxEmail.Animated = true;
-            this.TboxEmail.AutoRoundedCorners = true;
-            this.TboxEmail.BorderRadius = 28;
+            this.TboxEmail.BorderRadius = 10;
             this.TboxEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TboxEmail.DefaultText = "";
             this.TboxEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -210,7 +206,7 @@
             this.TboxEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TboxEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxEmail.Location = new System.Drawing.Point(479, 205);
+            this.TboxEmail.Location = new System.Drawing.Point(392, 206);
             this.TboxEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TboxEmail.Name = "TboxEmail";
             this.TboxEmail.PasswordChar = '\0';
@@ -236,7 +232,7 @@
             this.BtnBack.ForeColor = System.Drawing.Color.Black;
             this.BtnBack.Image = ((System.Drawing.Image)(resources.GetObject("BtnBack.Image")));
             this.BtnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BtnBack.Location = new System.Drawing.Point(204, 491);
+            this.BtnBack.Location = new System.Drawing.Point(117, 492);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(148, 53);
             this.BtnBack.TabIndex = 24;
@@ -247,8 +243,7 @@
             // TboxCity
             // 
             this.TboxCity.Animated = true;
-            this.TboxCity.AutoRoundedCorners = true;
-            this.TboxCity.BorderRadius = 28;
+            this.TboxCity.BorderRadius = 10;
             this.TboxCity.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TboxCity.DefaultText = "";
             this.TboxCity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -259,7 +254,7 @@
             this.TboxCity.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxCity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TboxCity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxCity.Location = new System.Drawing.Point(479, 275);
+            this.TboxCity.Location = new System.Drawing.Point(392, 276);
             this.TboxCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TboxCity.Name = "TboxCity";
             this.TboxCity.PasswordChar = '\0';
@@ -272,8 +267,7 @@
             // TboxPhone
             // 
             this.TboxPhone.Animated = true;
-            this.TboxPhone.AutoRoundedCorners = true;
-            this.TboxPhone.BorderRadius = 28;
+            this.TboxPhone.BorderRadius = 10;
             this.TboxPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TboxPhone.DefaultText = "";
             this.TboxPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -284,7 +278,7 @@
             this.TboxPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TboxPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxPhone.Location = new System.Drawing.Point(204, 275);
+            this.TboxPhone.Location = new System.Drawing.Point(117, 276);
             this.TboxPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TboxPhone.Name = "TboxPhone";
             this.TboxPhone.PasswordChar = '\0';
@@ -297,8 +291,7 @@
             // TboxCreateDate
             // 
             this.TboxCreateDate.Animated = true;
-            this.TboxCreateDate.AutoRoundedCorners = true;
-            this.TboxCreateDate.BorderRadius = 28;
+            this.TboxCreateDate.BorderRadius = 10;
             this.TboxCreateDate.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TboxCreateDate.DefaultText = "";
             this.TboxCreateDate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -309,7 +302,7 @@
             this.TboxCreateDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxCreateDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TboxCreateDate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxCreateDate.Location = new System.Drawing.Point(204, 414);
+            this.TboxCreateDate.Location = new System.Drawing.Point(117, 415);
             this.TboxCreateDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TboxCreateDate.Name = "TboxCreateDate";
             this.TboxCreateDate.PasswordChar = '\0';
@@ -335,7 +328,7 @@
             this.BtnclientUpdatetingSave.ForeColor = System.Drawing.Color.Black;
             this.BtnclientUpdatetingSave.Image = ((System.Drawing.Image)(resources.GetObject("BtnclientUpdatetingSave.Image")));
             this.BtnclientUpdatetingSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BtnclientUpdatetingSave.Location = new System.Drawing.Point(589, 491);
+            this.BtnclientUpdatetingSave.Location = new System.Drawing.Point(502, 492);
             this.BtnclientUpdatetingSave.Name = "BtnclientUpdatetingSave";
             this.BtnclientUpdatetingSave.Size = new System.Drawing.Size(146, 53);
             this.BtnclientUpdatetingSave.TabIndex = 28;
@@ -347,7 +340,7 @@
             // 
             this.labUpdateClient.AutoSize = true;
             this.labUpdateClient.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.labUpdateClient.Location = new System.Drawing.Point(177, 33);
+            this.labUpdateClient.Location = new System.Drawing.Point(112, 49);
             this.labUpdateClient.Name = "labUpdateClient";
             this.labUpdateClient.Size = new System.Drawing.Size(175, 29);
             this.labUpdateClient.TabIndex = 29;
@@ -358,7 +351,7 @@
             this.picAddImgeClient.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picAddImgeClient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picAddImgeClient.Image = ((System.Drawing.Image)(resources.GetObject("picAddImgeClient.Image")));
-            this.picAddImgeClient.Location = new System.Drawing.Point(773, 291);
+            this.picAddImgeClient.Location = new System.Drawing.Point(686, 292);
             this.picAddImgeClient.Name = "picAddImgeClient";
             this.picAddImgeClient.Size = new System.Drawing.Size(41, 40);
             this.picAddImgeClient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -371,7 +364,7 @@
             this.picDeleteimageClient.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picDeleteimageClient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picDeleteimageClient.Image = ((System.Drawing.Image)(resources.GetObject("picDeleteimageClient.Image")));
-            this.picDeleteimageClient.Location = new System.Drawing.Point(839, 291);
+            this.picDeleteimageClient.Location = new System.Drawing.Point(752, 292);
             this.picDeleteimageClient.Name = "picDeleteimageClient";
             this.picDeleteimageClient.Size = new System.Drawing.Size(41, 40);
             this.picDeleteimageClient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -384,7 +377,7 @@
             this.picImgeClient.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picImgeClient.BackColor = System.Drawing.Color.Transparent;
             this.picImgeClient.ImageRotate = 0F;
-            this.picImgeClient.Location = new System.Drawing.Point(756, 135);
+            this.picImgeClient.Location = new System.Drawing.Point(669, 136);
             this.picImgeClient.Name = "picImgeClient";
             this.picImgeClient.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.picImgeClient.Size = new System.Drawing.Size(150, 150);
@@ -397,14 +390,13 @@
             // 
             this.BtnDateOfBirth.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnDateOfBirth.Animated = true;
-            this.BtnDateOfBirth.AutoRoundedCorners = true;
             this.BtnDateOfBirth.BackColor = System.Drawing.Color.Transparent;
-            this.BtnDateOfBirth.BorderRadius = 25;
+            this.BtnDateOfBirth.BorderRadius = 10;
             this.BtnDateOfBirth.Checked = true;
             this.BtnDateOfBirth.FillColor = System.Drawing.Color.White;
             this.BtnDateOfBirth.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.BtnDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.BtnDateOfBirth.Location = new System.Drawing.Point(476, 350);
+            this.BtnDateOfBirth.Location = new System.Drawing.Point(389, 351);
             this.BtnDateOfBirth.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.BtnDateOfBirth.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.BtnDateOfBirth.Name = "BtnDateOfBirth";
