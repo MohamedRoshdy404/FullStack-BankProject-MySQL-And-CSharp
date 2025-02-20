@@ -51,10 +51,11 @@ namespace FullStackBankProject
             else
             {
                 // لو مفيش صورة، استخدم صورة افتراضية
-                //picImgeUser.Image = Properties.Resources.; // استبدلها بصورة افتراضية من Resources
-
             }
+
             labINameUser.Text = clsGlobal.UserName;
+
+
         }
         
 
@@ -93,6 +94,11 @@ namespace FullStackBankProject
         private void BtnManageUsers_Click(object sender, EventArgs e)
         {
             Form1.loadForm(new ManageUsers());
+        }
+
+        private void picLoadImgeUser_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

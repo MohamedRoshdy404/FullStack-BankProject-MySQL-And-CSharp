@@ -75,7 +75,7 @@ namespace FullStackBankProject
                 {
                     using (FileStream fs = new FileStream(selectedFilePath, FileMode.Open, FileAccess.Read))
                     {
-                        picImgeClient.Image = Image.FromStream(fs);
+                        picImgeUser.Image = Image.FromStream(fs);
                     }
                 }
                 catch (Exception ex)
@@ -83,6 +83,7 @@ namespace FullStackBankProject
                     MessageBox.Show("خطأ في تحميل الصورة: " + ex.Message, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+
         }
     }
 }

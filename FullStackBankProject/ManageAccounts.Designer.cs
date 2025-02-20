@@ -37,6 +37,7 @@
             this.BtnUpdateAccount = new Guna.UI2.WinForms.Guna2Button();
             this.BtnAddAccount = new Guna.UI2.WinForms.Guna2Button();
             this.BtnAccountsList = new Guna.UI2.WinForms.Guna2Button();
+            this.labMainScreenAccount = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -65,7 +66,7 @@
             this.BtnDeleteAccount.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnDeleteAccount.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnDeleteAccount.IndicateFocus = true;
-            this.BtnDeleteAccount.Location = new System.Drawing.Point(539, 288);
+            this.BtnDeleteAccount.Location = new System.Drawing.Point(500, 278);
             this.BtnDeleteAccount.Name = "BtnDeleteAccount";
             this.BtnDeleteAccount.Size = new System.Drawing.Size(251, 63);
             this.BtnDeleteAccount.TabIndex = 13;
@@ -92,7 +93,7 @@
             this.BtnFindAccount.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnFindAccount.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnFindAccount.IndicateFocus = true;
-            this.BtnFindAccount.Location = new System.Drawing.Point(222, 206);
+            this.BtnFindAccount.Location = new System.Drawing.Point(200, 200);
             this.BtnFindAccount.Name = "BtnFindAccount";
             this.BtnFindAccount.Size = new System.Drawing.Size(251, 63);
             this.BtnFindAccount.TabIndex = 12;
@@ -119,7 +120,7 @@
             this.BtnUpdateAccount.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnUpdateAccount.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnUpdateAccount.IndicateFocus = true;
-            this.BtnUpdateAccount.Location = new System.Drawing.Point(222, 366);
+            this.BtnUpdateAccount.Location = new System.Drawing.Point(200, 357);
             this.BtnUpdateAccount.Name = "BtnUpdateAccount";
             this.BtnUpdateAccount.Size = new System.Drawing.Size(251, 63);
             this.BtnUpdateAccount.TabIndex = 11;
@@ -146,7 +147,7 @@
             this.BtnAddAccount.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnAddAccount.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnAddAccount.IndicateFocus = true;
-            this.BtnAddAccount.Location = new System.Drawing.Point(222, 288);
+            this.BtnAddAccount.Location = new System.Drawing.Point(200, 278);
             this.BtnAddAccount.Name = "BtnAddAccount";
             this.BtnAddAccount.Size = new System.Drawing.Size(251, 63);
             this.BtnAddAccount.TabIndex = 10;
@@ -173,7 +174,7 @@
             this.BtnAccountsList.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnAccountsList.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnAccountsList.IndicateFocus = true;
-            this.BtnAccountsList.Location = new System.Drawing.Point(539, 206);
+            this.BtnAccountsList.Location = new System.Drawing.Point(500, 200);
             this.BtnAccountsList.Name = "BtnAccountsList";
             this.BtnAccountsList.Size = new System.Drawing.Size(251, 63);
             this.BtnAccountsList.TabIndex = 9;
@@ -181,11 +182,24 @@
             this.BtnAccountsList.UseTransparentBackground = true;
             this.BtnAccountsList.Click += new System.EventHandler(this.BtnAccountsList_Click);
             // 
+            // labMainScreenAccount
+            // 
+            this.labMainScreenAccount.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labMainScreenAccount.AutoSize = true;
+            this.labMainScreenAccount.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labMainScreenAccount.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.labMainScreenAccount.Location = new System.Drawing.Point(200, 20);
+            this.labMainScreenAccount.Name = "labMainScreenAccount";
+            this.labMainScreenAccount.Size = new System.Drawing.Size(262, 29);
+            this.labMainScreenAccount.TabIndex = 14;
+            this.labMainScreenAccount.Text = "Main Screen Account";
+            // 
             // ManageAccounts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 675);
+            this.Controls.Add(this.labMainScreenAccount);
             this.Controls.Add(this.BtnDeleteAccount);
             this.Controls.Add(this.BtnFindAccount);
             this.Controls.Add(this.BtnUpdateAccount);
@@ -195,6 +209,7 @@
             this.Name = "ManageAccounts";
             this.Text = "ManageAccounts";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -207,5 +222,6 @@
         private Guna.UI2.WinForms.Guna2Button BtnUpdateAccount;
         private Guna.UI2.WinForms.Guna2Button BtnAddAccount;
         private Guna.UI2.WinForms.Guna2Button BtnAccountsList;
+        private System.Windows.Forms.Label labMainScreenAccount;
     }
 }

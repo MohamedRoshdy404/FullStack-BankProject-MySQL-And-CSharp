@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -60,16 +61,25 @@ namespace FullStackBankProject
                 TboxCountry.Text = Client.Country.ToString();
                 TboxDateOfBirth.Text = Client.DateOfBirth.ToString();
                 TboxCreateDate.Text = Client.CreateDate.ToString();
-                if (!string.IsNullOrEmpty(Client.Image) && System.IO.File.Exists(Client.Image))
-                {
-                    picImgeClient.Load(Client.Image);
 
+                if (!string.IsNullOrEmpty(Client.Image) && File.Exists(Client.Image))
+                {
+                    try
+                    {
+                        using (FileStream fs = new FileStream(Client.Image, FileMode.Open, FileAccess.Read))
+                        {
+                            picImgeClient.Image = Image.FromStream(fs);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("خطأ في تحميل الصورة: " + ex.Message, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Image file not found.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    // لو مفيش صورة، استخدم صورة افتراضية
                 }
-
 
             }
             else

@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewUser));
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.picImgeClient = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.picImgeUser = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.picDeleteimageUser = new System.Windows.Forms.PictureBox();
             this.picAddImgeUser = new System.Windows.Forms.PictureBox();
             this.labAddNewUser = new System.Windows.Forms.Label();
@@ -47,7 +47,7 @@
             this.TboxLastName = new Guna.UI2.WinForms.Guna2TextBox();
             this.TboxFirstName = new Guna.UI2.WinForms.Guna2TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            ((System.ComponentModel.ISupportInitialize)(this.picImgeClient)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picImgeUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDeleteimageUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAddImgeUser)).BeginInit();
             this.SuspendLayout();
@@ -59,21 +59,21 @@
             this.guna2BorderlessForm1.HasFormShadow = false;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // picImgeClient
+            // picImgeUser
             // 
-            this.picImgeClient.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picImgeClient.BackColor = System.Drawing.Color.Transparent;
-            this.picImgeClient.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picImgeClient.ErrorImage")));
-            this.picImgeClient.ImageRotate = 0F;
-            this.picImgeClient.InitialImage = ((System.Drawing.Image)(resources.GetObject("picImgeClient.InitialImage")));
-            this.picImgeClient.Location = new System.Drawing.Point(834, 138);
-            this.picImgeClient.Name = "picImgeClient";
-            this.picImgeClient.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.picImgeClient.Size = new System.Drawing.Size(150, 150);
-            this.picImgeClient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picImgeClient.TabIndex = 66;
-            this.picImgeClient.TabStop = false;
-            this.picImgeClient.UseTransparentBackground = true;
+            this.picImgeUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picImgeUser.BackColor = System.Drawing.Color.Transparent;
+            this.picImgeUser.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picImgeUser.ErrorImage")));
+            this.picImgeUser.ImageRotate = 0F;
+            this.picImgeUser.InitialImage = ((System.Drawing.Image)(resources.GetObject("picImgeUser.InitialImage")));
+            this.picImgeUser.Location = new System.Drawing.Point(834, 138);
+            this.picImgeUser.Name = "picImgeUser";
+            this.picImgeUser.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.picImgeUser.Size = new System.Drawing.Size(150, 150);
+            this.picImgeUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picImgeUser.TabIndex = 66;
+            this.picImgeUser.TabStop = false;
+            this.picImgeUser.UseTransparentBackground = true;
             // 
             // picDeleteimageUser
             // 
@@ -380,7 +380,7 @@
             this.Controls.Add(this.TboxUserName);
             this.Controls.Add(this.TboxLastName);
             this.Controls.Add(this.TboxFirstName);
-            this.Controls.Add(this.picImgeClient);
+            this.Controls.Add(this.picImgeUser);
             this.Controls.Add(this.picDeleteimageUser);
             this.Controls.Add(this.picAddImgeUser);
             this.Controls.Add(this.labAddNewUser);
@@ -389,7 +389,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddNewUser";
             this.Text = "AddNewUser";
-            ((System.ComponentModel.ISupportInitialize)(this.picImgeClient)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picImgeUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDeleteimageUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAddImgeUser)).EndInit();
             this.ResumeLayout(false);
@@ -401,7 +401,7 @@
 
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox picImgeClient;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox picImgeUser;
         private System.Windows.Forms.PictureBox picDeleteimageUser;
         private System.Windows.Forms.PictureBox picAddImgeUser;
         private System.Windows.Forms.Label labAddNewUser;

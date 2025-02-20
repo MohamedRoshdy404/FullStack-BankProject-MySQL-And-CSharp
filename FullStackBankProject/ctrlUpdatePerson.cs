@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,7 @@ namespace FullStackBankProject
 
         clsClient Client;
 
+        public string selectedFilePath = "";
         public void LoadForm(object form)
         {
 
@@ -54,15 +56,27 @@ namespace FullStackBankProject
                 BtnDateOfBirth.Text = Client.DateOfBirth.ToString();
                 TboxCreateDate.Text = Client.CreateDate.ToString();
 
-                if (!string.IsNullOrEmpty(Client.Image) && System.IO.File.Exists(Client.Image))
+                if (!string.IsNullOrEmpty(Client.Image) && File.Exists(Client.Image))
                 {
-                    picImgeClient.Load(Client.Image);
-
+                    try
+                    {
+                        using (FileStream fs = new FileStream(Client.Image, FileMode.Open, FileAccess.Read))
+                        {
+                            picImgeClient.Image = Image.FromStream(fs);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("خطأ في تحميل الصورة: " + ex.Message, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Image file not found.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    // لو مفيش صورة، استخدم صورة افتراضية
                 }
+
+
+
             }
             else
             {
@@ -70,15 +84,45 @@ namespace FullStackBankProject
             }
         }
 
-        private void BtnclientUpdatetingSave_Click(object sender, EventArgs e)
+
+
+        private void picAddImgeClient_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(TbxFindCleint.Text, out int ID))
+            openFileDialog1.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
+            openFileDialog1.FilterIndex = 1;
+            openFileDialog1.RestoreDirectory = true;
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                MessageBox.Show("Please enter a valid numeric ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                // string selectedFilePath = openFileDialog1.FileName;
+                selectedFilePath = openFileDialog1.FileName;
+                Client.Image = selectedFilePath;
+
+                try
+                {
+                    using (FileStream fs = new FileStream(selectedFilePath, FileMode.Open, FileAccess.Read))
+                    {
+                        picImgeClient.Image = Image.FromStream(fs);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("خطأ في تحميل الصورة: " + ex.Message, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
 
-            clsClient Client = clsClient.Find(ID);
+        }
+
+        private void picDeleteimageClient_Click(object sender, EventArgs e)
+        {
+            picImgeClient.Image = null;
+            Client.Image = "";
+        }
+
+
+        private void BtnclientUpdatetingSave_Click(object sender, EventArgs e)
+        {
+
             if (Client != null)
             {
                 Client.FirstName = TboxFirstName.Text ?? "";
@@ -90,29 +134,10 @@ namespace FullStackBankProject
                 Client.Country = TboxCountry.Text ?? "";
                 Client.DateOfBirth = DateTime.TryParse(BtnDateOfBirth.Text, out DateTime dob) ? dob : DateTime.MinValue;
                 Client.CreateDate = DateTime.TryParse(TboxCreateDate.Text, out DateTime createDate) ? createDate : DateTime.Now;
-
-                string selectedFilePath = openFileDialog1.FileName;
                 Client.Image = selectedFilePath;
-                picImgeClient.Load(selectedFilePath);
-
-                if (picImgeClient.ImageLocation != null)
-                {
-                   // string selectedFilePath = openFileDialog1.FileName;
-                    Client.Image = selectedFilePath;
-                    picImgeClient.Load(selectedFilePath);
-                }
-                else
-                {
-                   Client.Image = "";
-                }
-
 
                 if (Client.Save())
                 {
-                    if (!string.IsNullOrEmpty(Client.Image) && System.IO.File.Exists(Client.Image))
-                    {
-                        picImgeClient.Load(Client.Image);
-                    }
                     MessageBox.Show("Client updated successfully.", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -127,24 +152,9 @@ namespace FullStackBankProject
         {
             LoadForm(new ManageClients());
         }
-        private void picAddImgeClient_Click(object sender, EventArgs e)
-        {
-            openFileDialog1.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
-            openFileDialog1.FilterIndex = 1;
-            openFileDialog1.RestoreDirectory = true;
 
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                string selectedFilePath = openFileDialog1.FileName;
-                Client.Image = selectedFilePath;
-                picImgeClient.Load(selectedFilePath);
-            }
-        }
 
-        private void picDeleteimageClient_Click(object sender, EventArgs e)
-        {
-            picImgeClient.Image = null;
-            Client.Image = "";
-        }
+
+
     }
 }

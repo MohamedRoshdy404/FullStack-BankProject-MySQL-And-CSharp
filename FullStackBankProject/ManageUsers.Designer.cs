@@ -37,6 +37,7 @@
             this.BtnUpdateUser = new Guna.UI2.WinForms.Guna2Button();
             this.BtnAddUser = new Guna.UI2.WinForms.Guna2Button();
             this.BtnFindUser = new Guna.UI2.WinForms.Guna2Button();
+            this.labMainScreenUsers = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -65,7 +66,7 @@
             this.BtnDeleteUser.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnDeleteUser.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnDeleteUser.IndicateFocus = true;
-            this.BtnDeleteUser.Location = new System.Drawing.Point(523, 273);
+            this.BtnDeleteUser.Location = new System.Drawing.Point(500, 279);
             this.BtnDeleteUser.Name = "BtnDeleteUser";
             this.BtnDeleteUser.Size = new System.Drawing.Size(251, 63);
             this.BtnDeleteUser.TabIndex = 13;
@@ -91,7 +92,7 @@
             this.BtnUserList.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnUserList.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnUserList.IndicateFocus = true;
-            this.BtnUserList.Location = new System.Drawing.Point(523, 186);
+            this.BtnUserList.Location = new System.Drawing.Point(500, 200);
             this.BtnUserList.Name = "BtnUserList";
             this.BtnUserList.Size = new System.Drawing.Size(251, 63);
             this.BtnUserList.TabIndex = 12;
@@ -117,7 +118,7 @@
             this.BtnUpdateUser.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnUpdateUser.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnUpdateUser.IndicateFocus = true;
-            this.BtnUpdateUser.Location = new System.Drawing.Point(206, 351);
+            this.BtnUpdateUser.Location = new System.Drawing.Point(200, 357);
             this.BtnUpdateUser.Name = "BtnUpdateUser";
             this.BtnUpdateUser.Size = new System.Drawing.Size(251, 63);
             this.BtnUpdateUser.TabIndex = 11;
@@ -143,7 +144,7 @@
             this.BtnAddUser.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnAddUser.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnAddUser.IndicateFocus = true;
-            this.BtnAddUser.Location = new System.Drawing.Point(206, 273);
+            this.BtnAddUser.Location = new System.Drawing.Point(200, 279);
             this.BtnAddUser.Name = "BtnAddUser";
             this.BtnAddUser.Size = new System.Drawing.Size(251, 63);
             this.BtnAddUser.TabIndex = 10;
@@ -170,7 +171,7 @@
             this.BtnFindUser.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnFindUser.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnFindUser.IndicateFocus = true;
-            this.BtnFindUser.Location = new System.Drawing.Point(206, 186);
+            this.BtnFindUser.Location = new System.Drawing.Point(200, 200);
             this.BtnFindUser.Name = "BtnFindUser";
             this.BtnFindUser.Size = new System.Drawing.Size(251, 63);
             this.BtnFindUser.TabIndex = 9;
@@ -178,11 +179,24 @@
             this.BtnFindUser.UseTransparentBackground = true;
             this.BtnFindUser.Click += new System.EventHandler(this.BtnFindUser_Click);
             // 
+            // labMainScreenUsers
+            // 
+            this.labMainScreenUsers.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labMainScreenUsers.AutoSize = true;
+            this.labMainScreenUsers.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labMainScreenUsers.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.labMainScreenUsers.Location = new System.Drawing.Point(200, 20);
+            this.labMainScreenUsers.Name = "labMainScreenUsers";
+            this.labMainScreenUsers.Size = new System.Drawing.Size(231, 29);
+            this.labMainScreenUsers.TabIndex = 16;
+            this.labMainScreenUsers.Text = "Main Screen Users";
+            // 
             // ManageUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1124, 636);
+            this.ClientSize = new System.Drawing.Size(1140, 675);
+            this.Controls.Add(this.labMainScreenUsers);
             this.Controls.Add(this.BtnDeleteUser);
             this.Controls.Add(this.BtnUserList);
             this.Controls.Add(this.BtnUpdateUser);
@@ -192,6 +206,7 @@
             this.Name = "ManageUsers";
             this.Text = "ManageUsers";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -204,5 +219,6 @@
         private Guna.UI2.WinForms.Guna2Button BtnUpdateUser;
         private Guna.UI2.WinForms.Guna2Button BtnAddUser;
         private Guna.UI2.WinForms.Guna2Button BtnFindUser;
+        private System.Windows.Forms.Label labMainScreenUsers;
     }
 }
