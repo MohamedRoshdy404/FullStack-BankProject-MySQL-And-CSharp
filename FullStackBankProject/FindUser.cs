@@ -44,12 +44,6 @@ namespace FullStackBankProject
                 TboxPermissions.Text = User.Permissions.ToString();
 
 
-
-               
-
-                MessageBox.Show("المسار المسترجع: " + User.Image);
-
-
                 if (!string.IsNullOrEmpty(User.Image) && File.Exists(User.Image))
                 {
                     try
@@ -67,8 +61,6 @@ namespace FullStackBankProject
                 else
                 {
                     // لو مفيش صورة، استخدم صورة افتراضية
-                    //picImgeUser.Image = Properties.Resources.; // استبدلها بصورة افتراضية من Resources
-                    MessageBox.Show("asfafafasf");
                 }
 
 

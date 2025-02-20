@@ -53,7 +53,7 @@ namespace FullStackBankProject
                 // لو مفيش صورة، استخدم صورة افتراضية
             }
 
-            labINameUser.Text = clsGlobal.UserName;
+            labINameUser.Text = clsGlobal.UserName.ToUpper();
 
 
         }
