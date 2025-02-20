@@ -86,7 +86,7 @@
             this.picImgeClient.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picImgeClient.BackColor = System.Drawing.Color.Transparent;
             this.picImgeClient.ImageRotate = 0F;
-            this.picImgeClient.Location = new System.Drawing.Point(817, 123);
+            this.picImgeClient.Location = new System.Drawing.Point(817, 141);
             this.picImgeClient.Name = "picImgeClient";
             this.picImgeClient.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.picImgeClient.Size = new System.Drawing.Size(150, 150);

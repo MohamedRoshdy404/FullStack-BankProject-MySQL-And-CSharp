@@ -12,34 +12,9 @@ namespace FullStackBankProject
 {
     public static class clsGlobal
     {
-
-
         public static int UserID = -1;
         public static string UserName = "";
         public static string Password = "";
         public static int Permissions = -1;
-
-        public struct stLoginData
-        {
-
-            public static int UserID = -1;
-            public static string UserName = "";
-            public static string Password = "";
-            public static int Permissions = -1;
-        }
-
-        //public static stLoginData CurrentUser = new stLoginData();
-
-
-
-
-
-
-
-
-
-
-        //public static clsUserBusinessLayer CurrentUser = clsUserBusinessLayer.FindUserByUserNameAndPassword("", "");
-
     }
 }

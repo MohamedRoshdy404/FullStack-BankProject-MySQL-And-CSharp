@@ -31,9 +31,10 @@ namespace FullStackBankProject
 
             clsUserBusinessLayer User = clsUserBusinessLayer.FindUserByUserNameAndPassword(UserName, Password);
 
-
             if (User != null)
             {
+                clsGlobal.UserName = UserName;
+                clsGlobal.Password = Password;
                 Form frm1 = new Form1();
                 this.Hide();
                 frm1.ShowDialog();

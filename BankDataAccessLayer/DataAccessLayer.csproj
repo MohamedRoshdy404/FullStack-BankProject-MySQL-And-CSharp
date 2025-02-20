@@ -43,9 +43,9 @@
   <ItemGroup>
     <Compile Include="clsAccountsDataAccessLayer.cs" />
     <Compile Include="clsSettingsConnectoinStrinng.cs" />
-    <Compile Include="ClientDataAccess.cs" />
+    <Compile Include="clsClientDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="clsUsers.cs" />
+    <Compile Include="clsUsersDataAccessLayer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

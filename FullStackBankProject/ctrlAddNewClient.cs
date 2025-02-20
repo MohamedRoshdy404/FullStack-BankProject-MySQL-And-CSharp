@@ -32,7 +32,7 @@ namespace FullStackBankProject
             frm.BringToFront();
         }
 
-            clsClient Client;
+            clsClient Client = new clsClient();
         private void BtnAddNewClient_Click(object sender, EventArgs e)
         {
 

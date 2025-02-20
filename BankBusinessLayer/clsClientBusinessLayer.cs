@@ -68,7 +68,7 @@ namespace BankBusinessLayer
 
         public static DataTable GetAllClients()
         {  
-            return ClientDataAccess.GetAllClients();
+            return clsClientDataAccess.GetAllClients();
         }
 
 
@@ -79,7 +79,7 @@ namespace BankBusinessLayer
             DateTime DateOfBirth = DateTime.Now , CreateDate = DateTime.Now;
 
 
-            if (ClientDataAccess.FindClientByID( ID, ref  FirstName, ref  LastName, ref  Gender, ref  Email, ref  Phone, ref  City, ref  Country, ref  DateOfBirth, ref  CreateDate , ref Image))
+            if (clsClientDataAccess.FindClientByID( ID, ref  FirstName, ref  LastName, ref  Gender, ref  Email, ref  Phone, ref  City, ref  Country, ref  DateOfBirth, ref  CreateDate , ref Image))
             {
                 return new clsClient(ID , FirstName, LastName, Gender, Email , Phone , City , Country , DateOfBirth , CreateDate , Image);
             }
@@ -94,7 +94,7 @@ namespace BankBusinessLayer
         private bool _AddNewClient()
         {
 
-            this.ID = ClientDataAccess.AddNewClient(this.FirstName, this.LastName, this.Gender, this.Email, this.Phone, this.City, this.Country, this.DateOfBirth, this.CreateDate, this.Image);
+            this.ID = clsClientDataAccess.AddNewClient(this.FirstName, this.LastName, this.Gender, this.Email, this.Phone, this.City, this.Country, this.DateOfBirth, this.CreateDate, this.Image);
             return (this.ID != -1);
         }
 
@@ -102,19 +102,19 @@ namespace BankBusinessLayer
 
         private bool _UpdateClientByID()
         {
-           return ClientDataAccess.UpdateClient(this.ID,this.FirstName, this.LastName, this.Gender, this.Email, this.Phone, this.City, this.Country, this.DateOfBirth, this.CreateDate ,this.Image);
+           return clsClientDataAccess.UpdateClient(this.ID,this.FirstName, this.LastName, this.Gender, this.Email, this.Phone, this.City, this.Country, this.DateOfBirth, this.CreateDate ,this.Image);
             
         }
         
         public static bool DeleteClienID(int ClientID)
         {
-            return ClientDataAccess.DeleteClient(ClientID);
+            return clsClientDataAccess.DeleteClient(ClientID);
             
         }
                 
         public static bool isExist( int ClientID)
         {
-            return ClientDataAccess.isExist(ClientID);
+            return clsClientDataAccess.isExist(ClientID);
             
         }
 

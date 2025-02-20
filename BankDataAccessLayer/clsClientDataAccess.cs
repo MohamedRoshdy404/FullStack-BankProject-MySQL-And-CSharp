@@ -9,7 +9,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace BankDataAccessLayer
 {
-    public class ClientDataAccess
+    public class clsClientDataAccess
     {
 
 

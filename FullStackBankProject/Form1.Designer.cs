@@ -33,7 +33,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnManageUsers = new Guna.UI2.WinForms.Guna2Button();
             this.BtnAccounts = new Guna.UI2.WinForms.Guna2Button();
             this.BtnlistClients = new Guna.UI2.WinForms.Guna2Button();
             this.labINameUser = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.guna2Button4);
             this.panel1.Controls.Add(this.guna2Button2);
-            this.panel1.Controls.Add(this.guna2Button3);
+            this.panel1.Controls.Add(this.BtnManageUsers);
             this.panel1.Controls.Add(this.BtnAccounts);
             this.panel1.Controls.Add(this.BtnlistClients);
             this.panel1.Controls.Add(this.labINameUser);
@@ -114,29 +114,30 @@
             this.guna2Button2.Text = "Clients";
             this.guna2Button2.UseTransparentBackground = true;
             // 
-            // guna2Button3
+            // BtnManageUsers
             // 
-            this.guna2Button3.Animated = true;
-            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.guna2Button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.Gainsboro;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
-            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button3.IndicateFocus = true;
-            this.guna2Button3.Location = new System.Drawing.Point(12, 358);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(228, 59);
-            this.guna2Button3.TabIndex = 5;
-            this.guna2Button3.Text = "Clients";
-            this.guna2Button3.UseTransparentBackground = true;
+            this.BtnManageUsers.Animated = true;
+            this.BtnManageUsers.BackColor = System.Drawing.Color.Transparent;
+            this.BtnManageUsers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnManageUsers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnManageUsers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnManageUsers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnManageUsers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnManageUsers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnManageUsers.FillColor = System.Drawing.Color.Gainsboro;
+            this.BtnManageUsers.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.BtnManageUsers.ForeColor = System.Drawing.Color.Black;
+            this.BtnManageUsers.Image = ((System.Drawing.Image)(resources.GetObject("BtnManageUsers.Image")));
+            this.BtnManageUsers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BtnManageUsers.ImageSize = new System.Drawing.Size(30, 30);
+            this.BtnManageUsers.IndicateFocus = true;
+            this.BtnManageUsers.Location = new System.Drawing.Point(12, 358);
+            this.BtnManageUsers.Name = "BtnManageUsers";
+            this.BtnManageUsers.Size = new System.Drawing.Size(228, 59);
+            this.BtnManageUsers.TabIndex = 5;
+            this.BtnManageUsers.Text = "Users";
+            this.BtnManageUsers.UseTransparentBackground = true;
+            this.BtnManageUsers.Click += new System.EventHandler(this.BtnManageUsers_Click);
             // 
             // BtnAccounts
             // 
@@ -309,7 +310,7 @@
         private Guna.UI2.WinForms.Guna2Button BtnlistClients;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button BtnManageUsers;
         private Guna.UI2.WinForms.Guna2Button BtnAccounts;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel mainPanel;

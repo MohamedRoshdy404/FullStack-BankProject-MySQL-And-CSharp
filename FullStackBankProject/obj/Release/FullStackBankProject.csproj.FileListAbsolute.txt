@@ -29,3 +29,6 @@ C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.DeleteAccount.resources
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.UpdateAccountNumber.resources
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.GetAllAccountList.resources
+C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.ManageUsers.resources
+C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.FindUser.resources
+C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.AddNewUser.resources
