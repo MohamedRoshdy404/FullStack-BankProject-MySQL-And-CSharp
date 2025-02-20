@@ -38,14 +38,14 @@
             this.BtnlistClients = new Guna.UI2.WinForms.Guna2Button();
             this.labINameUser = new System.Windows.Forms.Label();
             this.LabUser = new System.Windows.Forms.Label();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.picLoadImgeUser = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLoadImgeUser)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +59,7 @@
             this.panel1.Controls.Add(this.BtnlistClients);
             this.panel1.Controls.Add(this.labINameUser);
             this.panel1.Controls.Add(this.LabUser);
-            this.panel1.Controls.Add(this.guna2CirclePictureBox1);
+            this.panel1.Controls.Add(this.picLoadImgeUser);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -83,7 +83,7 @@
             this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button4.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2Button4.IndicateFocus = true;
-            this.guna2Button4.Location = new System.Drawing.Point(12, 496);
+            this.guna2Button4.Location = new System.Drawing.Point(12, 547);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(228, 59);
             this.guna2Button4.TabIndex = 7;
@@ -107,7 +107,7 @@
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2Button2.IndicateFocus = true;
-            this.guna2Button2.Location = new System.Drawing.Point(12, 427);
+            this.guna2Button2.Location = new System.Drawing.Point(12, 478);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(228, 59);
             this.guna2Button2.TabIndex = 6;
@@ -131,7 +131,7 @@
             this.BtnManageUsers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnManageUsers.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnManageUsers.IndicateFocus = true;
-            this.BtnManageUsers.Location = new System.Drawing.Point(12, 358);
+            this.BtnManageUsers.Location = new System.Drawing.Point(12, 409);
             this.BtnManageUsers.Name = "BtnManageUsers";
             this.BtnManageUsers.Size = new System.Drawing.Size(228, 59);
             this.BtnManageUsers.TabIndex = 5;
@@ -156,7 +156,7 @@
             this.BtnAccounts.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnAccounts.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnAccounts.IndicateFocus = true;
-            this.BtnAccounts.Location = new System.Drawing.Point(12, 289);
+            this.BtnAccounts.Location = new System.Drawing.Point(12, 340);
             this.BtnAccounts.Name = "BtnAccounts";
             this.BtnAccounts.Size = new System.Drawing.Size(228, 59);
             this.BtnAccounts.TabIndex = 4;
@@ -181,7 +181,7 @@
             this.BtnlistClients.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnlistClients.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnlistClients.IndicateFocus = true;
-            this.BtnlistClients.Location = new System.Drawing.Point(12, 220);
+            this.BtnlistClients.Location = new System.Drawing.Point(12, 271);
             this.BtnlistClients.Name = "BtnlistClients";
             this.BtnlistClients.Size = new System.Drawing.Size(228, 59);
             this.BtnlistClients.TabIndex = 3;
@@ -193,8 +193,8 @@
             // 
             this.labINameUser.AutoSize = true;
             this.labINameUser.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold);
-            this.labINameUser.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.labINameUser.Location = new System.Drawing.Point(97, 182);
+            this.labINameUser.ForeColor = System.Drawing.Color.DarkCyan;
+            this.labINameUser.Location = new System.Drawing.Point(83, 215);
             this.labINameUser.Name = "labINameUser";
             this.labINameUser.Size = new System.Drawing.Size(56, 19);
             this.labINameUser.TabIndex = 2;
@@ -206,25 +206,25 @@
             this.LabUser.AutoSize = true;
             this.LabUser.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabUser.ForeColor = System.Drawing.Color.Black;
-            this.LabUser.Location = new System.Drawing.Point(26, 179);
+            this.LabUser.Location = new System.Drawing.Point(12, 212);
             this.LabUser.Name = "LabUser";
             this.LabUser.Size = new System.Drawing.Size(56, 22);
             this.LabUser.TabIndex = 1;
             this.LabUser.Text = "User :";
             // 
-            // guna2CirclePictureBox1
+            // picLoadImgeUser
             // 
-            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(60, 42);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(121, 108);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
-            this.guna2CirclePictureBox1.UseTransparentBackground = true;
+            this.picLoadImgeUser.BackColor = System.Drawing.Color.Transparent;
+            this.picLoadImgeUser.Image = ((System.Drawing.Image)(resources.GetObject("picLoadImgeUser.Image")));
+            this.picLoadImgeUser.ImageRotate = 0F;
+            this.picLoadImgeUser.Location = new System.Drawing.Point(46, 36);
+            this.picLoadImgeUser.Name = "picLoadImgeUser";
+            this.picLoadImgeUser.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.picLoadImgeUser.Size = new System.Drawing.Size(150, 150);
+            this.picLoadImgeUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLoadImgeUser.TabIndex = 0;
+            this.picLoadImgeUser.TabStop = false;
+            this.picLoadImgeUser.UseTransparentBackground = true;
             // 
             // guna2BorderlessForm1
             // 
@@ -293,7 +293,7 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLoadImgeUser)).EndInit();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -305,7 +305,7 @@
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private System.Windows.Forms.Label LabUser;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox picLoadImgeUser;
         private System.Windows.Forms.Label labINameUser;
         private Guna.UI2.WinForms.Guna2Button BtnlistClients;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,6 +36,8 @@ namespace FullStackBankProject
             {
                 clsGlobal.UserName = UserName;
                 clsGlobal.Password = Password;
+                clsGlobal.Image = User.Image;
+
                 Form frm1 = new Form1();
                 this.Hide();
                 frm1.ShowDialog();

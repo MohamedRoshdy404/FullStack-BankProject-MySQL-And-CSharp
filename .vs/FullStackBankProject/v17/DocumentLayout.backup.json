@@ -3,15 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\fullstackbankproject\\addnewuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\addnewuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\fullstackbankproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD4ECF44-6A11-4F88-BFBB-0DC94607202D}|BankBusinessLayer\\BusinessLayer.csproj|C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\bankbusinesslayer\\clsuserbusinesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD4ECF44-6A11-4F88-BFBB-0DC94607202D}|BankBusinessLayer\\BusinessLayer.csproj|solutionrelative:bankbusinesslayer\\clsuserbusinesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C59EA3CF-8988-4F4B-AA38-39D7FC11D640}|BankDataAccessLayer\\DataAccessLayer.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\bankdataaccesslayer\\clsusersdataaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\fullstackbankproject\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C59EA3CF-8988-4F4B-AA38-39D7FC11D640}|BankDataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\bankdataaccesslayer\\clsusersdataaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C59EA3CF-8988-4F4B-AA38-39D7FC11D640}|BankDataAccessLayer\\DataAccessLayer.csproj|solutionrelative:bankdataaccesslayer\\clsusersdataaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,14 +35,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddNewUser.cs",
-              "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\AddNewUser.cs",
-              "RelativeDocumentMoniker": "FullStackBankProject\\AddNewUser.cs",
-              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\AddNewUser.cs*",
-              "RelativeToolTip": "FullStackBankProject\\AddNewUser.cs*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAUwCUAAAAAAAAAAAAAAA==",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\Form1.cs",
+              "RelativeDocumentMoniker": "FullStackBankProject\\Form1.cs",
+              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\Form1.cs*",
+              "RelativeToolTip": "FullStackBankProject\\Form1.cs*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T08:58:17.237Z",
+              "WhenOpened": "2025-02-20T13:48:21.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\Login.cs",
+              "RelativeDocumentMoniker": "FullStackBankProject\\Login.cs",
+              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\Login.cs",
+              "RelativeToolTip": "FullStackBankProject\\Login.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:42:37.269Z",
               "EditorCaption": ""
             },
             {
@@ -49,27 +66,27 @@
               "RelativeDocumentMoniker": "BankBusinessLayer\\clsUserBusinessLayer.cs",
               "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\BankBusinessLayer\\clsUserBusinessLayer.cs",
               "RelativeToolTip": "BankBusinessLayer\\clsUserBusinessLayer.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAxwCAAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAIA1wG8AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-19T14:50:04.281Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "clsUsersDataAccessLayer.cs",
               "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\BankDataAccessLayer\\clsUsersDataAccessLayer.cs",
               "RelativeDocumentMoniker": "BankDataAccessLayer\\clsUsersDataAccessLayer.cs",
-              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\BankDataAccessLayer\\clsUsersDataAccessLayer.cs*",
-              "RelativeToolTip": "BankDataAccessLayer\\clsUsersDataAccessLayer.cs*",
-              "ViewState": "AgIAADAAAAAAAAAAAAAiwJMAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\BankDataAccessLayer\\clsUsersDataAccessLayer.cs",
+              "RelativeToolTip": "BankDataAccessLayer\\clsUsersDataAccessLayer.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-19T15:01:07.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\Program.cs",
               "RelativeDocumentMoniker": "FullStackBankProject\\Program.cs",

@@ -16,5 +16,6 @@ namespace FullStackBankProject
         public static string UserName = "";
         public static string Password = "";
         public static int Permissions = -1;
+        public static string Image = "";
     }
 }

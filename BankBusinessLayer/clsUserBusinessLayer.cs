@@ -55,13 +55,29 @@ namespace BankBusinessLayer
             this.Image = Image;
             Mode = enMode.Update;
         }
-               
-        
-        private clsUserBusinessLayer( string UserName, string Password)
+
+
+        // Users by username and password
+        private clsUserBusinessLayer(string UserName, string Password, string FirstName, string LastName, string Email, string Phone, DateTime CreateDate, int Permissions, string Image)
         {
             this.UserName = UserName;
             this.Password = Password;
+            this.FirstName = FirstName;
+            this.LastName = LastName;
+            this.Email = Email;
+            this.Phone = Phone;
+            this.CreateDate = CreateDate;
+            this.Permissions = Permissions;
+            this.Image = Image;
+            Mode = enMode.Update;
         }
+
+
+        //private clsUserBusinessLayer( string UserName, string Password)
+        //{
+        //    this.UserName = UserName;
+        //    this.Password = Password;
+        //}
 
 
         public static clsUserBusinessLayer FindUserByID( int UserID )
@@ -86,12 +102,16 @@ namespace BankBusinessLayer
         
         
         
-        public static clsUserBusinessLayer FindUserByUserNameAndPassword( string UserName , string Password)
+        public static clsUserBusinessLayer FindUserByUserNameAndPassword( string UserName,  string Password)
         {
-            
-            if (clsUsersDataAccessLayer.FindUserByUserNameAndPassword(ref UserName , ref Password))
+
+            string FirstName = "", LastName = "", Email = "", Phone = "", Image = "";
+            DateTime CreateDate = DateTime.Now;
+            int Permissions = 0;
+
+            if (clsUsersDataAccessLayer.FindUserByUserNameAndPassword( UserName,  Password, ref  FirstName, ref  LastName, ref  Email, ref  Phone, ref  CreateDate, ref  Permissions, ref  Image))
             {
-                return new clsUserBusinessLayer(UserName , Password);
+                return new clsUserBusinessLayer(UserName , Password , FirstName , LastName , Email , Phone , CreateDate , Permissions , Image);
             }
             else
             {

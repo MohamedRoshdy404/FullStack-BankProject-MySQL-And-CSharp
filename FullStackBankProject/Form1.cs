@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,9 +23,40 @@ namespace FullStackBankProject
         public Form1()
         {
             InitializeComponent();
+
             myPanel = mainPanel;
             Form1.loadForm(new ManageClients());
+            loadInfoUser();
         }
+
+
+
+
+        public void loadInfoUser()
+        {
+            if (!string.IsNullOrEmpty(clsGlobal.Image) && File.Exists(clsGlobal.Image))
+            {
+                try
+                {
+                    using (FileStream fs = new FileStream(clsGlobal.Image, FileMode.Open, FileAccess.Read))
+                    {
+                        picLoadImgeUser.Image = Image.FromStream(fs);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("خطأ في تحميل الصورة: " + ex.Message, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                // لو مفيش صورة، استخدم صورة افتراضية
+                //picImgeUser.Image = Properties.Resources.; // استبدلها بصورة افتراضية من Resources
+
+            }
+            labINameUser.Text = clsGlobal.UserName;
+        }
+        
 
         public static void loadForm(Form form)
         {

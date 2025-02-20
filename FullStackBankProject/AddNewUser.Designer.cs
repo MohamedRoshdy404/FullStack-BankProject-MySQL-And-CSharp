@@ -33,8 +33,8 @@
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.picImgeClient = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.picDeleteimageClient = new System.Windows.Forms.PictureBox();
-            this.picAddImgeClient = new System.Windows.Forms.PictureBox();
+            this.picDeleteimageUser = new System.Windows.Forms.PictureBox();
+            this.picAddImgeUser = new System.Windows.Forms.PictureBox();
             this.labAddNewUser = new System.Windows.Forms.Label();
             this.BtnAddNewUser = new Guna.UI2.WinForms.Guna2Button();
             this.BtnBack = new Guna.UI2.WinForms.Guna2Button();
@@ -46,9 +46,10 @@
             this.TboxUserName = new Guna.UI2.WinForms.Guna2TextBox();
             this.TboxLastName = new Guna.UI2.WinForms.Guna2TextBox();
             this.TboxFirstName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.picImgeClient)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDeleteimageClient)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAddImgeClient)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDeleteimageUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAddImgeUser)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -74,29 +75,30 @@
             this.picImgeClient.TabStop = false;
             this.picImgeClient.UseTransparentBackground = true;
             // 
-            // picDeleteimageClient
+            // picDeleteimageUser
             // 
-            this.picDeleteimageClient.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picDeleteimageClient.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picDeleteimageClient.Image = ((System.Drawing.Image)(resources.GetObject("picDeleteimageClient.Image")));
-            this.picDeleteimageClient.Location = new System.Drawing.Point(926, 297);
-            this.picDeleteimageClient.Name = "picDeleteimageClient";
-            this.picDeleteimageClient.Size = new System.Drawing.Size(41, 40);
-            this.picDeleteimageClient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDeleteimageClient.TabIndex = 65;
-            this.picDeleteimageClient.TabStop = false;
+            this.picDeleteimageUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picDeleteimageUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picDeleteimageUser.Image = ((System.Drawing.Image)(resources.GetObject("picDeleteimageUser.Image")));
+            this.picDeleteimageUser.Location = new System.Drawing.Point(926, 297);
+            this.picDeleteimageUser.Name = "picDeleteimageUser";
+            this.picDeleteimageUser.Size = new System.Drawing.Size(41, 40);
+            this.picDeleteimageUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDeleteimageUser.TabIndex = 65;
+            this.picDeleteimageUser.TabStop = false;
             // 
-            // picAddImgeClient
+            // picAddImgeUser
             // 
-            this.picAddImgeClient.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picAddImgeClient.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picAddImgeClient.Image = ((System.Drawing.Image)(resources.GetObject("picAddImgeClient.Image")));
-            this.picAddImgeClient.Location = new System.Drawing.Point(860, 297);
-            this.picAddImgeClient.Name = "picAddImgeClient";
-            this.picAddImgeClient.Size = new System.Drawing.Size(41, 40);
-            this.picAddImgeClient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAddImgeClient.TabIndex = 64;
-            this.picAddImgeClient.TabStop = false;
+            this.picAddImgeUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picAddImgeUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picAddImgeUser.Image = ((System.Drawing.Image)(resources.GetObject("picAddImgeUser.Image")));
+            this.picAddImgeUser.Location = new System.Drawing.Point(860, 297);
+            this.picAddImgeUser.Name = "picAddImgeUser";
+            this.picAddImgeUser.Size = new System.Drawing.Size(41, 40);
+            this.picAddImgeUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAddImgeUser.TabIndex = 64;
+            this.picAddImgeUser.TabStop = false;
+            this.picAddImgeUser.Click += new System.EventHandler(this.picAddImgeUser_Click);
             // 
             // labAddNewUser
             // 
@@ -361,6 +363,10 @@
             this.TboxFirstName.TabIndex = 67;
             this.TboxFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // AddNewUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -375,8 +381,8 @@
             this.Controls.Add(this.TboxLastName);
             this.Controls.Add(this.TboxFirstName);
             this.Controls.Add(this.picImgeClient);
-            this.Controls.Add(this.picDeleteimageClient);
-            this.Controls.Add(this.picAddImgeClient);
+            this.Controls.Add(this.picDeleteimageUser);
+            this.Controls.Add(this.picAddImgeUser);
             this.Controls.Add(this.labAddNewUser);
             this.Controls.Add(this.BtnAddNewUser);
             this.Controls.Add(this.BtnBack);
@@ -384,8 +390,8 @@
             this.Name = "AddNewUser";
             this.Text = "AddNewUser";
             ((System.ComponentModel.ISupportInitialize)(this.picImgeClient)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDeleteimageClient)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAddImgeClient)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDeleteimageUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAddImgeUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,8 +402,8 @@
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox picImgeClient;
-        private System.Windows.Forms.PictureBox picDeleteimageClient;
-        private System.Windows.Forms.PictureBox picAddImgeClient;
+        private System.Windows.Forms.PictureBox picDeleteimageUser;
+        private System.Windows.Forms.PictureBox picAddImgeUser;
         private System.Windows.Forms.Label labAddNewUser;
         private Guna.UI2.WinForms.Guna2Button BtnAddNewUser;
         private Guna.UI2.WinForms.Guna2Button BtnBack;
@@ -409,5 +415,6 @@
         private Guna.UI2.WinForms.Guna2TextBox TboxUserName;
         private Guna.UI2.WinForms.Guna2TextBox TboxLastName;
         private Guna.UI2.WinForms.Guna2TextBox TboxFirstName;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

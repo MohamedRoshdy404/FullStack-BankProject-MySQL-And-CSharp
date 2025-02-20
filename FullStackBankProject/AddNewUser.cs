@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,13 +58,31 @@ namespace FullStackBankProject
 
         }
 
+        private void picAddImgeUser_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
+            openFileDialog1.FilterIndex = 1;
+            openFileDialog1.RestoreDirectory = true;
 
+            User = new clsUserBusinessLayer();
 
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string selectedFilePath = openFileDialog1.FileName;
+                User.Image = selectedFilePath;
 
-
-
-
-
-
+                try
+                {
+                    using (FileStream fs = new FileStream(selectedFilePath, FileMode.Open, FileAccess.Read))
+                    {
+                        picImgeClient.Image = Image.FromStream(fs);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("خطأ في تحميل الصورة: " + ex.Message, "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }
