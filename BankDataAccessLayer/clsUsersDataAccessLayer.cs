@@ -170,5 +170,53 @@ namespace BankDataAccessLayer
         }
 
 
+
+        public static bool UpdateUser(int UserID , string UserName, string Password, string FirstName, string LastName, string Email, string Phone, DateTime CreateDate, int Permissions, string Image)
+        {
+            int rowsAffected = 0;
+
+            using (SqlConnection connection = new SqlConnection(clsSettingsConnectoinStrinng.connectionString))
+            {
+
+                string query = "UPDATE Users SET Username = @Username, Password = @Password, FirstName = @FirstName, LastName = @LastName, Email = @Email, Phone = @Phone, CreateDate = @CreateDate, Permissions = @Permissions, Image = @Image WHERE UserID = @UserID;";
+
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@UserID", UserID);
+                    command.Parameters.AddWithValue("@UserName", UserName);
+                    command.Parameters.AddWithValue("@Password", Password);
+                    command.Parameters.AddWithValue("@FirstName", FirstName);
+                    command.Parameters.AddWithValue("@LastName", LastName);
+                    command.Parameters.AddWithValue("@Email", Email);
+                    command.Parameters.AddWithValue("@Phone", Phone);
+                    command.Parameters.AddWithValue("@CreateDate", CreateDate);
+                    command.Parameters.AddWithValue("@Permissions", Permissions);
+                    if (Image != null)
+
+                        command.Parameters.AddWithValue("@Image", Image);
+                    else
+                        command.Parameters.AddWithValue("@Image", System.DBNull.Value);
+
+                    try
+                    {
+                        connection.Open();
+                        rowsAffected = command.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error: {ex.Message}");
+                    }
+                }
+            }
+
+            return (rowsAffected > 0);
+        }
+
+
+
+
+
+
     }
 }

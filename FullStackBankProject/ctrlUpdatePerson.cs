@@ -21,7 +21,7 @@ namespace FullStackBankProject
 
         clsClient Client;
 
-        public string selectedFilePath = "";
+        private string selectedFilePath = "";
         public void LoadForm(object form)
         {
 
@@ -81,7 +81,7 @@ namespace FullStackBankProject
             }
             else
             {
-                MessageBox.Show("This user does not exist", "Oops Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("This Client does not exist", "Oops Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

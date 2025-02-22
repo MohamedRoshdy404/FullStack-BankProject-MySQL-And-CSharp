@@ -17,8 +17,8 @@ namespace FullStackBankProject
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Login());
-            Application.Run(new Form1());
-            //Application.Run(new GetAllClients());
+            //Application.Run(new Form1());
+            Application.Run(new UpdateUser());
         }
     }
 }

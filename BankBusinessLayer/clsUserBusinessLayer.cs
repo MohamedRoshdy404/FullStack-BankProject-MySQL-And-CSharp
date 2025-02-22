@@ -135,10 +135,7 @@ namespace BankBusinessLayer
         private bool _UpdateUser()
         {
 
-            this.UserID = clsUsersDataAccessLayer.AddNewUser(this.UserName, this.Password, this.FirstName, this.LastName, this.Email, this.Phone, this.CreateDate, this.Permissions, this.Image);
-
-            return (this.UserID != -1);
-
+            return clsUsersDataAccessLayer.UpdateUser( this.UserID, this.UserName, this.Password, this.FirstName, this.LastName, this.Email, this.Phone, this.CreateDate, this.Permissions, this.Image);
         }
 
 

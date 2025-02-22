@@ -46,9 +46,13 @@
             this.labAddNewUser = new System.Windows.Forms.Label();
             this.BtnUpdateUser = new Guna.UI2.WinForms.Guna2Button();
             this.BtnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.picSearchClient = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.TbxFindUser = new Guna.UI2.WinForms.Guna2TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.picImgeUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDeleteimageUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAddImgeUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSearchClient)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -82,7 +86,6 @@
             this.TboxCreateDate.Size = new System.Drawing.Size(288, 62);
             this.TboxCreateDate.TabIndex = 88;
             this.TboxCreateDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TboxCreateDate.Visible = false;
             // 
             // TboxPhone
             // 
@@ -183,7 +186,6 @@
             this.TboxPermissions.Size = new System.Drawing.Size(288, 62);
             this.TboxPermissions.TabIndex = 84;
             this.TboxPermissions.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TboxPermissions.Visible = false;
             // 
             // TboxUserName
             // 
@@ -287,6 +289,7 @@
             this.picDeleteimageUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picDeleteimageUser.TabIndex = 79;
             this.picDeleteimageUser.TabStop = false;
+            this.picDeleteimageUser.Click += new System.EventHandler(this.picDeleteimageUser_Click);
             // 
             // picAddImgeUser
             // 
@@ -299,6 +302,7 @@
             this.picAddImgeUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAddImgeUser.TabIndex = 78;
             this.picAddImgeUser.TabStop = false;
+            this.picAddImgeUser.Click += new System.EventHandler(this.picAddImgeUser_Click);
             // 
             // labAddNewUser
             // 
@@ -334,6 +338,7 @@
             this.BtnUpdateUser.TabIndex = 76;
             this.BtnUpdateUser.Text = "Update User";
             this.BtnUpdateUser.UseTransparentBackground = true;
+            this.BtnUpdateUser.Click += new System.EventHandler(this.BtnUpdateUser_Click);
             // 
             // BtnBack
             // 
@@ -360,11 +365,56 @@
             this.BtnBack.UseTransparentBackground = true;
             this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
+            // picSearchClient
+            // 
+            this.picSearchClient.BackColor = System.Drawing.Color.Transparent;
+            this.picSearchClient.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSearchClient.Image = ((System.Drawing.Image)(resources.GetObject("picSearchClient.Image")));
+            this.picSearchClient.ImageRotate = 0F;
+            this.picSearchClient.Location = new System.Drawing.Point(738, 86);
+            this.picSearchClient.Name = "picSearchClient";
+            this.picSearchClient.Size = new System.Drawing.Size(37, 42);
+            this.picSearchClient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSearchClient.TabIndex = 90;
+            this.picSearchClient.TabStop = false;
+            this.picSearchClient.UseTransparentBackground = true;
+            this.picSearchClient.Click += new System.EventHandler(this.picSearchClient_Click);
+            // 
+            // TbxFindUser
+            // 
+            this.TbxFindUser.Animated = true;
+            this.TbxFindUser.BorderRadius = 10;
+            this.TbxFindUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TbxFindUser.DefaultText = "";
+            this.TbxFindUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TbxFindUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TbxFindUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TbxFindUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TbxFindUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TbxFindUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TbxFindUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TbxFindUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TbxFindUser.Location = new System.Drawing.Point(558, 86);
+            this.TbxFindUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TbxFindUser.Name = "TbxFindUser";
+            this.TbxFindUser.PasswordChar = '\0';
+            this.TbxFindUser.PlaceholderText = "";
+            this.TbxFindUser.SelectedText = "";
+            this.TbxFindUser.Size = new System.Drawing.Size(173, 47);
+            this.TbxFindUser.TabIndex = 89;
+            this.TbxFindUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // UpdateUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 675);
+            this.Controls.Add(this.picSearchClient);
+            this.Controls.Add(this.TbxFindUser);
             this.Controls.Add(this.TboxCreateDate);
             this.Controls.Add(this.TboxPhone);
             this.Controls.Add(this.TboxPassword);
@@ -385,6 +435,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picImgeUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDeleteimageUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAddImgeUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSearchClient)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -408,5 +459,8 @@
         private System.Windows.Forms.Label labAddNewUser;
         private Guna.UI2.WinForms.Guna2Button BtnUpdateUser;
         private Guna.UI2.WinForms.Guna2Button BtnBack;
+        private Guna.UI2.WinForms.Guna2PictureBox picSearchClient;
+        private Guna.UI2.WinForms.Guna2TextBox TbxFindUser;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
