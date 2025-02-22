@@ -100,5 +100,18 @@ namespace FullStackBankProject
         {
 
         }
+
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Form frmLogin = new Login();
+            frmLogin.ShowDialog();
+        }
+
+        private void BtnTransactionScreen_Click(object sender, EventArgs e)
+        {
+            Form1.loadForm(new ManageTransactions());
+        }
     }
 }

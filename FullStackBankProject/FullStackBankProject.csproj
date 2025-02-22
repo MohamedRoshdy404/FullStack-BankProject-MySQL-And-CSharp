@@ -67,6 +67,12 @@
     <Compile Include="DeleteUser.Designer.cs">
       <DependentUpon>DeleteUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="DepositScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepositScreen.Designer.cs">
+      <DependentUpon>DepositScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="FindUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,12 @@
     <Compile Include="ManageAccounts.Designer.cs">
       <DependentUpon>ManageAccounts.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageTransactions.Designer.cs">
+      <DependentUpon>ManageTransactions.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageUsers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteUser.resx">
       <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepositScreen.resx">
+      <DependentUpon>DepositScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FindUser.resx">
       <DependentUpon>FindUser.cs</DependentUpon>
@@ -237,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManageClients.resx">
       <DependentUpon>ManageClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageTransactions.resx">
+      <DependentUpon>ManageTransactions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageUsers.resx">
       <DependentUpon>ManageUsers.cs</DependentUpon>
