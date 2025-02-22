@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\fullstackbankproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\fullstackbankproject\\depositscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\depositscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C59EA3CF-8988-4F4B-AA38-39D7FC11D640}|BankDataAccessLayer\\DataAccessLayer.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\bankdataaccesslayer\\clstransactionsdataaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C59EA3CF-8988-4F4B-AA38-39D7FC11D640}|BankDataAccessLayer\\DataAccessLayer.csproj|solutionrelative:bankdataaccesslayer\\clstransactionsdataaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\fullstackbankproject\\depositscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\depositscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD4ECF44-6A11-4F88-BFBB-0DC94607202D}|BankBusinessLayer\\BusinessLayer.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\bankbusinesslayer\\clstransactionsbusinesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD4ECF44-6A11-4F88-BFBB-0DC94607202D}|BankBusinessLayer\\BusinessLayer.csproj|solutionrelative:bankbusinesslayer\\clstransactionsbusinesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\fullstackbankproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DepositScreen.cs",
               "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\DepositScreen.cs",
               "RelativeDocumentMoniker": "FullStackBankProject\\DepositScreen.cs",
-              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\DepositScreen.cs*",
-              "RelativeToolTip": "FullStackBankProject\\DepositScreen.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA7wBkAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\DepositScreen.cs",
+              "RelativeToolTip": "FullStackBankProject\\DepositScreen.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAhwFYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T20:23:15.908Z",
               "EditorCaption": ""
@@ -51,47 +43,21 @@
               "Title": "DepositScreen.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\DepositScreen.cs",
               "RelativeDocumentMoniker": "FullStackBankProject\\DepositScreen.cs",
-              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\DepositScreen.cs [Design]*",
-              "RelativeToolTip": "FullStackBankProject\\DepositScreen.cs [Design]*",
+              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\DepositScreen.cs [Design]",
+              "RelativeToolTip": "FullStackBankProject\\DepositScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T15:20:35.405Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "clsTransactionsBusinessLayer.cs",
-              "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\BankBusinessLayer\\clsTransactionsBusinessLayer.cs",
-              "RelativeDocumentMoniker": "BankBusinessLayer\\clsTransactionsBusinessLayer.cs",
-              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\BankBusinessLayer\\clsTransactionsBusinessLayer.cs",
-              "RelativeToolTip": "BankBusinessLayer\\clsTransactionsBusinessLayer.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAqwDYAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T20:07:31.583Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "clsTransactionsDataAccessLayer.cs",
-              "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\BankDataAccessLayer\\clsTransactionsDataAccessLayer.cs",
-              "RelativeDocumentMoniker": "BankDataAccessLayer\\clsTransactionsDataAccessLayer.cs",
-              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\BankDataAccessLayer\\clsTransactionsDataAccessLayer.cs*",
-              "RelativeToolTip": "BankDataAccessLayer\\clsTransactionsDataAccessLayer.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T19:55:32.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\Program.cs",
               "RelativeDocumentMoniker": "FullStackBankProject\\Program.cs",
-              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\Program.cs",
-              "RelativeToolTip": "FullStackBankProject\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\Program.cs*",
+              "RelativeToolTip": "FullStackBankProject\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-19T08:49:36.329Z",
               "EditorCaption": ""

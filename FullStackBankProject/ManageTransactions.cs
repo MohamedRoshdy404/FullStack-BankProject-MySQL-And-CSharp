@@ -16,7 +16,6 @@ namespace FullStackBankProject
         {
             InitializeComponent();
         }
-
         private void BtnBack_Click(object sender, EventArgs e)
         {
             Form1.loadForm(new ManageClients());
