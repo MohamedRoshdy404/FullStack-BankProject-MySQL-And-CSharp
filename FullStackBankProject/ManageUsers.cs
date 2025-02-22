@@ -32,5 +32,15 @@ namespace FullStackBankProject
         {
             Form1.loadForm(new UpdateUser());
         }
+
+        private void BtnUserList_Click(object sender, EventArgs e)
+        {
+            Form1.loadForm(new GetAllUsers());
+        }
+
+        private void BtnDeleteUser_Click(object sender, EventArgs e)
+        {
+            Form1.loadForm(new DeleteUser());
+        }
     }
 }

@@ -33,3 +33,5 @@ C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Debug\FullStackBankProject.FindUser.resources
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Debug\FullStackBankProject.AddNewUser.resources
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Debug\FullStackBankProject.UpdateUser.resources
+C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Debug\FullStackBankProject.GetAllUsers.resources
+C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Debug\FullStackBankProject.DeleteUser.resources

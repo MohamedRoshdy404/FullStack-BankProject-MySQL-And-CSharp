@@ -61,6 +61,12 @@
     <Compile Include="AddNewUser.Designer.cs">
       <DependentUpon>AddNewUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteUser.Designer.cs">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="FindUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,12 @@
     <Compile Include="GetAllClients.Designer.cs">
       <DependentUpon>GetAllClients.cs</DependentUpon>
     </Compile>
+    <Compile Include="GetAllUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetAllUsers.Designer.cs">
+      <DependentUpon>GetAllUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -175,6 +187,9 @@
     <EmbeddedResource Include="AddNewUser.resx">
       <DependentUpon>AddNewUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUser.resx">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FindUser.resx">
       <DependentUpon>FindUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GetAllClients.resx">
       <DependentUpon>GetAllClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetAllUsers.resx">
+      <DependentUpon>GetAllUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

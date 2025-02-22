@@ -72,6 +72,7 @@
             this.BtnDeleteUser.TabIndex = 13;
             this.BtnDeleteUser.Text = "Delete User";
             this.BtnDeleteUser.UseTransparentBackground = true;
+            this.BtnDeleteUser.Click += new System.EventHandler(this.BtnDeleteUser_Click);
             // 
             // BtnUserList
             // 
@@ -98,6 +99,7 @@
             this.BtnUserList.TabIndex = 12;
             this.BtnUserList.Text = "User List";
             this.BtnUserList.UseTransparentBackground = true;
+            this.BtnUserList.Click += new System.EventHandler(this.BtnUserList_Click);
             // 
             // BtnUpdateUser
             // 

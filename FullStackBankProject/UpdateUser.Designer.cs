@@ -86,6 +86,7 @@
             this.TboxCreateDate.Size = new System.Drawing.Size(288, 62);
             this.TboxCreateDate.TabIndex = 88;
             this.TboxCreateDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TboxCreateDate.Visible = false;
             // 
             // TboxPhone
             // 
@@ -186,6 +187,7 @@
             this.TboxPermissions.Size = new System.Drawing.Size(288, 62);
             this.TboxPermissions.TabIndex = 84;
             this.TboxPermissions.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TboxPermissions.Visible = false;
             // 
             // TboxUserName
             // 

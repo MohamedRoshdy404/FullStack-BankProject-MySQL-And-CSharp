@@ -11,28 +11,21 @@ using System.Windows.Forms;
 
 namespace FullStackBankProject
 {
-    public partial class GetAllClients : Form
+    public partial class GetAllUsers : Form
     {
-        public GetAllClients()
+        public GetAllUsers()
         {
             InitializeComponent();
-            _RefreshGetAllClients();
+            _RefreshGetAllUsers();
         }
 
-
-        private void _RefreshGetAllClients()
+        private void _RefreshGetAllUsers()
         {
-            dgvGetAllClients.DataSource = clsClient.GetAllClients();
+            dgvGetAllUsers.DataSource = clsUserBusinessLayer.GetAllUser();
         }
-
-        private void dgvGetAllClients_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void BtnBack_Click(object sender, EventArgs e)
         {
-            Form1.loadForm(new ManageClients());
+            Form1.loadForm(new ManageUsers());   
         }
     }
 }

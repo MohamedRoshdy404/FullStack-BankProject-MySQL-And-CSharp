@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BankDataAccessLayer;
 using System.Security.Policy;
+using System.Data;
 
 namespace BankBusinessLayer
 {
@@ -80,6 +81,13 @@ namespace BankBusinessLayer
         //}
 
 
+
+
+        public static DataTable GetAllUser()
+        {
+            return clsUsersDataAccessLayer.GetAllUsers();
+        }
+
         public static clsUserBusinessLayer FindUserByID( int UserID )
         {
 
@@ -137,6 +145,16 @@ namespace BankBusinessLayer
 
             return clsUsersDataAccessLayer.UpdateUser( this.UserID, this.UserName, this.Password, this.FirstName, this.LastName, this.Email, this.Phone, this.CreateDate, this.Permissions, this.Image);
         }
+
+
+                
+        public static bool DeleteUser(int UserID)
+        {
+            return clsUsersDataAccessLayer.DeleteUser(UserID);
+        }
+
+
+
 
 
 

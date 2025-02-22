@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Security.Policy;
@@ -11,6 +12,50 @@ namespace BankDataAccessLayer
 {
     public class clsUsersDataAccessLayer
     {
+
+
+
+
+
+        public static DataTable GetAllUsers()
+        {
+
+            DataTable dataTable = new DataTable();
+
+            using (SqlConnection connection = new SqlConnection(clsSettingsConnectoinStrinng.connectionString))
+            {
+                string query = @"SELECT * FROM Users ";
+
+
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+
+                    try
+                    {
+                        connection.Open();
+
+                        SqlDataReader reader = command.ExecuteReader();
+                        if (reader.HasRows)
+                        {
+                            dataTable.Load(reader);
+                        }
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error: {ex.Message}");
+                    }
+                }
+            }
+
+            return dataTable;
+        }
+
+
+
+
 
         public static bool FindUserByUserNameAndPassword(string UserName, string Password, ref string FirstName, ref string LastName, ref string Email, ref string Phone, ref DateTime CreateDate, ref int Permissions, ref string Image)
         {
@@ -212,6 +257,43 @@ namespace BankDataAccessLayer
 
             return (rowsAffected > 0);
         }
+
+
+
+
+
+        public static bool DeleteUser(int UserID)
+        {
+            int rowsAffeted = 0;
+
+            using (SqlConnection connection = new SqlConnection(clsSettingsConnectoinStrinng.connectionString))
+            {
+                string query = @" delete Users where UserID = @UserID ";
+
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@UserID", UserID);
+
+
+
+                    try
+                    {
+                        connection.Open();
+                        rowsAffeted = command.ExecuteNonQuery();
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error: {ex.Message}");
+                    }
+                }
+            }
+
+            return (rowsAffeted > 0);
+        }
+
 
 
 
