@@ -124,6 +124,7 @@
             this.BtnUpdateUser.TabIndex = 11;
             this.BtnUpdateUser.Text = "Update User";
             this.BtnUpdateUser.UseTransparentBackground = true;
+            this.BtnUpdateUser.Click += new System.EventHandler(this.BtnUpdateUser_Click);
             // 
             // BtnAddUser
             // 

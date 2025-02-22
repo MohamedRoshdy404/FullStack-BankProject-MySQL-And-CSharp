@@ -58,6 +58,7 @@ namespace FullStackBankProject
 
                 if (!string.IsNullOrEmpty(Client.Image) && File.Exists(Client.Image))
                 {
+                    picDeleteimageClient.Visible = true;
                     try
                     {
                         using (FileStream fs = new FileStream(Client.Image, FileMode.Open, FileAccess.Read))
@@ -72,7 +73,7 @@ namespace FullStackBankProject
                 }
                 else
                 {
-                    // لو مفيش صورة، استخدم صورة افتراضية
+                    picDeleteimageClient.Visible = false;
                 }
 
 
@@ -111,10 +112,18 @@ namespace FullStackBankProject
                 }
             }
 
+
+            
+
+
         }
 
         private void picDeleteimageClient_Click(object sender, EventArgs e)
         {
+            if (picImgeClient.Image == null)
+            {
+                MessageBox.Show("You do not have a photo to delete. Please upload a photo" , "Error" , MessageBoxButtons.OK , MessageBoxIcon.Stop);
+            }
             picImgeClient.Image = null;
             Client.Image = "";
         }

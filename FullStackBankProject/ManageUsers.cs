@@ -27,5 +27,10 @@ namespace FullStackBankProject
         {
             Form1.loadForm(new AddNewUser());
         }
+
+        private void BtnUpdateUser_Click(object sender, EventArgs e)
+        {
+            Form1.loadForm(new UpdateUser());
+        }
     }
 }
