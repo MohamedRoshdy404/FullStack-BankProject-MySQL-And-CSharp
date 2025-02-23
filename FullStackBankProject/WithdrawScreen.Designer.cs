@@ -1,6 +1,6 @@
 ﻿namespace FullStackBankProject
 {
-    partial class DepositScreen
+    partial class WithdrawScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DepositScreen));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WithdrawScreen));
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.labMainScreenTransactionsDeposit = new System.Windows.Forms.Label();
+            this.BtnBack = new Guna.UI2.WinForms.Guna2Button();
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.BtnDeposit = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnWithdraw = new Guna.UI2.WinForms.Guna2Button();
             this.BtnClear = new Guna.UI2.WinForms.Guna2Button();
-            this.TboxEnterthedepositamount = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TboxEntertheWithdrawAmount = new Guna.UI2.WinForms.Guna2TextBox();
             this.TboxClientID = new Guna.UI2.WinForms.Guna2TextBox();
             this.TboxAccountBalance = new Guna.UI2.WinForms.Guna2TextBox();
             this.BtnSerach = new Guna.UI2.WinForms.Guna2Button();
@@ -49,7 +49,7 @@
             this.TboxFirstName = new Guna.UI2.WinForms.Guna2TextBox();
             this.PanelHeader = new System.Windows.Forms.Panel();
             this.LabAccountDetails = new System.Windows.Forms.Label();
-            this.BtnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.labMainScreenTransactionsWithdraw = new System.Windows.Forms.Label();
             this.MainPanel.SuspendLayout();
             this.PanelHeader.SuspendLayout();
             this.SuspendLayout();
@@ -61,25 +61,38 @@
             this.guna2BorderlessForm1.HasFormShadow = false;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // labMainScreenTransactionsDeposit
+            // BtnBack
             // 
-            this.labMainScreenTransactionsDeposit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labMainScreenTransactionsDeposit.AutoSize = true;
-            this.labMainScreenTransactionsDeposit.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labMainScreenTransactionsDeposit.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.labMainScreenTransactionsDeposit.Location = new System.Drawing.Point(121, 9);
-            this.labMainScreenTransactionsDeposit.Name = "labMainScreenTransactionsDeposit";
-            this.labMainScreenTransactionsDeposit.Size = new System.Drawing.Size(375, 29);
-            this.labMainScreenTransactionsDeposit.TabIndex = 17;
-            this.labMainScreenTransactionsDeposit.Text = "Screen Transactions > deposit";
+            this.BtnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnBack.Animated = true;
+            this.BtnBack.AutoRoundedCorners = true;
+            this.BtnBack.BackColor = System.Drawing.Color.Transparent;
+            this.BtnBack.BorderRadius = 21;
+            this.BtnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BtnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnBack.ForeColor = System.Drawing.Color.Black;
+            this.BtnBack.Image = ((System.Drawing.Image)(resources.GetObject("BtnBack.Image")));
+            this.BtnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BtnBack.Location = new System.Drawing.Point(108, 615);
+            this.BtnBack.Name = "BtnBack";
+            this.BtnBack.Size = new System.Drawing.Size(180, 45);
+            this.BtnBack.TabIndex = 27;
+            this.BtnBack.Text = "Back";
+            this.BtnBack.UseTransparentBackground = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // MainPanel
             // 
             this.MainPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MainPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.MainPanel.Controls.Add(this.BtnDeposit);
+            this.MainPanel.Controls.Add(this.BtnWithdraw);
             this.MainPanel.Controls.Add(this.BtnClear);
-            this.MainPanel.Controls.Add(this.TboxEnterthedepositamount);
+            this.MainPanel.Controls.Add(this.TboxEntertheWithdrawAmount);
             this.MainPanel.Controls.Add(this.TboxClientID);
             this.MainPanel.Controls.Add(this.TboxAccountBalance);
             this.MainPanel.Controls.Add(this.BtnSerach);
@@ -91,37 +104,37 @@
             this.MainPanel.Controls.Add(this.TboxLastName);
             this.MainPanel.Controls.Add(this.TboxFirstName);
             this.MainPanel.Controls.Add(this.PanelHeader);
-            this.MainPanel.Location = new System.Drawing.Point(126, 50);
+            this.MainPanel.Location = new System.Drawing.Point(109, 56);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(927, 553);
-            this.MainPanel.TabIndex = 18;
+            this.MainPanel.TabIndex = 26;
             // 
-            // BtnDeposit
+            // BtnWithdraw
             // 
-            this.BtnDeposit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnDeposit.Animated = true;
-            this.BtnDeposit.AutoRoundedCorners = true;
-            this.BtnDeposit.BackColor = System.Drawing.Color.Transparent;
-            this.BtnDeposit.BorderRadius = 26;
-            this.BtnDeposit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnDeposit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnDeposit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnDeposit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnDeposit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnDeposit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnDeposit.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.BtnDeposit.ForeColor = System.Drawing.Color.Black;
-            this.BtnDeposit.Image = ((System.Drawing.Image)(resources.GetObject("BtnDeposit.Image")));
-            this.BtnDeposit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BtnDeposit.ImageSize = new System.Drawing.Size(30, 30);
-            this.BtnDeposit.Location = new System.Drawing.Point(537, 482);
-            this.BtnDeposit.Name = "BtnDeposit";
-            this.BtnDeposit.Size = new System.Drawing.Size(191, 55);
-            this.BtnDeposit.TabIndex = 36;
-            this.BtnDeposit.Text = "Deposit";
-            this.BtnDeposit.UseTransparentBackground = true;
-            this.BtnDeposit.Visible = false;
-            this.BtnDeposit.Click += new System.EventHandler(this.BtnDeposit_Click);
+            this.BtnWithdraw.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnWithdraw.Animated = true;
+            this.BtnWithdraw.AutoRoundedCorners = true;
+            this.BtnWithdraw.BackColor = System.Drawing.Color.Transparent;
+            this.BtnWithdraw.BorderRadius = 26;
+            this.BtnWithdraw.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnWithdraw.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnWithdraw.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnWithdraw.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnWithdraw.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnWithdraw.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BtnWithdraw.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.BtnWithdraw.ForeColor = System.Drawing.Color.Black;
+            this.BtnWithdraw.Image = ((System.Drawing.Image)(resources.GetObject("BtnWithdraw.Image")));
+            this.BtnWithdraw.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BtnWithdraw.ImageSize = new System.Drawing.Size(30, 30);
+            this.BtnWithdraw.Location = new System.Drawing.Point(537, 482);
+            this.BtnWithdraw.Name = "BtnWithdraw";
+            this.BtnWithdraw.Size = new System.Drawing.Size(191, 55);
+            this.BtnWithdraw.TabIndex = 36;
+            this.BtnWithdraw.Text = "Withdraw";
+            this.BtnWithdraw.UseTransparentBackground = true;
+            this.BtnWithdraw.Visible = false;
+            this.BtnWithdraw.Click += new System.EventHandler(this.BtnWithdraw_Click);
             // 
             // BtnClear
             // 
@@ -150,31 +163,31 @@
             this.BtnClear.Visible = false;
             this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
-            // TboxEnterthedepositamount
+            // TboxEntertheWithdrawAmount
             // 
-            this.TboxEnterthedepositamount.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TboxEnterthedepositamount.Animated = true;
-            this.TboxEnterthedepositamount.BorderRadius = 10;
-            this.TboxEnterthedepositamount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxEnterthedepositamount.DefaultText = "";
-            this.TboxEnterthedepositamount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TboxEnterthedepositamount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TboxEnterthedepositamount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxEnterthedepositamount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxEnterthedepositamount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxEnterthedepositamount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TboxEnterthedepositamount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TboxEnterthedepositamount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxEnterthedepositamount.Location = new System.Drawing.Point(155, 427);
-            this.TboxEnterthedepositamount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TboxEnterthedepositamount.Name = "TboxEnterthedepositamount";
-            this.TboxEnterthedepositamount.PasswordChar = '\0';
-            this.TboxEnterthedepositamount.PlaceholderText = "Enter the deposit amount";
-            this.TboxEnterthedepositamount.SelectedText = "";
-            this.TboxEnterthedepositamount.Size = new System.Drawing.Size(615, 48);
-            this.TboxEnterthedepositamount.TabIndex = 34;
-            this.TboxEnterthedepositamount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TboxEnterthedepositamount.Visible = false;
+            this.TboxEntertheWithdrawAmount.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TboxEntertheWithdrawAmount.Animated = true;
+            this.TboxEntertheWithdrawAmount.BorderRadius = 10;
+            this.TboxEntertheWithdrawAmount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TboxEntertheWithdrawAmount.DefaultText = "";
+            this.TboxEntertheWithdrawAmount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TboxEntertheWithdrawAmount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TboxEntertheWithdrawAmount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxEntertheWithdrawAmount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxEntertheWithdrawAmount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxEntertheWithdrawAmount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.TboxEntertheWithdrawAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TboxEntertheWithdrawAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxEntertheWithdrawAmount.Location = new System.Drawing.Point(155, 427);
+            this.TboxEntertheWithdrawAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TboxEntertheWithdrawAmount.Name = "TboxEntertheWithdrawAmount";
+            this.TboxEntertheWithdrawAmount.PasswordChar = '\0';
+            this.TboxEntertheWithdrawAmount.PlaceholderText = "Enter the withdraw amount";
+            this.TboxEntertheWithdrawAmount.SelectedText = "";
+            this.TboxEntertheWithdrawAmount.Size = new System.Drawing.Size(615, 48);
+            this.TboxEntertheWithdrawAmount.TabIndex = 34;
+            this.TboxEntertheWithdrawAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TboxEntertheWithdrawAmount.Visible = false;
             // 
             // TboxClientID
             // 
@@ -456,42 +469,29 @@
             this.LabAccountDetails.TabIndex = 2;
             this.LabAccountDetails.Text = "Account Details";
             // 
-            // BtnBack
+            // labMainScreenTransactionsWithdraw
             // 
-            this.BtnBack.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnBack.Animated = true;
-            this.BtnBack.AutoRoundedCorners = true;
-            this.BtnBack.BackColor = System.Drawing.Color.Transparent;
-            this.BtnBack.BorderRadius = 21;
-            this.BtnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.BtnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.BtnBack.ForeColor = System.Drawing.Color.Black;
-            this.BtnBack.Image = ((System.Drawing.Image)(resources.GetObject("BtnBack.Image")));
-            this.BtnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BtnBack.Location = new System.Drawing.Point(125, 609);
-            this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(180, 45);
-            this.BtnBack.TabIndex = 24;
-            this.BtnBack.Text = "Back";
-            this.BtnBack.UseTransparentBackground = true;
-            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
+            this.labMainScreenTransactionsWithdraw.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labMainScreenTransactionsWithdraw.AutoSize = true;
+            this.labMainScreenTransactionsWithdraw.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labMainScreenTransactionsWithdraw.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.labMainScreenTransactionsWithdraw.Location = new System.Drawing.Point(104, 15);
+            this.labMainScreenTransactionsWithdraw.Name = "labMainScreenTransactionsWithdraw";
+            this.labMainScreenTransactionsWithdraw.Size = new System.Drawing.Size(404, 29);
+            this.labMainScreenTransactionsWithdraw.TabIndex = 25;
+            this.labMainScreenTransactionsWithdraw.Text = "Screen Transactions > Withdraw";
             // 
-            // DepositScreen
+            // WithdrawScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 675);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.MainPanel);
-            this.Controls.Add(this.labMainScreenTransactionsDeposit);
+            this.Controls.Add(this.labMainScreenTransactionsWithdraw);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "DepositScreen";
-            this.Text = "DepositScreen";
+            this.Name = "WithdrawScreen";
+            this.Text = "WithdrawScreen";
             this.MainPanel.ResumeLayout(false);
             this.PanelHeader.ResumeLayout(false);
             this.PanelHeader.PerformLayout();
@@ -504,10 +504,14 @@
 
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2Button BtnBack;
         private System.Windows.Forms.Panel MainPanel;
-        private System.Windows.Forms.Panel PanelHeader;
-        private System.Windows.Forms.Label labMainScreenTransactionsDeposit;
-        private System.Windows.Forms.Label LabAccountDetails;
+        private Guna.UI2.WinForms.Guna2Button BtnWithdraw;
+        private Guna.UI2.WinForms.Guna2Button BtnClear;
+        private Guna.UI2.WinForms.Guna2TextBox TboxEntertheWithdrawAmount;
+        private Guna.UI2.WinForms.Guna2TextBox TboxClientID;
+        private Guna.UI2.WinForms.Guna2TextBox TboxAccountBalance;
+        private Guna.UI2.WinForms.Guna2Button BtnSerach;
         private Guna.UI2.WinForms.Guna2TextBox TboxPhone;
         private Guna.UI2.WinForms.Guna2TextBox TboxCity;
         private Guna.UI2.WinForms.Guna2TextBox TboxEmail;
@@ -515,12 +519,8 @@
         private Guna.UI2.WinForms.Guna2TextBox TboxAccountNumber;
         private Guna.UI2.WinForms.Guna2TextBox TboxLastName;
         private Guna.UI2.WinForms.Guna2TextBox TboxFirstName;
-        private Guna.UI2.WinForms.Guna2Button BtnBack;
-        private Guna.UI2.WinForms.Guna2Button BtnSerach;
-        private Guna.UI2.WinForms.Guna2TextBox TboxClientID;
-        private Guna.UI2.WinForms.Guna2TextBox TboxAccountBalance;
-        private Guna.UI2.WinForms.Guna2TextBox TboxEnterthedepositamount;
-        private Guna.UI2.WinForms.Guna2Button BtnDeposit;
-        private Guna.UI2.WinForms.Guna2Button BtnClear;
+        private System.Windows.Forms.Panel PanelHeader;
+        private System.Windows.Forms.Label LabAccountDetails;
+        private System.Windows.Forms.Label labMainScreenTransactionsWithdraw;
     }
 }

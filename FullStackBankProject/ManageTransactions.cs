@@ -25,5 +25,15 @@ namespace FullStackBankProject
         {
             Form1.loadForm(new DepositScreen());
         }
+
+        private void BtnTotalBalances_Click(object sender, EventArgs e)
+        {
+            Form1.loadForm(new GetAllAccountList());
+        }
+
+        private void BtnWithdraw_Click(object sender, EventArgs e)
+        {
+            Form1.loadForm(new WithdrawScreen());
+        }
     }
 }

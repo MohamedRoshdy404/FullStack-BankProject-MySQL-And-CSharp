@@ -37,3 +37,4 @@ C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.DeleteUser.resources
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.ManageTransactions.resources
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.DepositScreen.resources
+C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.WithdrawScreen.resources

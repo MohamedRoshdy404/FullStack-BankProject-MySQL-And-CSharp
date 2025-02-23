@@ -99,6 +99,7 @@
             this.BtnWithdraw.TabIndex = 5;
             this.BtnWithdraw.Text = "Withdraw";
             this.BtnWithdraw.UseTransparentBackground = true;
+            this.BtnWithdraw.Click += new System.EventHandler(this.BtnWithdraw_Click);
             // 
             // BtnTotalBalances
             // 
@@ -125,6 +126,7 @@
             this.BtnTotalBalances.TabIndex = 7;
             this.BtnTotalBalances.Text = "TotalBalances";
             this.BtnTotalBalances.UseTransparentBackground = true;
+            this.BtnTotalBalances.Click += new System.EventHandler(this.BtnTotalBalances_Click);
             // 
             // BtnTransfer
             // 
