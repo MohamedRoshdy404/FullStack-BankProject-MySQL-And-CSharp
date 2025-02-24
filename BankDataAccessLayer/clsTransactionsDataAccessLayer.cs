@@ -52,5 +52,48 @@ namespace BankDataAccessLayer
             return isFound;
         }
 
+
+
+
+
+        public static bool UpdateAccountBalance(string AccountNumber , int Amount)
+        {
+            int rowsAffected = 0;
+
+            using (SqlConnection connection = new SqlConnection(clsSettingsConnectoinStrinng.connectionString))
+            {
+                string query = @"
+                                    UPDATE Accounts 
+                                    SET AccountBalance = @Amount
+                                    WHERE AccountNumber = @AccountNumber";
+
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@AccountNumber", AccountNumber);
+                    command.Parameters.AddWithValue("@Amount", Amount);
+
+                    try
+                    {
+                        connection.Open();
+                        rowsAffected = command.ExecuteNonQuery();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error: {ex.Message}");
+                    }
+                }
+            }
+
+            return (rowsAffected > 0);
+        }
+
+
+
+
+
+
+
     }
 }

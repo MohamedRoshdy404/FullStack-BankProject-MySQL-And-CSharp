@@ -86,14 +86,12 @@ namespace BankBusinessLayer
             else
             {
                 return null;
-            }
-;
+            };
 
         }
 
         private bool _AddNewClient()
         {
-
             this.ID = clsClientDataAccess.AddNewClient(this.FirstName, this.LastName, this.Gender, this.Email, this.Phone, this.City, this.Country, this.DateOfBirth, this.CreateDate, this.Image);
             return (this.ID != -1);
         }

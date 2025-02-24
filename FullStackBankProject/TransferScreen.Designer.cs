@@ -34,6 +34,15 @@
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.labMainTransactionsScreenDeposit = new System.Windows.Forms.Label();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.TboxClientIDto = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TboxAccountBalanceto = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TboxPhoneto = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TboxCityto = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TboxEmailto = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TboxCountryto = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TboxAccountNumberto = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TboxLastNameto = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TboxFirstNameto = new Guna.UI2.WinForms.Guna2TextBox();
             this.BtnTransfer = new Guna.UI2.WinForms.Guna2Button();
             this.BtnClear = new Guna.UI2.WinForms.Guna2Button();
             this.TboxEnterthedepositamount = new Guna.UI2.WinForms.Guna2TextBox();
@@ -50,15 +59,6 @@
             this.PanelHeader = new System.Windows.Forms.Panel();
             this.LabAccountDetails = new System.Windows.Forms.Label();
             this.BtnBack = new Guna.UI2.WinForms.Guna2Button();
-            this.TboxClientID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TboxAccountBalance = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TboxPhone = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TboxCity = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TboxEmail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TboxCountry = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TboxAccountNumberto = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TboxLastName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TboxFirstName = new Guna.UI2.WinForms.Guna2TextBox();
             this.MainPanel.SuspendLayout();
             this.PanelHeader.SuspendLayout();
             this.SuspendLayout();
@@ -86,15 +86,15 @@
             // 
             this.MainPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MainPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.MainPanel.Controls.Add(this.TboxClientID);
-            this.MainPanel.Controls.Add(this.TboxAccountBalance);
-            this.MainPanel.Controls.Add(this.TboxPhone);
-            this.MainPanel.Controls.Add(this.TboxCity);
-            this.MainPanel.Controls.Add(this.TboxEmail);
-            this.MainPanel.Controls.Add(this.TboxCountry);
+            this.MainPanel.Controls.Add(this.TboxClientIDto);
+            this.MainPanel.Controls.Add(this.TboxAccountBalanceto);
+            this.MainPanel.Controls.Add(this.TboxPhoneto);
+            this.MainPanel.Controls.Add(this.TboxCityto);
+            this.MainPanel.Controls.Add(this.TboxEmailto);
+            this.MainPanel.Controls.Add(this.TboxCountryto);
             this.MainPanel.Controls.Add(this.TboxAccountNumberto);
-            this.MainPanel.Controls.Add(this.TboxLastName);
-            this.MainPanel.Controls.Add(this.TboxFirstName);
+            this.MainPanel.Controls.Add(this.TboxLastNameto);
+            this.MainPanel.Controls.Add(this.TboxFirstNameto);
             this.MainPanel.Controls.Add(this.BtnTransfer);
             this.MainPanel.Controls.Add(this.BtnClear);
             this.MainPanel.Controls.Add(this.TboxEnterthedepositamount);
@@ -113,6 +113,239 @@
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(927, 553);
             this.MainPanel.TabIndex = 19;
+            // 
+            // TboxClientIDto
+            // 
+            this.TboxClientIDto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TboxClientIDto.Animated = true;
+            this.TboxClientIDto.BorderRadius = 10;
+            this.TboxClientIDto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TboxClientIDto.DefaultText = "";
+            this.TboxClientIDto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TboxClientIDto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TboxClientIDto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxClientIDto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxClientIDto.Enabled = false;
+            this.TboxClientIDto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxClientIDto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.TboxClientIDto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TboxClientIDto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxClientIDto.Location = new System.Drawing.Point(702, 147);
+            this.TboxClientIDto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TboxClientIDto.Name = "TboxClientIDto";
+            this.TboxClientIDto.PasswordChar = '\0';
+            this.TboxClientIDto.PlaceholderText = "ClientID";
+            this.TboxClientIDto.SelectedText = "";
+            this.TboxClientIDto.Size = new System.Drawing.Size(214, 51);
+            this.TboxClientIDto.TabIndex = 45;
+            this.TboxClientIDto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TboxAccountBalanceto
+            // 
+            this.TboxAccountBalanceto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TboxAccountBalanceto.Animated = true;
+            this.TboxAccountBalanceto.BorderRadius = 10;
+            this.TboxAccountBalanceto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TboxAccountBalanceto.DefaultText = "";
+            this.TboxAccountBalanceto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TboxAccountBalanceto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TboxAccountBalanceto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxAccountBalanceto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxAccountBalanceto.Enabled = false;
+            this.TboxAccountBalanceto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxAccountBalanceto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.TboxAccountBalanceto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TboxAccountBalanceto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxAccountBalanceto.Location = new System.Drawing.Point(483, 147);
+            this.TboxAccountBalanceto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TboxAccountBalanceto.Name = "TboxAccountBalanceto";
+            this.TboxAccountBalanceto.PasswordChar = '\0';
+            this.TboxAccountBalanceto.PlaceholderText = "Account Balance";
+            this.TboxAccountBalanceto.SelectedText = "";
+            this.TboxAccountBalanceto.Size = new System.Drawing.Size(214, 51);
+            this.TboxAccountBalanceto.TabIndex = 44;
+            this.TboxAccountBalanceto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TboxPhoneto
+            // 
+            this.TboxPhoneto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TboxPhoneto.Animated = true;
+            this.TboxPhoneto.BorderRadius = 10;
+            this.TboxPhoneto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TboxPhoneto.DefaultText = "";
+            this.TboxPhoneto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TboxPhoneto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TboxPhoneto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxPhoneto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxPhoneto.Enabled = false;
+            this.TboxPhoneto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxPhoneto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.TboxPhoneto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TboxPhoneto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxPhoneto.Location = new System.Drawing.Point(702, 287);
+            this.TboxPhoneto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TboxPhoneto.Name = "TboxPhoneto";
+            this.TboxPhoneto.PasswordChar = '\0';
+            this.TboxPhoneto.PlaceholderText = "Phone";
+            this.TboxPhoneto.SelectedText = "";
+            this.TboxPhoneto.Size = new System.Drawing.Size(214, 51);
+            this.TboxPhoneto.TabIndex = 43;
+            this.TboxPhoneto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TboxCityto
+            // 
+            this.TboxCityto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TboxCityto.Animated = true;
+            this.TboxCityto.BorderRadius = 10;
+            this.TboxCityto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TboxCityto.DefaultText = "";
+            this.TboxCityto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TboxCityto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TboxCityto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxCityto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxCityto.Enabled = false;
+            this.TboxCityto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxCityto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.TboxCityto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TboxCityto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxCityto.Location = new System.Drawing.Point(483, 357);
+            this.TboxCityto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TboxCityto.Name = "TboxCityto";
+            this.TboxCityto.PasswordChar = '\0';
+            this.TboxCityto.PlaceholderText = "City";
+            this.TboxCityto.SelectedText = "";
+            this.TboxCityto.Size = new System.Drawing.Size(214, 51);
+            this.TboxCityto.TabIndex = 42;
+            this.TboxCityto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TboxEmailto
+            // 
+            this.TboxEmailto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TboxEmailto.Animated = true;
+            this.TboxEmailto.BorderRadius = 10;
+            this.TboxEmailto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TboxEmailto.DefaultText = "";
+            this.TboxEmailto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TboxEmailto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TboxEmailto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxEmailto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxEmailto.Enabled = false;
+            this.TboxEmailto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxEmailto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.TboxEmailto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TboxEmailto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxEmailto.Location = new System.Drawing.Point(483, 287);
+            this.TboxEmailto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TboxEmailto.Name = "TboxEmailto";
+            this.TboxEmailto.PasswordChar = '\0';
+            this.TboxEmailto.PlaceholderText = "Email";
+            this.TboxEmailto.SelectedText = "";
+            this.TboxEmailto.Size = new System.Drawing.Size(214, 51);
+            this.TboxEmailto.TabIndex = 41;
+            this.TboxEmailto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TboxCountryto
+            // 
+            this.TboxCountryto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TboxCountryto.Animated = true;
+            this.TboxCountryto.BorderRadius = 10;
+            this.TboxCountryto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TboxCountryto.DefaultText = "";
+            this.TboxCountryto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TboxCountryto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TboxCountryto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxCountryto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxCountryto.Enabled = false;
+            this.TboxCountryto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxCountryto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.TboxCountryto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TboxCountryto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxCountryto.Location = new System.Drawing.Point(702, 357);
+            this.TboxCountryto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TboxCountryto.Name = "TboxCountryto";
+            this.TboxCountryto.PasswordChar = '\0';
+            this.TboxCountryto.PlaceholderText = "Country";
+            this.TboxCountryto.SelectedText = "";
+            this.TboxCountryto.Size = new System.Drawing.Size(214, 51);
+            this.TboxCountryto.TabIndex = 40;
+            this.TboxCountryto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TboxAccountNumberto
+            // 
+            this.TboxAccountNumberto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TboxAccountNumberto.Animated = true;
+            this.TboxAccountNumberto.BorderRadius = 10;
+            this.TboxAccountNumberto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TboxAccountNumberto.DefaultText = "";
+            this.TboxAccountNumberto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TboxAccountNumberto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TboxAccountNumberto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxAccountNumberto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxAccountNumberto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxAccountNumberto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.TboxAccountNumberto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TboxAccountNumberto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxAccountNumberto.Location = new System.Drawing.Point(702, 77);
+            this.TboxAccountNumberto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TboxAccountNumberto.Name = "TboxAccountNumberto";
+            this.TboxAccountNumberto.PasswordChar = '\0';
+            this.TboxAccountNumberto.PlaceholderText = "Account Number";
+            this.TboxAccountNumberto.SelectedText = "";
+            this.TboxAccountNumberto.Size = new System.Drawing.Size(214, 51);
+            this.TboxAccountNumberto.TabIndex = 39;
+            this.TboxAccountNumberto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TboxLastNameto
+            // 
+            this.TboxLastNameto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TboxLastNameto.Animated = true;
+            this.TboxLastNameto.BorderRadius = 10;
+            this.TboxLastNameto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TboxLastNameto.DefaultText = "";
+            this.TboxLastNameto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TboxLastNameto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TboxLastNameto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxLastNameto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxLastNameto.Enabled = false;
+            this.TboxLastNameto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxLastNameto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.TboxLastNameto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TboxLastNameto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxLastNameto.Location = new System.Drawing.Point(702, 217);
+            this.TboxLastNameto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TboxLastNameto.Name = "TboxLastNameto";
+            this.TboxLastNameto.PasswordChar = '\0';
+            this.TboxLastNameto.PlaceholderText = "LastName";
+            this.TboxLastNameto.SelectedText = "";
+            this.TboxLastNameto.Size = new System.Drawing.Size(214, 51);
+            this.TboxLastNameto.TabIndex = 38;
+            this.TboxLastNameto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TboxFirstNameto
+            // 
+            this.TboxFirstNameto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TboxFirstNameto.Animated = true;
+            this.TboxFirstNameto.BorderRadius = 10;
+            this.TboxFirstNameto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TboxFirstNameto.DefaultText = "";
+            this.TboxFirstNameto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TboxFirstNameto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TboxFirstNameto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxFirstNameto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxFirstNameto.Enabled = false;
+            this.TboxFirstNameto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxFirstNameto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.TboxFirstNameto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TboxFirstNameto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxFirstNameto.Location = new System.Drawing.Point(483, 217);
+            this.TboxFirstNameto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TboxFirstNameto.Name = "TboxFirstNameto";
+            this.TboxFirstNameto.PasswordChar = '\0';
+            this.TboxFirstNameto.PlaceholderText = "FirstName";
+            this.TboxFirstNameto.SelectedText = "";
+            this.TboxFirstNameto.Size = new System.Drawing.Size(214, 51);
+            this.TboxFirstNameto.TabIndex = 37;
+            this.TboxFirstNameto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // BtnTransfer
             // 
@@ -139,6 +372,7 @@
             this.BtnTransfer.Text = "Transfer";
             this.BtnTransfer.UseTransparentBackground = true;
             this.BtnTransfer.Visible = false;
+            this.BtnTransfer.Click += new System.EventHandler(this.BtnTransfer_Click);
             // 
             // BtnClear
             // 
@@ -268,6 +502,7 @@
             this.BtnSerach.TabIndex = 31;
             this.BtnSerach.Text = "Serach";
             this.BtnSerach.UseTransparentBackground = true;
+            this.BtnSerach.Click += new System.EventHandler(this.BtnSerach_Click);
             // 
             // TboxPhonefrom
             // 
@@ -496,239 +731,6 @@
             this.BtnBack.UseTransparentBackground = true;
             this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
-            // TboxClientID
-            // 
-            this.TboxClientID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TboxClientID.Animated = true;
-            this.TboxClientID.BorderRadius = 10;
-            this.TboxClientID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxClientID.DefaultText = "";
-            this.TboxClientID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TboxClientID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TboxClientID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxClientID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxClientID.Enabled = false;
-            this.TboxClientID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxClientID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TboxClientID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TboxClientID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxClientID.Location = new System.Drawing.Point(702, 147);
-            this.TboxClientID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TboxClientID.Name = "TboxClientID";
-            this.TboxClientID.PasswordChar = '\0';
-            this.TboxClientID.PlaceholderText = "ClientID";
-            this.TboxClientID.SelectedText = "";
-            this.TboxClientID.Size = new System.Drawing.Size(214, 51);
-            this.TboxClientID.TabIndex = 45;
-            this.TboxClientID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TboxAccountBalance
-            // 
-            this.TboxAccountBalance.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TboxAccountBalance.Animated = true;
-            this.TboxAccountBalance.BorderRadius = 10;
-            this.TboxAccountBalance.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxAccountBalance.DefaultText = "";
-            this.TboxAccountBalance.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TboxAccountBalance.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TboxAccountBalance.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxAccountBalance.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxAccountBalance.Enabled = false;
-            this.TboxAccountBalance.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxAccountBalance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TboxAccountBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TboxAccountBalance.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxAccountBalance.Location = new System.Drawing.Point(483, 147);
-            this.TboxAccountBalance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TboxAccountBalance.Name = "TboxAccountBalance";
-            this.TboxAccountBalance.PasswordChar = '\0';
-            this.TboxAccountBalance.PlaceholderText = "Account Balance";
-            this.TboxAccountBalance.SelectedText = "";
-            this.TboxAccountBalance.Size = new System.Drawing.Size(214, 51);
-            this.TboxAccountBalance.TabIndex = 44;
-            this.TboxAccountBalance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TboxPhone
-            // 
-            this.TboxPhone.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TboxPhone.Animated = true;
-            this.TboxPhone.BorderRadius = 10;
-            this.TboxPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxPhone.DefaultText = "";
-            this.TboxPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TboxPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TboxPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxPhone.Enabled = false;
-            this.TboxPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TboxPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TboxPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxPhone.Location = new System.Drawing.Point(702, 287);
-            this.TboxPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TboxPhone.Name = "TboxPhone";
-            this.TboxPhone.PasswordChar = '\0';
-            this.TboxPhone.PlaceholderText = "Phone";
-            this.TboxPhone.SelectedText = "";
-            this.TboxPhone.Size = new System.Drawing.Size(214, 51);
-            this.TboxPhone.TabIndex = 43;
-            this.TboxPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TboxCity
-            // 
-            this.TboxCity.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TboxCity.Animated = true;
-            this.TboxCity.BorderRadius = 10;
-            this.TboxCity.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxCity.DefaultText = "";
-            this.TboxCity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TboxCity.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TboxCity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxCity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxCity.Enabled = false;
-            this.TboxCity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxCity.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TboxCity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TboxCity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxCity.Location = new System.Drawing.Point(483, 357);
-            this.TboxCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TboxCity.Name = "TboxCity";
-            this.TboxCity.PasswordChar = '\0';
-            this.TboxCity.PlaceholderText = "City";
-            this.TboxCity.SelectedText = "";
-            this.TboxCity.Size = new System.Drawing.Size(214, 51);
-            this.TboxCity.TabIndex = 42;
-            this.TboxCity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TboxEmail
-            // 
-            this.TboxEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TboxEmail.Animated = true;
-            this.TboxEmail.BorderRadius = 10;
-            this.TboxEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxEmail.DefaultText = "";
-            this.TboxEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TboxEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TboxEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxEmail.Enabled = false;
-            this.TboxEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TboxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TboxEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxEmail.Location = new System.Drawing.Point(483, 287);
-            this.TboxEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TboxEmail.Name = "TboxEmail";
-            this.TboxEmail.PasswordChar = '\0';
-            this.TboxEmail.PlaceholderText = "Email";
-            this.TboxEmail.SelectedText = "";
-            this.TboxEmail.Size = new System.Drawing.Size(214, 51);
-            this.TboxEmail.TabIndex = 41;
-            this.TboxEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TboxCountry
-            // 
-            this.TboxCountry.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TboxCountry.Animated = true;
-            this.TboxCountry.BorderRadius = 10;
-            this.TboxCountry.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxCountry.DefaultText = "";
-            this.TboxCountry.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TboxCountry.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TboxCountry.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxCountry.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxCountry.Enabled = false;
-            this.TboxCountry.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxCountry.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TboxCountry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TboxCountry.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxCountry.Location = new System.Drawing.Point(702, 357);
-            this.TboxCountry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TboxCountry.Name = "TboxCountry";
-            this.TboxCountry.PasswordChar = '\0';
-            this.TboxCountry.PlaceholderText = "Country";
-            this.TboxCountry.SelectedText = "";
-            this.TboxCountry.Size = new System.Drawing.Size(214, 51);
-            this.TboxCountry.TabIndex = 40;
-            this.TboxCountry.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TboxAccountNumberto
-            // 
-            this.TboxAccountNumberto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TboxAccountNumberto.Animated = true;
-            this.TboxAccountNumberto.BorderRadius = 10;
-            this.TboxAccountNumberto.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxAccountNumberto.DefaultText = "";
-            this.TboxAccountNumberto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TboxAccountNumberto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TboxAccountNumberto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxAccountNumberto.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxAccountNumberto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxAccountNumberto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TboxAccountNumberto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TboxAccountNumberto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxAccountNumberto.Location = new System.Drawing.Point(702, 77);
-            this.TboxAccountNumberto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TboxAccountNumberto.Name = "TboxAccountNumberto";
-            this.TboxAccountNumberto.PasswordChar = '\0';
-            this.TboxAccountNumberto.PlaceholderText = "Account Number";
-            this.TboxAccountNumberto.SelectedText = "";
-            this.TboxAccountNumberto.Size = new System.Drawing.Size(214, 51);
-            this.TboxAccountNumberto.TabIndex = 39;
-            this.TboxAccountNumberto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TboxLastName
-            // 
-            this.TboxLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TboxLastName.Animated = true;
-            this.TboxLastName.BorderRadius = 10;
-            this.TboxLastName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxLastName.DefaultText = "";
-            this.TboxLastName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TboxLastName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TboxLastName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxLastName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxLastName.Enabled = false;
-            this.TboxLastName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxLastName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TboxLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TboxLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxLastName.Location = new System.Drawing.Point(702, 217);
-            this.TboxLastName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TboxLastName.Name = "TboxLastName";
-            this.TboxLastName.PasswordChar = '\0';
-            this.TboxLastName.PlaceholderText = "LastName";
-            this.TboxLastName.SelectedText = "";
-            this.TboxLastName.Size = new System.Drawing.Size(214, 51);
-            this.TboxLastName.TabIndex = 38;
-            this.TboxLastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // TboxFirstName
-            // 
-            this.TboxFirstName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TboxFirstName.Animated = true;
-            this.TboxFirstName.BorderRadius = 10;
-            this.TboxFirstName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxFirstName.DefaultText = "";
-            this.TboxFirstName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TboxFirstName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TboxFirstName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxFirstName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxFirstName.Enabled = false;
-            this.TboxFirstName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxFirstName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TboxFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TboxFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxFirstName.Location = new System.Drawing.Point(483, 217);
-            this.TboxFirstName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TboxFirstName.Name = "TboxFirstName";
-            this.TboxFirstName.PasswordChar = '\0';
-            this.TboxFirstName.PlaceholderText = "FirstName";
-            this.TboxFirstName.SelectedText = "";
-            this.TboxFirstName.Size = new System.Drawing.Size(214, 51);
-            this.TboxFirstName.TabIndex = 37;
-            this.TboxFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // TransferScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -770,14 +772,14 @@
         private System.Windows.Forms.Panel PanelHeader;
         private System.Windows.Forms.Label LabAccountDetails;
         private Guna.UI2.WinForms.Guna2Button BtnBack;
-        private Guna.UI2.WinForms.Guna2TextBox TboxClientID;
-        private Guna.UI2.WinForms.Guna2TextBox TboxAccountBalance;
-        private Guna.UI2.WinForms.Guna2TextBox TboxPhone;
-        private Guna.UI2.WinForms.Guna2TextBox TboxCity;
-        private Guna.UI2.WinForms.Guna2TextBox TboxEmail;
-        private Guna.UI2.WinForms.Guna2TextBox TboxCountry;
+        private Guna.UI2.WinForms.Guna2TextBox TboxClientIDto;
+        private Guna.UI2.WinForms.Guna2TextBox TboxAccountBalanceto;
+        private Guna.UI2.WinForms.Guna2TextBox TboxPhoneto;
+        private Guna.UI2.WinForms.Guna2TextBox TboxCityto;
+        private Guna.UI2.WinForms.Guna2TextBox TboxEmailto;
+        private Guna.UI2.WinForms.Guna2TextBox TboxCountryto;
         private Guna.UI2.WinForms.Guna2TextBox TboxAccountNumberto;
-        private Guna.UI2.WinForms.Guna2TextBox TboxLastName;
-        private Guna.UI2.WinForms.Guna2TextBox TboxFirstName;
+        private Guna.UI2.WinForms.Guna2TextBox TboxLastNameto;
+        private Guna.UI2.WinForms.Guna2TextBox TboxFirstNameto;
     }
 }

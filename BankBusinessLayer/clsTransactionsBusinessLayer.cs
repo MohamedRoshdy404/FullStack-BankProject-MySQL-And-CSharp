@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BankBusinessLayer
 {
-    public class clsTransactionsBusinessLayer
+    public class clsTransactionsBusinessLayer 
     {
 
 
@@ -110,18 +110,10 @@ namespace BankBusinessLayer
 
         }
 
-
-
-
-
-        //public bool Transfer(int Amount , )
-        //{
-
-        //}
-
-
-
-
+        public bool UpdateAccountBalance()
+        {
+            return clsTransactionsDataAccessLayer.UpdateAccountBalance( this.AccountNumber,this.AccountBalance);
+        }
 
     }
 }

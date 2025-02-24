@@ -69,6 +69,8 @@ namespace FullStackBankProject
 
         }
 
+
+
         private void BtnClear_Click(object sender, EventArgs e)
         {
             ClearAllTbox();
@@ -85,7 +87,7 @@ namespace FullStackBankProject
 
             if (Account.Save())
             {
-                MessageBox.Show($"The process was completed successfully, and an amount has been deposited {TboxEnterthedepositamount.Text} into the account [ {Account.AccountNumber} ]", "Done" , MessageBoxButtons.OK , MessageBoxIcon.Information);
+                MessageBox.Show($"The process was completed successfully, and an amount has been deposited {TboxEnterthedepositamount.Text} into the account [ {Account.AccountNumber} ]", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ClearAllTbox();
             }
             else
@@ -97,5 +99,7 @@ namespace FullStackBankProject
 
 
         }
+
+
     }
 }
