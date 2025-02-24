@@ -110,26 +110,14 @@ namespace BankBusinessLayer
 
         }
 
-        //public static clsClient GetAllInfoClient_Account(int ID)
+
+
+
+
+        //public bool Transfer(int Amount , )
         //{
-        //    string FirstName = "", LastName = "", Gender = "", Email = "", Phone = "", City = "", Country = "", Image = "";
 
-        //    DateTime DateOfBirth = DateTime.Now, CreateDate = DateTime.Now;
-
-
-        //    if (clsClientDataAccess.FindClientByID(ID, ref FirstName, ref LastName, ref Gender, ref Email, ref Phone, ref City, ref Country, ref DateOfBirth, ref CreateDate, ref Image))
-        //    {
-        //        return new clsClient(ID, FirstName, LastName, Gender, Email, Phone, City, Country, DateOfBirth, CreateDate, Image);
-        //    }
-        //    else
-        //    {
-        //        return null;
-        //    }
-//;
-
-//        }
-
-
+        //}
 
 
 

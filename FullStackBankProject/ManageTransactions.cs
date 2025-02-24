@@ -35,5 +35,10 @@ namespace FullStackBankProject
         {
             Form1.loadForm(new WithdrawScreen());
         }
+
+        private void BtnTransfer_Click(object sender, EventArgs e)
+        {
+            Form1.loadForm(new TransferScreen());
+        }
     }
 }

@@ -67,7 +67,7 @@
             this.labMainScreenTransactionsDeposit.AutoSize = true;
             this.labMainScreenTransactionsDeposit.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labMainScreenTransactionsDeposit.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.labMainScreenTransactionsDeposit.Location = new System.Drawing.Point(121, 9);
+            this.labMainScreenTransactionsDeposit.Location = new System.Drawing.Point(120, 10);
             this.labMainScreenTransactionsDeposit.Name = "labMainScreenTransactionsDeposit";
             this.labMainScreenTransactionsDeposit.Size = new System.Drawing.Size(375, 29);
             this.labMainScreenTransactionsDeposit.TabIndex = 17;
@@ -91,7 +91,7 @@
             this.MainPanel.Controls.Add(this.TboxLastName);
             this.MainPanel.Controls.Add(this.TboxFirstName);
             this.MainPanel.Controls.Add(this.PanelHeader);
-            this.MainPanel.Location = new System.Drawing.Point(126, 50);
+            this.MainPanel.Location = new System.Drawing.Point(125, 50);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(927, 553);
             this.MainPanel.TabIndex = 18;
@@ -473,7 +473,7 @@
             this.BtnBack.ForeColor = System.Drawing.Color.Black;
             this.BtnBack.Image = ((System.Drawing.Image)(resources.GetObject("BtnBack.Image")));
             this.BtnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BtnBack.Location = new System.Drawing.Point(125, 609);
+            this.BtnBack.Location = new System.Drawing.Point(146, 609);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(180, 45);
             this.BtnBack.TabIndex = 24;

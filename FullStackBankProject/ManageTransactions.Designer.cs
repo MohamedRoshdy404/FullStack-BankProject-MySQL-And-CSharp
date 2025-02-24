@@ -153,6 +153,7 @@
             this.BtnTransfer.TabIndex = 6;
             this.BtnTransfer.Text = "Transfer";
             this.BtnTransfer.UseTransparentBackground = true;
+            this.BtnTransfer.Click += new System.EventHandler(this.BtnTransfer_Click);
             // 
             // BtnTransferLog
             // 
