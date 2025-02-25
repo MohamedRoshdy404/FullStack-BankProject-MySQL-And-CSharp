@@ -59,8 +59,9 @@ namespace BankBusinessLayer
 
 
         // Users by username and password
-        private clsUserBusinessLayer(string UserName, string Password, string FirstName, string LastName, string Email, string Phone, DateTime CreateDate, int Permissions, string Image)
+        private clsUserBusinessLayer( string UserName, string Password, string FirstName, string LastName, string Email, string Phone, DateTime CreateDate, int Permissions, string Image)
         {
+
             this.UserName = UserName;
             this.Password = Password;
             this.FirstName = FirstName;
@@ -72,6 +73,9 @@ namespace BankBusinessLayer
             this.Image = Image;
             Mode = enMode.Update;
         }
+
+
+
 
 
         //private clsUserBusinessLayer( string UserName, string Password)
@@ -115,11 +119,11 @@ namespace BankBusinessLayer
 
             string FirstName = "", LastName = "", Email = "", Phone = "", Image = "";
             DateTime CreateDate = DateTime.Now;
-            int Permissions = 0;
+            int UserID = 0, Permissions = 0;
 
-            if (clsUsersDataAccessLayer.FindUserByUserNameAndPassword( UserName,  Password, ref  FirstName, ref  LastName, ref  Email, ref  Phone, ref  CreateDate, ref  Permissions, ref  Image))
+            if (clsUsersDataAccessLayer.FindUserByUserNameAndPassword(ref UserID , UserName,  Password, ref  FirstName, ref  LastName, ref  Email, ref  Phone, ref  CreateDate, ref  Permissions, ref  Image))
             {
-                return new clsUserBusinessLayer(UserName , Password , FirstName , LastName , Email , Phone , CreateDate , Permissions , Image);
+                return new clsUserBusinessLayer(UserID , UserName , Password , FirstName , LastName , Email , Phone , CreateDate , Permissions , Image);
             }
             else
             {

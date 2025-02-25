@@ -34,6 +34,22 @@
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.labMainTransactionsScreenDeposit = new System.Windows.Forms.Label();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.labCountryto = new System.Windows.Forms.Label();
+            this.labCityto = new System.Windows.Forms.Label();
+            this.labPhoneto = new System.Windows.Forms.Label();
+            this.labEmailto = new System.Windows.Forms.Label();
+            this.labLastnameto = new System.Windows.Forms.Label();
+            this.labFirstnameto = new System.Windows.Forms.Label();
+            this.labClientIDto = new System.Windows.Forms.Label();
+            this.labAccountBalanceto = new System.Windows.Forms.Label();
+            this.labCountryfrom = new System.Windows.Forms.Label();
+            this.labCityfrom = new System.Windows.Forms.Label();
+            this.labPhonefrom = new System.Windows.Forms.Label();
+            this.labEmailfrom = new System.Windows.Forms.Label();
+            this.labLastnamefrom = new System.Windows.Forms.Label();
+            this.labFirstnamefrom = new System.Windows.Forms.Label();
+            this.labClientIDfrom = new System.Windows.Forms.Label();
+            this.labAccountBalancefrom = new System.Windows.Forms.Label();
             this.TboxClientIDto = new Guna.UI2.WinForms.Guna2TextBox();
             this.TboxAccountBalanceto = new Guna.UI2.WinForms.Guna2TextBox();
             this.TboxPhoneto = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,7 +61,7 @@
             this.TboxFirstNameto = new Guna.UI2.WinForms.Guna2TextBox();
             this.BtnTransfer = new Guna.UI2.WinForms.Guna2Button();
             this.BtnClear = new Guna.UI2.WinForms.Guna2Button();
-            this.TboxEnterthedepositamount = new Guna.UI2.WinForms.Guna2TextBox();
+            this.TboxEnterdepositamount = new Guna.UI2.WinForms.Guna2TextBox();
             this.TboxClientIDfrom = new Guna.UI2.WinForms.Guna2TextBox();
             this.TboxAccountBalancefrom = new Guna.UI2.WinForms.Guna2TextBox();
             this.BtnSerach = new Guna.UI2.WinForms.Guna2Button();
@@ -57,7 +73,8 @@
             this.TboxLastNamefrom = new Guna.UI2.WinForms.Guna2TextBox();
             this.TboxFirstNamefrom = new Guna.UI2.WinForms.Guna2TextBox();
             this.PanelHeader = new System.Windows.Forms.Panel();
-            this.LabAccountDetails = new System.Windows.Forms.Label();
+            this.labTranferTo = new System.Windows.Forms.Label();
+            this.LabTranferFrom = new System.Windows.Forms.Label();
             this.BtnBack = new Guna.UI2.WinForms.Guna2Button();
             this.MainPanel.SuspendLayout();
             this.PanelHeader.SuspendLayout();
@@ -86,6 +103,22 @@
             // 
             this.MainPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MainPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MainPanel.Controls.Add(this.labCountryto);
+            this.MainPanel.Controls.Add(this.labCityto);
+            this.MainPanel.Controls.Add(this.labPhoneto);
+            this.MainPanel.Controls.Add(this.labEmailto);
+            this.MainPanel.Controls.Add(this.labLastnameto);
+            this.MainPanel.Controls.Add(this.labFirstnameto);
+            this.MainPanel.Controls.Add(this.labClientIDto);
+            this.MainPanel.Controls.Add(this.labAccountBalanceto);
+            this.MainPanel.Controls.Add(this.labCountryfrom);
+            this.MainPanel.Controls.Add(this.labCityfrom);
+            this.MainPanel.Controls.Add(this.labPhonefrom);
+            this.MainPanel.Controls.Add(this.labEmailfrom);
+            this.MainPanel.Controls.Add(this.labLastnamefrom);
+            this.MainPanel.Controls.Add(this.labFirstnamefrom);
+            this.MainPanel.Controls.Add(this.labClientIDfrom);
+            this.MainPanel.Controls.Add(this.labAccountBalancefrom);
             this.MainPanel.Controls.Add(this.TboxClientIDto);
             this.MainPanel.Controls.Add(this.TboxAccountBalanceto);
             this.MainPanel.Controls.Add(this.TboxPhoneto);
@@ -97,7 +130,7 @@
             this.MainPanel.Controls.Add(this.TboxFirstNameto);
             this.MainPanel.Controls.Add(this.BtnTransfer);
             this.MainPanel.Controls.Add(this.BtnClear);
-            this.MainPanel.Controls.Add(this.TboxEnterthedepositamount);
+            this.MainPanel.Controls.Add(this.TboxEnterdepositamount);
             this.MainPanel.Controls.Add(this.TboxClientIDfrom);
             this.MainPanel.Controls.Add(this.TboxAccountBalancefrom);
             this.MainPanel.Controls.Add(this.BtnSerach);
@@ -113,6 +146,182 @@
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(927, 553);
             this.MainPanel.TabIndex = 19;
+            // 
+            // labCountryto
+            // 
+            this.labCountryto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labCountryto.AutoSize = true;
+            this.labCountryto.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labCountryto.Location = new System.Drawing.Point(704, 342);
+            this.labCountryto.Name = "labCountryto";
+            this.labCountryto.Size = new System.Drawing.Size(57, 14);
+            this.labCountryto.TabIndex = 61;
+            this.labCountryto.Text = "Country";
+            // 
+            // labCityto
+            // 
+            this.labCityto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labCityto.AutoSize = true;
+            this.labCityto.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labCityto.Location = new System.Drawing.Point(480, 342);
+            this.labCityto.Name = "labCityto";
+            this.labCityto.Size = new System.Drawing.Size(31, 14);
+            this.labCityto.TabIndex = 60;
+            this.labCityto.Text = "City";
+            // 
+            // labPhoneto
+            // 
+            this.labPhoneto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labPhoneto.AutoSize = true;
+            this.labPhoneto.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labPhoneto.Location = new System.Drawing.Point(704, 269);
+            this.labPhoneto.Name = "labPhoneto";
+            this.labPhoneto.Size = new System.Drawing.Size(46, 14);
+            this.labPhoneto.TabIndex = 59;
+            this.labPhoneto.Text = "Phone";
+            // 
+            // labEmailto
+            // 
+            this.labEmailto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labEmailto.AutoSize = true;
+            this.labEmailto.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labEmailto.Location = new System.Drawing.Point(480, 269);
+            this.labEmailto.Name = "labEmailto";
+            this.labEmailto.Size = new System.Drawing.Size(38, 14);
+            this.labEmailto.TabIndex = 58;
+            this.labEmailto.Text = "Email";
+            // 
+            // labLastnameto
+            // 
+            this.labLastnameto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labLastnameto.AutoSize = true;
+            this.labLastnameto.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labLastnameto.Location = new System.Drawing.Point(704, 199);
+            this.labLastnameto.Name = "labLastnameto";
+            this.labLastnameto.Size = new System.Drawing.Size(66, 14);
+            this.labLastnameto.TabIndex = 57;
+            this.labLastnameto.Text = "LastName";
+            // 
+            // labFirstnameto
+            // 
+            this.labFirstnameto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labFirstnameto.AutoSize = true;
+            this.labFirstnameto.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labFirstnameto.Location = new System.Drawing.Point(480, 199);
+            this.labFirstnameto.Name = "labFirstnameto";
+            this.labFirstnameto.Size = new System.Drawing.Size(66, 14);
+            this.labFirstnameto.TabIndex = 56;
+            this.labFirstnameto.Text = "FirstName";
+            // 
+            // labClientIDto
+            // 
+            this.labClientIDto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labClientIDto.AutoSize = true;
+            this.labClientIDto.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labClientIDto.Location = new System.Drawing.Point(704, 131);
+            this.labClientIDto.Name = "labClientIDto";
+            this.labClientIDto.Size = new System.Drawing.Size(56, 14);
+            this.labClientIDto.TabIndex = 55;
+            this.labClientIDto.Text = "ClientID";
+            // 
+            // labAccountBalanceto
+            // 
+            this.labAccountBalanceto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labAccountBalanceto.AutoSize = true;
+            this.labAccountBalanceto.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labAccountBalanceto.Location = new System.Drawing.Point(480, 129);
+            this.labAccountBalanceto.Name = "labAccountBalanceto";
+            this.labAccountBalanceto.Size = new System.Drawing.Size(112, 14);
+            this.labAccountBalanceto.TabIndex = 54;
+            this.labAccountBalanceto.Text = "Account Balance ";
+            // 
+            // labCountryfrom
+            // 
+            this.labCountryfrom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labCountryfrom.AutoSize = true;
+            this.labCountryfrom.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labCountryfrom.Location = new System.Drawing.Point(231, 342);
+            this.labCountryfrom.Name = "labCountryfrom";
+            this.labCountryfrom.Size = new System.Drawing.Size(57, 14);
+            this.labCountryfrom.TabIndex = 53;
+            this.labCountryfrom.Text = "Country";
+            // 
+            // labCityfrom
+            // 
+            this.labCityfrom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labCityfrom.AutoSize = true;
+            this.labCityfrom.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labCityfrom.Location = new System.Drawing.Point(7, 342);
+            this.labCityfrom.Name = "labCityfrom";
+            this.labCityfrom.Size = new System.Drawing.Size(31, 14);
+            this.labCityfrom.TabIndex = 52;
+            this.labCityfrom.Text = "City";
+            // 
+            // labPhonefrom
+            // 
+            this.labPhonefrom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labPhonefrom.AutoSize = true;
+            this.labPhonefrom.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labPhonefrom.Location = new System.Drawing.Point(231, 269);
+            this.labPhonefrom.Name = "labPhonefrom";
+            this.labPhonefrom.Size = new System.Drawing.Size(46, 14);
+            this.labPhonefrom.TabIndex = 51;
+            this.labPhonefrom.Text = "Phone";
+            // 
+            // labEmailfrom
+            // 
+            this.labEmailfrom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labEmailfrom.AutoSize = true;
+            this.labEmailfrom.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labEmailfrom.Location = new System.Drawing.Point(7, 269);
+            this.labEmailfrom.Name = "labEmailfrom";
+            this.labEmailfrom.Size = new System.Drawing.Size(38, 14);
+            this.labEmailfrom.TabIndex = 50;
+            this.labEmailfrom.Text = "Email";
+            // 
+            // labLastnamefrom
+            // 
+            this.labLastnamefrom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labLastnamefrom.AutoSize = true;
+            this.labLastnamefrom.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labLastnamefrom.Location = new System.Drawing.Point(231, 199);
+            this.labLastnamefrom.Name = "labLastnamefrom";
+            this.labLastnamefrom.Size = new System.Drawing.Size(66, 14);
+            this.labLastnamefrom.TabIndex = 49;
+            this.labLastnamefrom.Text = "LastName";
+            // 
+            // labFirstnamefrom
+            // 
+            this.labFirstnamefrom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labFirstnamefrom.AutoSize = true;
+            this.labFirstnamefrom.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labFirstnamefrom.Location = new System.Drawing.Point(7, 199);
+            this.labFirstnamefrom.Name = "labFirstnamefrom";
+            this.labFirstnamefrom.Size = new System.Drawing.Size(66, 14);
+            this.labFirstnamefrom.TabIndex = 48;
+            this.labFirstnamefrom.Text = "FirstName";
+            // 
+            // labClientIDfrom
+            // 
+            this.labClientIDfrom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labClientIDfrom.AutoSize = true;
+            this.labClientIDfrom.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labClientIDfrom.Location = new System.Drawing.Point(231, 131);
+            this.labClientIDfrom.Name = "labClientIDfrom";
+            this.labClientIDfrom.Size = new System.Drawing.Size(56, 14);
+            this.labClientIDfrom.TabIndex = 47;
+            this.labClientIDfrom.Text = "ClientID";
+            // 
+            // labAccountBalancefrom
+            // 
+            this.labAccountBalancefrom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labAccountBalancefrom.AutoSize = true;
+            this.labAccountBalancefrom.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labAccountBalancefrom.Location = new System.Drawing.Point(7, 129);
+            this.labAccountBalancefrom.Name = "labAccountBalancefrom";
+            this.labAccountBalancefrom.Size = new System.Drawing.Size(112, 14);
+            this.labAccountBalancefrom.TabIndex = 46;
+            this.labAccountBalancefrom.Text = "Account Balance ";
             // 
             // TboxClientIDto
             // 
@@ -276,7 +485,7 @@
             this.TboxAccountNumberto.Animated = true;
             this.TboxAccountNumberto.BorderRadius = 10;
             this.TboxAccountNumberto.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxAccountNumberto.DefaultText = "";
+            this.TboxAccountNumberto.DefaultText = "a100";
             this.TboxAccountNumberto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TboxAccountNumberto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TboxAccountNumberto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -399,32 +608,33 @@
             this.BtnClear.Text = "Clear";
             this.BtnClear.UseTransparentBackground = true;
             this.BtnClear.Visible = false;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
-            // TboxEnterthedepositamount
+            // TboxEnterdepositamount
             // 
-            this.TboxEnterthedepositamount.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TboxEnterthedepositamount.Animated = true;
-            this.TboxEnterthedepositamount.BorderRadius = 10;
-            this.TboxEnterthedepositamount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxEnterthedepositamount.DefaultText = "";
-            this.TboxEnterthedepositamount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TboxEnterthedepositamount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TboxEnterthedepositamount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxEnterthedepositamount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TboxEnterthedepositamount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxEnterthedepositamount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.TboxEnterthedepositamount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TboxEnterthedepositamount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxEnterthedepositamount.Location = new System.Drawing.Point(10, 427);
-            this.TboxEnterthedepositamount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TboxEnterthedepositamount.Name = "TboxEnterthedepositamount";
-            this.TboxEnterthedepositamount.PasswordChar = '\0';
-            this.TboxEnterthedepositamount.PlaceholderText = "Enter the deposit amount";
-            this.TboxEnterthedepositamount.SelectedText = "";
-            this.TboxEnterthedepositamount.Size = new System.Drawing.Size(906, 48);
-            this.TboxEnterthedepositamount.TabIndex = 34;
-            this.TboxEnterthedepositamount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TboxEnterthedepositamount.Visible = false;
+            this.TboxEnterdepositamount.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TboxEnterdepositamount.Animated = true;
+            this.TboxEnterdepositamount.BorderRadius = 10;
+            this.TboxEnterdepositamount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TboxEnterdepositamount.DefaultText = "10";
+            this.TboxEnterdepositamount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TboxEnterdepositamount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TboxEnterdepositamount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxEnterdepositamount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxEnterdepositamount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxEnterdepositamount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.TboxEnterdepositamount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TboxEnterdepositamount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TboxEnterdepositamount.Location = new System.Drawing.Point(10, 427);
+            this.TboxEnterdepositamount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TboxEnterdepositamount.Name = "TboxEnterdepositamount";
+            this.TboxEnterdepositamount.PasswordChar = '\0';
+            this.TboxEnterdepositamount.PlaceholderText = "Enter the deposit amount";
+            this.TboxEnterdepositamount.SelectedText = "";
+            this.TboxEnterdepositamount.Size = new System.Drawing.Size(906, 48);
+            this.TboxEnterdepositamount.TabIndex = 34;
+            this.TboxEnterdepositamount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TboxEnterdepositamount.Visible = false;
             // 
             // TboxClientIDfrom
             // 
@@ -614,7 +824,7 @@
             this.TboxAccountNumberfrom.Animated = true;
             this.TboxAccountNumberfrom.BorderRadius = 10;
             this.TboxAccountNumberfrom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxAccountNumberfrom.DefaultText = "";
+            this.TboxAccountNumberfrom.DefaultText = "a110";
             this.TboxAccountNumberfrom.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TboxAccountNumberfrom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TboxAccountNumberfrom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -688,23 +898,35 @@
             // PanelHeader
             // 
             this.PanelHeader.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.PanelHeader.Controls.Add(this.LabAccountDetails);
+            this.PanelHeader.Controls.Add(this.labTranferTo);
+            this.PanelHeader.Controls.Add(this.LabTranferFrom);
             this.PanelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelHeader.Location = new System.Drawing.Point(0, 0);
             this.PanelHeader.Name = "PanelHeader";
             this.PanelHeader.Size = new System.Drawing.Size(925, 47);
             this.PanelHeader.TabIndex = 0;
             // 
-            // LabAccountDetails
+            // labTranferTo
             // 
-            this.LabAccountDetails.AutoSize = true;
-            this.LabAccountDetails.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabAccountDetails.ForeColor = System.Drawing.Color.DarkGray;
-            this.LabAccountDetails.Location = new System.Drawing.Point(16, 12);
-            this.LabAccountDetails.Name = "LabAccountDetails";
-            this.LabAccountDetails.Size = new System.Drawing.Size(137, 22);
-            this.LabAccountDetails.TabIndex = 2;
-            this.LabAccountDetails.Text = "Account Details";
+            this.labTranferTo.AutoSize = true;
+            this.labTranferTo.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labTranferTo.ForeColor = System.Drawing.Color.DarkGray;
+            this.labTranferTo.Location = new System.Drawing.Point(698, 11);
+            this.labTranferTo.Name = "labTranferTo";
+            this.labTranferTo.Size = new System.Drawing.Size(94, 22);
+            this.labTranferTo.TabIndex = 3;
+            this.labTranferTo.Text = "Tranfer To";
+            // 
+            // LabTranferFrom
+            // 
+            this.LabTranferFrom.AutoSize = true;
+            this.LabTranferFrom.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabTranferFrom.ForeColor = System.Drawing.Color.DarkGray;
+            this.LabTranferFrom.Location = new System.Drawing.Point(6, 11);
+            this.LabTranferFrom.Name = "LabTranferFrom";
+            this.LabTranferFrom.Size = new System.Drawing.Size(116, 22);
+            this.LabTranferFrom.TabIndex = 2;
+            this.LabTranferFrom.Text = "Tranfer From";
             // 
             // BtnBack
             // 
@@ -743,6 +965,7 @@
             this.Name = "TransferScreen";
             this.Text = "TransferScreen";
             this.MainPanel.ResumeLayout(false);
+            this.MainPanel.PerformLayout();
             this.PanelHeader.ResumeLayout(false);
             this.PanelHeader.PerformLayout();
             this.ResumeLayout(false);
@@ -758,7 +981,7 @@
         private System.Windows.Forms.Panel MainPanel;
         private Guna.UI2.WinForms.Guna2Button BtnTransfer;
         private Guna.UI2.WinForms.Guna2Button BtnClear;
-        private Guna.UI2.WinForms.Guna2TextBox TboxEnterthedepositamount;
+        private Guna.UI2.WinForms.Guna2TextBox TboxEnterdepositamount;
         private Guna.UI2.WinForms.Guna2TextBox TboxClientIDfrom;
         private Guna.UI2.WinForms.Guna2TextBox TboxAccountBalancefrom;
         private Guna.UI2.WinForms.Guna2Button BtnSerach;
@@ -770,7 +993,7 @@
         private Guna.UI2.WinForms.Guna2TextBox TboxLastNamefrom;
         private Guna.UI2.WinForms.Guna2TextBox TboxFirstNamefrom;
         private System.Windows.Forms.Panel PanelHeader;
-        private System.Windows.Forms.Label LabAccountDetails;
+        private System.Windows.Forms.Label LabTranferFrom;
         private Guna.UI2.WinForms.Guna2Button BtnBack;
         private Guna.UI2.WinForms.Guna2TextBox TboxClientIDto;
         private Guna.UI2.WinForms.Guna2TextBox TboxAccountBalanceto;
@@ -781,5 +1004,22 @@
         private Guna.UI2.WinForms.Guna2TextBox TboxAccountNumberto;
         private Guna.UI2.WinForms.Guna2TextBox TboxLastNameto;
         private Guna.UI2.WinForms.Guna2TextBox TboxFirstNameto;
+        private System.Windows.Forms.Label labAccountBalancefrom;
+        private System.Windows.Forms.Label labClientIDfrom;
+        private System.Windows.Forms.Label labFirstnamefrom;
+        private System.Windows.Forms.Label labPhonefrom;
+        private System.Windows.Forms.Label labEmailfrom;
+        private System.Windows.Forms.Label labLastnamefrom;
+        private System.Windows.Forms.Label labCountryto;
+        private System.Windows.Forms.Label labCityto;
+        private System.Windows.Forms.Label labPhoneto;
+        private System.Windows.Forms.Label labEmailto;
+        private System.Windows.Forms.Label labLastnameto;
+        private System.Windows.Forms.Label labFirstnameto;
+        private System.Windows.Forms.Label labClientIDto;
+        private System.Windows.Forms.Label labAccountBalanceto;
+        private System.Windows.Forms.Label labCountryfrom;
+        private System.Windows.Forms.Label labCityfrom;
+        private System.Windows.Forms.Label labTranferTo;
     }
 }

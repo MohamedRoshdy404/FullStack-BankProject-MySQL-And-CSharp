@@ -57,13 +57,13 @@ namespace BankDataAccessLayer
 
 
 
-        public static bool FindUserByUserNameAndPassword(string UserName, string Password, ref string FirstName, ref string LastName, ref string Email, ref string Phone, ref DateTime CreateDate, ref int Permissions, ref string Image)
+        public static bool FindUserByUserNameAndPassword(ref int UserID , string UserName, string Password, ref string FirstName, ref string LastName, ref string Email, ref string Phone, ref DateTime CreateDate, ref int Permissions, ref string Image)
         {
             bool isFound = false;
 
             using (SqlConnection connection = new SqlConnection(clsSettingsConnectoinStrinng.connectionString))
             {
-                string query = "select UserName, Password , FirstName , LastName , Email , Phone , CreateDate , Permissions , Image from Users WHERE Username = @UserName and Password = @Password";
+                string query = "select UserID , UserName, Password , FirstName , LastName , Email , Phone , CreateDate , Permissions , Image from Users WHERE Username = @UserName and Password = @Password";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
@@ -79,6 +79,7 @@ namespace BankDataAccessLayer
                             if (reader.Read())
                             {
                                 isFound = true;
+                                UserID = (int) reader["UserID"];
                                 UserName = reader["UserName"]?.ToString() ?? "";
                                 Password = reader["Password"]?.ToString() ?? "";
                                 FirstName = reader["FirstName"]?.ToString() ?? "";

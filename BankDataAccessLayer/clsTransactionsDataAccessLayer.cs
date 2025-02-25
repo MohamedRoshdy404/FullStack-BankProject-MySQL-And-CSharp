@@ -90,6 +90,44 @@ namespace BankDataAccessLayer
         }
 
 
+        public static bool AddTranferLog( DateTime TransactionDate, decimal Amount,string TransactionType,  string TransferFrom , string TransferTo , int UserID)
+        {
+            int rowsAffected = 0;
+
+            using (SqlConnection connection = new SqlConnection(clsSettingsConnectoinStrinng.connectionString))
+            {
+                string query = @"
+                             
+                                INSERT INTO Transactions (TransactionDate , Amount , TransactionType , TransferFrom , TransferTo ,UserID)
+					            VALUES (@TransactionDate ,@Amount , @TransactionType , @TransferFrom , @TransferTo ,@UserID )";
+
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@TransactionDate", TransactionDate);
+                    command.Parameters.AddWithValue("@Amount", Amount);
+                    command.Parameters.AddWithValue("@TransactionType", TransactionType);
+                    command.Parameters.AddWithValue("@TransferFrom", TransferFrom);
+                    command.Parameters.AddWithValue("@TransferTo", TransferTo);
+                    command.Parameters.AddWithValue("@UserID", UserID);
+
+                    try
+                    {
+                        connection.Open();
+                        rowsAffected = command.ExecuteNonQuery();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error: {ex.Message}");
+                    }
+                }
+            }
+
+            return (rowsAffected > 0);
+        }
+
+
 
 
 

@@ -34,6 +34,7 @@ namespace FullStackBankProject
 
             if (User != null)
             {
+                clsGlobal.UserID = User.UserID;
                 clsGlobal.UserName = UserName;
                 clsGlobal.Password = Password;
                 clsGlobal.Image = User.Image;

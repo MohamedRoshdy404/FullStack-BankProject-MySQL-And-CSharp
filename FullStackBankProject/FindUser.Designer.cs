@@ -45,6 +45,14 @@
             this.TboxFindUser = new Guna.UI2.WinForms.Guna2TextBox();
             this.labFindUser = new System.Windows.Forms.Label();
             this.picImgeUser = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.labFirstnamefrom = new System.Windows.Forms.Label();
+            this.labLastnamefrom = new System.Windows.Forms.Label();
+            this.labEmailfrom = new System.Windows.Forms.Label();
+            this.labPhonefrom = new System.Windows.Forms.Label();
+            this.labCreateDate = new System.Windows.Forms.Label();
+            this.labUsernaem = new System.Windows.Forms.Label();
+            this.labPassword = new System.Windows.Forms.Label();
+            this.labPermissions = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picSearchUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImgeUser)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +80,7 @@
             this.TboxCreateDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxCreateDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TboxCreateDate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxCreateDate.Location = new System.Drawing.Point(169, 366);
+            this.TboxCreateDate.Location = new System.Drawing.Point(169, 426);
             this.TboxCreateDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TboxCreateDate.Name = "TboxCreateDate";
             this.TboxCreateDate.PasswordChar = '\0';
@@ -98,7 +106,7 @@
             this.TboxPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TboxPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxPhone.Location = new System.Drawing.Point(496, 296);
+            this.TboxPhone.Location = new System.Drawing.Point(496, 336);
             this.TboxPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TboxPhone.Name = "TboxPhone";
             this.TboxPhone.PasswordChar = '\0';
@@ -175,7 +183,7 @@
             this.TboxEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TboxEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxEmail.Location = new System.Drawing.Point(169, 296);
+            this.TboxEmail.Location = new System.Drawing.Point(169, 336);
             this.TboxEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TboxEmail.Name = "TboxEmail";
             this.TboxEmail.PasswordChar = '\0';
@@ -201,7 +209,7 @@
             this.TboxPermissions.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxPermissions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TboxPermissions.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxPermissions.Location = new System.Drawing.Point(496, 366);
+            this.TboxPermissions.Location = new System.Drawing.Point(496, 426);
             this.TboxPermissions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TboxPermissions.Name = "TboxPermissions";
             this.TboxPermissions.PasswordChar = '\0';
@@ -253,7 +261,7 @@
             this.TboxLastName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TboxLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxLastName.Location = new System.Drawing.Point(496, 226);
+            this.TboxLastName.Location = new System.Drawing.Point(496, 246);
             this.TboxLastName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TboxLastName.Name = "TboxLastName";
             this.TboxLastName.PasswordChar = '\0';
@@ -279,7 +287,7 @@
             this.TboxFirstName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TboxFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TboxFirstName.Location = new System.Drawing.Point(169, 226);
+            this.TboxFirstName.Location = new System.Drawing.Point(169, 246);
             this.TboxFirstName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TboxFirstName.Name = "TboxFirstName";
             this.TboxFirstName.PasswordChar = '\0';
@@ -356,11 +364,107 @@
             this.picImgeUser.TabStop = false;
             this.picImgeUser.UseTransparentBackground = true;
             // 
+            // labFirstnamefrom
+            // 
+            this.labFirstnamefrom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labFirstnamefrom.AutoSize = true;
+            this.labFirstnamefrom.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labFirstnamefrom.Location = new System.Drawing.Point(166, 228);
+            this.labFirstnamefrom.Name = "labFirstnamefrom";
+            this.labFirstnamefrom.Size = new System.Drawing.Size(66, 14);
+            this.labFirstnamefrom.TabIndex = 67;
+            this.labFirstnamefrom.Text = "FirstName";
+            // 
+            // labLastnamefrom
+            // 
+            this.labLastnamefrom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labLastnamefrom.AutoSize = true;
+            this.labLastnamefrom.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labLastnamefrom.Location = new System.Drawing.Point(493, 228);
+            this.labLastnamefrom.Name = "labLastnamefrom";
+            this.labLastnamefrom.Size = new System.Drawing.Size(66, 14);
+            this.labLastnamefrom.TabIndex = 68;
+            this.labLastnamefrom.Text = "LastName";
+            // 
+            // labEmailfrom
+            // 
+            this.labEmailfrom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labEmailfrom.AutoSize = true;
+            this.labEmailfrom.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labEmailfrom.Location = new System.Drawing.Point(166, 318);
+            this.labEmailfrom.Name = "labEmailfrom";
+            this.labEmailfrom.Size = new System.Drawing.Size(38, 14);
+            this.labEmailfrom.TabIndex = 69;
+            this.labEmailfrom.Text = "Email";
+            // 
+            // labPhonefrom
+            // 
+            this.labPhonefrom.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labPhonefrom.AutoSize = true;
+            this.labPhonefrom.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labPhonefrom.Location = new System.Drawing.Point(493, 318);
+            this.labPhonefrom.Name = "labPhonefrom";
+            this.labPhonefrom.Size = new System.Drawing.Size(46, 14);
+            this.labPhonefrom.TabIndex = 70;
+            this.labPhonefrom.Text = "Phone";
+            // 
+            // labCreateDate
+            // 
+            this.labCreateDate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labCreateDate.AutoSize = true;
+            this.labCreateDate.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labCreateDate.Location = new System.Drawing.Point(166, 408);
+            this.labCreateDate.Name = "labCreateDate";
+            this.labCreateDate.Size = new System.Drawing.Size(76, 14);
+            this.labCreateDate.TabIndex = 71;
+            this.labCreateDate.Text = "CreateDate";
+            // 
+            // labUsernaem
+            // 
+            this.labUsernaem.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labUsernaem.AutoSize = true;
+            this.labUsernaem.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labUsernaem.Location = new System.Drawing.Point(166, 138);
+            this.labUsernaem.Name = "labUsernaem";
+            this.labUsernaem.Size = new System.Drawing.Size(66, 14);
+            this.labUsernaem.TabIndex = 72;
+            this.labUsernaem.Text = "UserName";
+            // 
+            // labPassword
+            // 
+            this.labPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labPassword.AutoSize = true;
+            this.labPassword.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labPassword.Location = new System.Drawing.Point(493, 138);
+            this.labPassword.Name = "labPassword";
+            this.labPassword.Size = new System.Drawing.Size(66, 14);
+            this.labPassword.TabIndex = 73;
+            this.labPassword.Text = "Password";
+            // 
+            // labPermissions
+            // 
+            this.labPermissions.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labPermissions.AutoSize = true;
+            this.labPermissions.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labPermissions.Location = new System.Drawing.Point(493, 408);
+            this.labPermissions.Name = "labPermissions";
+            this.labPermissions.Size = new System.Drawing.Size(78, 14);
+            this.labPermissions.TabIndex = 74;
+            this.labPermissions.Text = "Permissions";
+            // 
             // FindUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1124, 636);
+            this.Controls.Add(this.labPermissions);
+            this.Controls.Add(this.labPassword);
+            this.Controls.Add(this.labUsernaem);
+            this.Controls.Add(this.labCreateDate);
+            this.Controls.Add(this.labPhonefrom);
+            this.Controls.Add(this.labEmailfrom);
+            this.Controls.Add(this.labLastnamefrom);
+            this.Controls.Add(this.labFirstnamefrom);
             this.Controls.Add(this.picImgeUser);
             this.Controls.Add(this.TboxCreateDate);
             this.Controls.Add(this.TboxPhone);
@@ -401,5 +505,13 @@
         private Guna.UI2.WinForms.Guna2TextBox TboxFindUser;
         private System.Windows.Forms.Label labFindUser;
         private Guna.UI2.WinForms.Guna2CirclePictureBox picImgeUser;
+        private System.Windows.Forms.Label labFirstnamefrom;
+        private System.Windows.Forms.Label labLastnamefrom;
+        private System.Windows.Forms.Label labEmailfrom;
+        private System.Windows.Forms.Label labPhonefrom;
+        private System.Windows.Forms.Label labPermissions;
+        private System.Windows.Forms.Label labPassword;
+        private System.Windows.Forms.Label labUsernaem;
+        private System.Windows.Forms.Label labCreateDate;
     }
 }

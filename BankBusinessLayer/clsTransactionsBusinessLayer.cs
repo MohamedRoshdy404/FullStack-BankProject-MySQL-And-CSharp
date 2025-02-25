@@ -116,4 +116,90 @@ namespace BankBusinessLayer
         }
 
     }
+
+
+
+
+
+
+    public class clsTransferLog
+    {
+
+        public enum enMode { AddNew = 0, Update = 1 }
+        enMode Mode = enMode.AddNew;
+        public int TransactionID { get; set; }
+        public DateTime TransactionDate { get; set; }
+        public decimal Amount { get; set; }
+        public string TransactionType { get; set; }
+        public string TransferFrom { get; set; }
+        public string TransferTo { get; set; }
+        public int UserID { get; set; }
+
+
+
+
+
+
+        public clsTransferLog()
+        {
+            this.TransactionID = -1;
+            this.TransactionDate = DateTime.Now;
+            this.Amount = 0;
+            this.TransactionType = "";
+            this.TransferFrom = "";
+            this.TransferTo = "";
+            this.UserID = 0;
+        }
+
+        private clsTransferLog(DateTime TransactionDate , decimal Amount , string TransactionType , string TransferFrom , string TransferTo , int UserID)
+        {
+
+            this.TransactionDate = TransactionDate;
+            this.Amount = Amount;
+            this.TransactionType = TransactionType;
+            this.TransferFrom = TransferFrom;
+            this.TransferTo = TransferTo;
+            this.UserID = UserID;
+
+        }
+
+
+        public  bool AddTranferLog()
+        {
+            return clsTransactionsDataAccessLayer.AddTranferLog(this.TransactionDate, this.Amount, this.TransactionType, this.TransferFrom, this.TransferTo, this.UserID);
+        }
+
+
+        public bool Save()
+        {
+
+
+            switch (Mode)
+            {
+                case enMode.AddNew:
+                    if (AddTranferLog())
+                    {
+                        Mode = enMode.Update;
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+
+                    default : return false;
+            }
+
+        }
+
+
+
+    }
+
+
+  
+
+
+
+
 }
