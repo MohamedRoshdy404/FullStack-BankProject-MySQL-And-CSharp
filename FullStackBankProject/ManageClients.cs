@@ -27,6 +27,7 @@ namespace FullStackBankProject
         public ManageClients()
         {
             InitializeComponent();
+
         }
 
         private void InitializeComponent()

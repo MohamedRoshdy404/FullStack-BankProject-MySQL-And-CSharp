@@ -127,7 +127,6 @@ namespace FullStackBankProject
                 if (SourceClient.UpdateAccountBalance() && DestinationClient.UpdateAccountBalance())
                 {
                     MessageBox.Show("The transfer process has succeeded", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                     AddRowTransfer();
                     ClearAllTbox();
                 }

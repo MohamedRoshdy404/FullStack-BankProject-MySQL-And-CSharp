@@ -32,11 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnLogout = new Guna.UI2.WinForms.Guna2Button();
-            this.BtnLoginRegister = new Guna.UI2.WinForms.Guna2Button();
-            this.BtnTransactionScreen = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnManageLoginRegister = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnManageTransactionScreen = new Guna.UI2.WinForms.Guna2Button();
             this.BtnManageUsers = new Guna.UI2.WinForms.Guna2Button();
-            this.BtnAccounts = new Guna.UI2.WinForms.Guna2Button();
-            this.BtnlistClients = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnManageAccounts = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnManageClients = new Guna.UI2.WinForms.Guna2Button();
             this.labINameUser = new System.Windows.Forms.Label();
             this.LabUser = new System.Windows.Forms.Label();
             this.picLoadImgeUser = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -54,11 +54,11 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.BtnLogout);
-            this.panel1.Controls.Add(this.BtnLoginRegister);
-            this.panel1.Controls.Add(this.BtnTransactionScreen);
+            this.panel1.Controls.Add(this.BtnManageLoginRegister);
+            this.panel1.Controls.Add(this.BtnManageTransactionScreen);
             this.panel1.Controls.Add(this.BtnManageUsers);
-            this.panel1.Controls.Add(this.BtnAccounts);
-            this.panel1.Controls.Add(this.BtnlistClients);
+            this.panel1.Controls.Add(this.BtnManageAccounts);
+            this.panel1.Controls.Add(this.BtnManageClients);
             this.panel1.Controls.Add(this.labINameUser);
             this.panel1.Controls.Add(this.LabUser);
             this.panel1.Controls.Add(this.picLoadImgeUser);
@@ -93,58 +93,58 @@
             this.BtnLogout.UseTransparentBackground = true;
             this.BtnLogout.Click += new System.EventHandler(this.BtnLogout_Click);
             // 
-            // BtnLoginRegister
+            // BtnManageLoginRegister
             // 
-            this.BtnLoginRegister.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnLoginRegister.Animated = true;
-            this.BtnLoginRegister.BackColor = System.Drawing.Color.Transparent;
-            this.BtnLoginRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnLoginRegister.BorderRadius = 10;
-            this.BtnLoginRegister.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnLoginRegister.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnLoginRegister.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnLoginRegister.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnLoginRegister.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnLoginRegister.FillColor = System.Drawing.Color.Gainsboro;
-            this.BtnLoginRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.BtnLoginRegister.ForeColor = System.Drawing.Color.Black;
-            this.BtnLoginRegister.Image = ((System.Drawing.Image)(resources.GetObject("BtnLoginRegister.Image")));
-            this.BtnLoginRegister.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BtnLoginRegister.ImageSize = new System.Drawing.Size(30, 30);
-            this.BtnLoginRegister.IndicateFocus = true;
-            this.BtnLoginRegister.Location = new System.Drawing.Point(16, 560);
-            this.BtnLoginRegister.Name = "BtnLoginRegister";
-            this.BtnLoginRegister.Size = new System.Drawing.Size(229, 71);
-            this.BtnLoginRegister.TabIndex = 7;
-            this.BtnLoginRegister.Text = "Login Register";
-            this.BtnLoginRegister.UseTransparentBackground = true;
+            this.BtnManageLoginRegister.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnManageLoginRegister.Animated = true;
+            this.BtnManageLoginRegister.BackColor = System.Drawing.Color.Transparent;
+            this.BtnManageLoginRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnManageLoginRegister.BorderRadius = 10;
+            this.BtnManageLoginRegister.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnManageLoginRegister.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnManageLoginRegister.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnManageLoginRegister.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnManageLoginRegister.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnManageLoginRegister.FillColor = System.Drawing.Color.Gainsboro;
+            this.BtnManageLoginRegister.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.BtnManageLoginRegister.ForeColor = System.Drawing.Color.Black;
+            this.BtnManageLoginRegister.Image = ((System.Drawing.Image)(resources.GetObject("BtnManageLoginRegister.Image")));
+            this.BtnManageLoginRegister.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BtnManageLoginRegister.ImageSize = new System.Drawing.Size(30, 30);
+            this.BtnManageLoginRegister.IndicateFocus = true;
+            this.BtnManageLoginRegister.Location = new System.Drawing.Point(16, 560);
+            this.BtnManageLoginRegister.Name = "BtnManageLoginRegister";
+            this.BtnManageLoginRegister.Size = new System.Drawing.Size(229, 71);
+            this.BtnManageLoginRegister.TabIndex = 7;
+            this.BtnManageLoginRegister.Text = "Login Register";
+            this.BtnManageLoginRegister.UseTransparentBackground = true;
             // 
-            // BtnTransactionScreen
+            // BtnManageTransactionScreen
             // 
-            this.BtnTransactionScreen.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnTransactionScreen.Animated = true;
-            this.BtnTransactionScreen.BackColor = System.Drawing.Color.Transparent;
-            this.BtnTransactionScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnTransactionScreen.BorderRadius = 10;
-            this.BtnTransactionScreen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnTransactionScreen.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnTransactionScreen.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnTransactionScreen.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnTransactionScreen.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnTransactionScreen.FillColor = System.Drawing.Color.Gainsboro;
-            this.BtnTransactionScreen.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.BtnTransactionScreen.ForeColor = System.Drawing.Color.Black;
-            this.BtnTransactionScreen.Image = ((System.Drawing.Image)(resources.GetObject("BtnTransactionScreen.Image")));
-            this.BtnTransactionScreen.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BtnTransactionScreen.ImageSize = new System.Drawing.Size(30, 30);
-            this.BtnTransactionScreen.IndicateFocus = true;
-            this.BtnTransactionScreen.Location = new System.Drawing.Point(16, 482);
-            this.BtnTransactionScreen.Name = "BtnTransactionScreen";
-            this.BtnTransactionScreen.Size = new System.Drawing.Size(229, 71);
-            this.BtnTransactionScreen.TabIndex = 6;
-            this.BtnTransactionScreen.Text = "Transaction";
-            this.BtnTransactionScreen.UseTransparentBackground = true;
-            this.BtnTransactionScreen.Click += new System.EventHandler(this.BtnTransactionScreen_Click);
+            this.BtnManageTransactionScreen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnManageTransactionScreen.Animated = true;
+            this.BtnManageTransactionScreen.BackColor = System.Drawing.Color.Transparent;
+            this.BtnManageTransactionScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnManageTransactionScreen.BorderRadius = 10;
+            this.BtnManageTransactionScreen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnManageTransactionScreen.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnManageTransactionScreen.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnManageTransactionScreen.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnManageTransactionScreen.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnManageTransactionScreen.FillColor = System.Drawing.Color.Gainsboro;
+            this.BtnManageTransactionScreen.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.BtnManageTransactionScreen.ForeColor = System.Drawing.Color.Black;
+            this.BtnManageTransactionScreen.Image = ((System.Drawing.Image)(resources.GetObject("BtnManageTransactionScreen.Image")));
+            this.BtnManageTransactionScreen.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BtnManageTransactionScreen.ImageSize = new System.Drawing.Size(30, 30);
+            this.BtnManageTransactionScreen.IndicateFocus = true;
+            this.BtnManageTransactionScreen.Location = new System.Drawing.Point(16, 482);
+            this.BtnManageTransactionScreen.Name = "BtnManageTransactionScreen";
+            this.BtnManageTransactionScreen.Size = new System.Drawing.Size(229, 71);
+            this.BtnManageTransactionScreen.TabIndex = 6;
+            this.BtnManageTransactionScreen.Text = "Transaction";
+            this.BtnManageTransactionScreen.UseTransparentBackground = true;
+            this.BtnManageTransactionScreen.Click += new System.EventHandler(this.BtnTransactionScreen_Click);
             // 
             // BtnManageUsers
             // 
@@ -173,60 +173,60 @@
             this.BtnManageUsers.UseTransparentBackground = true;
             this.BtnManageUsers.Click += new System.EventHandler(this.BtnManageUsers_Click);
             // 
-            // BtnAccounts
+            // BtnManageAccounts
             // 
-            this.BtnAccounts.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnAccounts.Animated = true;
-            this.BtnAccounts.BackColor = System.Drawing.Color.Transparent;
-            this.BtnAccounts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnAccounts.BorderRadius = 10;
-            this.BtnAccounts.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnAccounts.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnAccounts.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnAccounts.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnAccounts.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnAccounts.FillColor = System.Drawing.Color.Gainsboro;
-            this.BtnAccounts.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.BtnAccounts.ForeColor = System.Drawing.Color.Black;
-            this.BtnAccounts.Image = ((System.Drawing.Image)(resources.GetObject("BtnAccounts.Image")));
-            this.BtnAccounts.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BtnAccounts.ImageSize = new System.Drawing.Size(30, 30);
-            this.BtnAccounts.IndicateFocus = true;
-            this.BtnAccounts.Location = new System.Drawing.Point(16, 326);
-            this.BtnAccounts.Name = "BtnAccounts";
-            this.BtnAccounts.Size = new System.Drawing.Size(229, 71);
-            this.BtnAccounts.TabIndex = 4;
-            this.BtnAccounts.Text = "Accounts";
-            this.BtnAccounts.UseTransparentBackground = true;
-            this.BtnAccounts.Click += new System.EventHandler(this.BtnAccounts_Click);
+            this.BtnManageAccounts.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnManageAccounts.Animated = true;
+            this.BtnManageAccounts.BackColor = System.Drawing.Color.Transparent;
+            this.BtnManageAccounts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnManageAccounts.BorderRadius = 10;
+            this.BtnManageAccounts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnManageAccounts.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnManageAccounts.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnManageAccounts.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnManageAccounts.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnManageAccounts.FillColor = System.Drawing.Color.Gainsboro;
+            this.BtnManageAccounts.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.BtnManageAccounts.ForeColor = System.Drawing.Color.Black;
+            this.BtnManageAccounts.Image = ((System.Drawing.Image)(resources.GetObject("BtnManageAccounts.Image")));
+            this.BtnManageAccounts.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BtnManageAccounts.ImageSize = new System.Drawing.Size(30, 30);
+            this.BtnManageAccounts.IndicateFocus = true;
+            this.BtnManageAccounts.Location = new System.Drawing.Point(16, 326);
+            this.BtnManageAccounts.Name = "BtnManageAccounts";
+            this.BtnManageAccounts.Size = new System.Drawing.Size(229, 71);
+            this.BtnManageAccounts.TabIndex = 4;
+            this.BtnManageAccounts.Text = "Accounts";
+            this.BtnManageAccounts.UseTransparentBackground = true;
+            this.BtnManageAccounts.Click += new System.EventHandler(this.BtnAccounts_Click);
             // 
-            // BtnlistClients
+            // BtnManageClients
             // 
-            this.BtnlistClients.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BtnlistClients.Animated = true;
-            this.BtnlistClients.BackColor = System.Drawing.Color.Transparent;
-            this.BtnlistClients.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnlistClients.BorderRadius = 10;
-            this.BtnlistClients.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnlistClients.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnlistClients.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnlistClients.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnlistClients.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnlistClients.FillColor = System.Drawing.Color.Gainsboro;
-            this.BtnlistClients.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.BtnlistClients.ForeColor = System.Drawing.Color.Black;
-            this.BtnlistClients.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.BtnlistClients.Image = ((System.Drawing.Image)(resources.GetObject("BtnlistClients.Image")));
-            this.BtnlistClients.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BtnlistClients.ImageSize = new System.Drawing.Size(30, 30);
-            this.BtnlistClients.IndicateFocus = true;
-            this.BtnlistClients.Location = new System.Drawing.Point(16, 248);
-            this.BtnlistClients.Name = "BtnlistClients";
-            this.BtnlistClients.Size = new System.Drawing.Size(229, 71);
-            this.BtnlistClients.TabIndex = 3;
-            this.BtnlistClients.Text = "Clients";
-            this.BtnlistClients.UseTransparentBackground = true;
-            this.BtnlistClients.Click += new System.EventHandler(this.BtnlistClients_Click);
+            this.BtnManageClients.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnManageClients.Animated = true;
+            this.BtnManageClients.BackColor = System.Drawing.Color.Transparent;
+            this.BtnManageClients.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnManageClients.BorderRadius = 10;
+            this.BtnManageClients.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnManageClients.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnManageClients.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnManageClients.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnManageClients.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnManageClients.FillColor = System.Drawing.Color.Gainsboro;
+            this.BtnManageClients.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.BtnManageClients.ForeColor = System.Drawing.Color.Black;
+            this.BtnManageClients.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.BtnManageClients.Image = ((System.Drawing.Image)(resources.GetObject("BtnManageClients.Image")));
+            this.BtnManageClients.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.BtnManageClients.ImageSize = new System.Drawing.Size(30, 30);
+            this.BtnManageClients.IndicateFocus = true;
+            this.BtnManageClients.Location = new System.Drawing.Point(16, 248);
+            this.BtnManageClients.Name = "BtnManageClients";
+            this.BtnManageClients.Size = new System.Drawing.Size(229, 71);
+            this.BtnManageClients.TabIndex = 3;
+            this.BtnManageClients.Text = "Clients";
+            this.BtnManageClients.UseTransparentBackground = true;
+            this.BtnManageClients.Click += new System.EventHandler(this.BtnlistClients_Click);
             // 
             // labINameUser
             // 
@@ -346,11 +346,11 @@
         private System.Windows.Forms.Label LabUser;
         private Guna.UI2.WinForms.Guna2CirclePictureBox picLoadImgeUser;
         private System.Windows.Forms.Label labINameUser;
-        private Guna.UI2.WinForms.Guna2Button BtnlistClients;
-        private Guna.UI2.WinForms.Guna2Button BtnLoginRegister;
-        private Guna.UI2.WinForms.Guna2Button BtnTransactionScreen;
+        private Guna.UI2.WinForms.Guna2Button BtnManageClients;
+        private Guna.UI2.WinForms.Guna2Button BtnManageLoginRegister;
+        private Guna.UI2.WinForms.Guna2Button BtnManageTransactionScreen;
         private Guna.UI2.WinForms.Guna2Button BtnManageUsers;
-        private Guna.UI2.WinForms.Guna2Button BtnAccounts;
+        private Guna.UI2.WinForms.Guna2Button BtnManageAccounts;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel mainPanel;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;

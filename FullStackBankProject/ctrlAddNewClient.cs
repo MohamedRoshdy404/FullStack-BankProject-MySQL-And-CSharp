@@ -16,6 +16,9 @@ namespace FullStackBankProject
         public ctrlAddNewClient()
         {
             InitializeComponent();
+
+            
+          
         }
        
 

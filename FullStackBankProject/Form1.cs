@@ -27,8 +27,53 @@ namespace FullStackBankProject
             myPanel = mainPanel;
             Form1.loadForm(new ManageClients());
             loadInfoUser();
+
+            if (!Form1.CheckPermissions(Form1.enMainMenuePermissions.pManageClients))
+            {
+                BtnManageClients.Enabled = false;
+            }
+
+            if (!Form1.CheckPermissions(Form1.enMainMenuePermissions.pManageAccounts))
+            {
+                BtnManageAccounts.Enabled = false;
+            }
+
+
+            if (!Form1.CheckPermissions(Form1.enMainMenuePermissions.pManageUsers))
+            {
+                BtnManageUsers.Enabled = false;
+            }
+
+            if (!Form1.CheckPermissions(Form1.enMainMenuePermissions.pManageTransactions))
+            {
+                BtnManageTransactionScreen.Enabled = false;
+            }
+
+            if (!Form1.CheckPermissions(Form1.enMainMenuePermissions.pLoginRegister))
+            {
+                BtnManageLoginRegister.Enabled = false;
+            }
+
         }
 
+
+        public enum enMainMenuePermissions
+        {
+            eAll = -1, pManageClients = 1, pManageAccounts = 2, pManageUsers = 4,
+            pManageTransactions = 8 , pLoginRegister = 16
+        };
+
+        public static bool CheckPermissions(enMainMenuePermissions permissions)
+        {
+            if ( (enMainMenuePermissions)clsGlobal.Permissions == enMainMenuePermissions.eAll )
+                return true;
+            if ((permissions & (enMainMenuePermissions)clsGlobal.Permissions) == permissions)
+                return true;
+            else
+                return false;
+
+
+        }
 
 
 

@@ -38,6 +38,7 @@ namespace FullStackBankProject
                 clsGlobal.UserName = UserName;
                 clsGlobal.Password = Password;
                 clsGlobal.Image = User.Image;
+                clsGlobal.Permissions = User.Permissions;
 
                 Form frm1 = new Form1();
                 this.Hide();

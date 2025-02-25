@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\fullstackbankproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\fullstackbankproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|c:\\users\\programming\\source\\repos\\fullstackbankproject\\fullstackbankproject\\manageclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|solutionrelative:fullstackbankproject\\manageclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C594F3C7-471C-467C-9CF9-A5A9338C4700}|FullStackBankProject\\FullStackBankProject.csproj|C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\fullstackbankproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,23 +26,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\Form1.cs",
               "RelativeDocumentMoniker": "FullStackBankProject\\Form1.cs",
               "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\Form1.cs [Design]",
               "RelativeToolTip": "FullStackBankProject\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T13:53:12.551Z",
+              "WhenOpened": "2025-02-25T17:19:45.794Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\Form1.cs",
+              "RelativeDocumentMoniker": "FullStackBankProject\\Form1.cs",
+              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\Form1.cs",
+              "RelativeToolTip": "FullStackBankProject\\Form1.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAywDQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T16:23:57.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManageClients.cs",
+              "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\ManageClients.cs",
+              "RelativeDocumentMoniker": "FullStackBankProject\\ManageClients.cs",
+              "ToolTip": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\ManageClients.cs",
+              "RelativeToolTip": "FullStackBankProject\\ManageClients.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T16:46:51.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Programming\\source\\repos\\FullStackBankProject\\FullStackBankProject\\Program.cs",
               "RelativeDocumentMoniker": "FullStackBankProject\\Program.cs",
@@ -42,8 +76,7 @@
               "RelativeToolTip": "FullStackBankProject\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T08:49:36.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T08:49:36.329Z"
             }
           ]
         }
