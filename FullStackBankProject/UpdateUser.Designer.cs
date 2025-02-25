@@ -49,6 +49,21 @@
             this.picSearchClient = new Guna.UI2.WinForms.Guna2PictureBox();
             this.TbxFindUser = new Guna.UI2.WinForms.Guna2TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.chboxPmanageClient = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.labPmanageClient = new System.Windows.Forms.Label();
+            this.labPermissionsTitle = new System.Windows.Forms.Label();
+            this.labPmanageAccounts = new System.Windows.Forms.Label();
+            this.chboxPmanageAccounts = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.labClearP = new System.Windows.Forms.Label();
+            this.chBoxClearP = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.labPmanageUser = new System.Windows.Forms.Label();
+            this.chboxPmanageUser = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.labPmanageTransaction = new System.Windows.Forms.Label();
+            this.labPmanageLoginRegister = new System.Windows.Forms.Label();
+            this.labFullPermissions = new System.Windows.Forms.Label();
+            this.chboxFullPermissions = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.chboxPmanageLoginRegister = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.chboxPmanageTransaction = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             ((System.ComponentModel.ISupportInitialize)(this.picImgeUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDeleteimageUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAddImgeUser)).BeginInit();
@@ -174,6 +189,7 @@
             this.TboxPermissions.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TboxPermissions.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.TboxPermissions.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TboxPermissions.Enabled = false;
             this.TboxPermissions.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TboxPermissions.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.TboxPermissions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -187,7 +203,6 @@
             this.TboxPermissions.Size = new System.Drawing.Size(288, 62);
             this.TboxPermissions.TabIndex = 84;
             this.TboxPermissions.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TboxPermissions.Visible = false;
             // 
             // TboxUserName
             // 
@@ -334,7 +349,7 @@
             this.BtnUpdateUser.ForeColor = System.Drawing.Color.Black;
             this.BtnUpdateUser.Image = ((System.Drawing.Image)(resources.GetObject("BtnUpdateUser.Image")));
             this.BtnUpdateUser.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BtnUpdateUser.Location = new System.Drawing.Point(503, 545);
+            this.BtnUpdateUser.Location = new System.Drawing.Point(503, 602);
             this.BtnUpdateUser.Name = "BtnUpdateUser";
             this.BtnUpdateUser.Size = new System.Drawing.Size(190, 44);
             this.BtnUpdateUser.TabIndex = 76;
@@ -359,7 +374,7 @@
             this.BtnBack.ForeColor = System.Drawing.Color.Black;
             this.BtnBack.Image = ((System.Drawing.Image)(resources.GetObject("BtnBack.Image")));
             this.BtnBack.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BtnBack.Location = new System.Drawing.Point(160, 545);
+            this.BtnBack.Location = new System.Drawing.Point(160, 602);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(169, 44);
             this.BtnBack.TabIndex = 75;
@@ -410,11 +425,238 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // chboxPmanageClient
+            // 
+            this.chboxPmanageClient.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chboxPmanageClient.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chboxPmanageClient.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chboxPmanageClient.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.chboxPmanageClient.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.chboxPmanageClient.Location = new System.Drawing.Point(319, 512);
+            this.chboxPmanageClient.Name = "chboxPmanageClient";
+            this.chboxPmanageClient.Size = new System.Drawing.Size(35, 19);
+            this.chboxPmanageClient.TabIndex = 91;
+            this.chboxPmanageClient.Tag = "1";
+            this.chboxPmanageClient.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chboxPmanageClient.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chboxPmanageClient.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.chboxPmanageClient.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.chboxPmanageClient.CheckedChanged += new System.EventHandler(this.chboxPmanageClient_CheckedChanged);
+            // 
+            // labPmanageClient
+            // 
+            this.labPmanageClient.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labPmanageClient.AutoSize = true;
+            this.labPmanageClient.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.labPmanageClient.Location = new System.Drawing.Point(156, 512);
+            this.labPmanageClient.Name = "labPmanageClient";
+            this.labPmanageClient.Size = new System.Drawing.Size(126, 19);
+            this.labPmanageClient.TabIndex = 92;
+            this.labPmanageClient.Text = "Manage Client";
+            // 
+            // labPermissionsTitle
+            // 
+            this.labPermissionsTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labPermissionsTitle.AutoSize = true;
+            this.labPermissionsTitle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.labPermissionsTitle.ForeColor = System.Drawing.Color.Red;
+            this.labPermissionsTitle.Location = new System.Drawing.Point(156, 454);
+            this.labPermissionsTitle.Name = "labPermissionsTitle";
+            this.labPermissionsTitle.Size = new System.Drawing.Size(106, 19);
+            this.labPermissionsTitle.TabIndex = 93;
+            this.labPermissionsTitle.Text = "Permissions";
+            // 
+            // labPmanageAccounts
+            // 
+            this.labPmanageAccounts.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labPmanageAccounts.AutoSize = true;
+            this.labPmanageAccounts.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.labPmanageAccounts.Location = new System.Drawing.Point(156, 541);
+            this.labPmanageAccounts.Name = "labPmanageAccounts";
+            this.labPmanageAccounts.Size = new System.Drawing.Size(151, 19);
+            this.labPmanageAccounts.TabIndex = 95;
+            this.labPmanageAccounts.Text = "Manage Accounts";
+            // 
+            // chboxPmanageAccounts
+            // 
+            this.chboxPmanageAccounts.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chboxPmanageAccounts.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chboxPmanageAccounts.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chboxPmanageAccounts.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.chboxPmanageAccounts.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.chboxPmanageAccounts.Location = new System.Drawing.Point(319, 540);
+            this.chboxPmanageAccounts.Name = "chboxPmanageAccounts";
+            this.chboxPmanageAccounts.Size = new System.Drawing.Size(35, 19);
+            this.chboxPmanageAccounts.TabIndex = 94;
+            this.chboxPmanageAccounts.Tag = "2";
+            this.chboxPmanageAccounts.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chboxPmanageAccounts.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chboxPmanageAccounts.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.chboxPmanageAccounts.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.chboxPmanageAccounts.CheckedChanged += new System.EventHandler(this.chboxPmanageAccounts_CheckedChanged);
+            // 
+            // labClearP
+            // 
+            this.labClearP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labClearP.AutoSize = true;
+            this.labClearP.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.labClearP.ForeColor = System.Drawing.Color.Firebrick;
+            this.labClearP.Location = new System.Drawing.Point(483, 541);
+            this.labClearP.Name = "labClearP";
+            this.labClearP.Size = new System.Drawing.Size(154, 19);
+            this.labClearP.TabIndex = 97;
+            this.labClearP.Text = "Clear Permissions";
+            // 
+            // chBoxClearP
+            // 
+            this.chBoxClearP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chBoxClearP.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chBoxClearP.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chBoxClearP.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.chBoxClearP.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.chBoxClearP.Location = new System.Drawing.Point(665, 539);
+            this.chBoxClearP.Name = "chBoxClearP";
+            this.chBoxClearP.Size = new System.Drawing.Size(35, 20);
+            this.chBoxClearP.TabIndex = 96;
+            this.chBoxClearP.Tag = "1";
+            this.chBoxClearP.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chBoxClearP.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chBoxClearP.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.chBoxClearP.UncheckedState.InnerColor = System.Drawing.Color.White;
+            // 
+            // labPmanageUser
+            // 
+            this.labPmanageUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labPmanageUser.AutoSize = true;
+            this.labPmanageUser.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.labPmanageUser.Location = new System.Drawing.Point(156, 570);
+            this.labPmanageUser.Name = "labPmanageUser";
+            this.labPmanageUser.Size = new System.Drawing.Size(115, 19);
+            this.labPmanageUser.TabIndex = 99;
+            this.labPmanageUser.Text = "Manage User";
+            // 
+            // chboxPmanageUser
+            // 
+            this.chboxPmanageUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chboxPmanageUser.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chboxPmanageUser.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chboxPmanageUser.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.chboxPmanageUser.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.chboxPmanageUser.Location = new System.Drawing.Point(319, 570);
+            this.chboxPmanageUser.Name = "chboxPmanageUser";
+            this.chboxPmanageUser.Size = new System.Drawing.Size(35, 19);
+            this.chboxPmanageUser.TabIndex = 98;
+            this.chboxPmanageUser.Tag = "4";
+            this.chboxPmanageUser.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chboxPmanageUser.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chboxPmanageUser.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.chboxPmanageUser.UncheckedState.InnerColor = System.Drawing.Color.White;
+            // 
+            // labPmanageTransaction
+            // 
+            this.labPmanageTransaction.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labPmanageTransaction.AutoSize = true;
+            this.labPmanageTransaction.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.labPmanageTransaction.Location = new System.Drawing.Point(483, 512);
+            this.labPmanageTransaction.Name = "labPmanageTransaction";
+            this.labPmanageTransaction.Size = new System.Drawing.Size(174, 19);
+            this.labPmanageTransaction.TabIndex = 101;
+            this.labPmanageTransaction.Text = "Manage Transaction";
+            // 
+            // labPmanageLoginRegister
+            // 
+            this.labPmanageLoginRegister.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labPmanageLoginRegister.AutoSize = true;
+            this.labPmanageLoginRegister.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.labPmanageLoginRegister.Location = new System.Drawing.Point(483, 482);
+            this.labPmanageLoginRegister.Name = "labPmanageLoginRegister";
+            this.labPmanageLoginRegister.Size = new System.Drawing.Size(127, 19);
+            this.labPmanageLoginRegister.TabIndex = 103;
+            this.labPmanageLoginRegister.Text = "Login Register";
+            // 
+            // labFullPermissions
+            // 
+            this.labFullPermissions.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labFullPermissions.AutoSize = true;
+            this.labFullPermissions.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.labFullPermissions.ForeColor = System.Drawing.Color.Firebrick;
+            this.labFullPermissions.Location = new System.Drawing.Point(156, 482);
+            this.labFullPermissions.Name = "labFullPermissions";
+            this.labFullPermissions.Size = new System.Drawing.Size(140, 19);
+            this.labFullPermissions.TabIndex = 105;
+            this.labFullPermissions.Text = "Full Permissions";
+            // 
+            // chboxFullPermissions
+            // 
+            this.chboxFullPermissions.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chboxFullPermissions.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chboxFullPermissions.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chboxFullPermissions.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.chboxFullPermissions.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.chboxFullPermissions.Location = new System.Drawing.Point(319, 481);
+            this.chboxFullPermissions.Name = "chboxFullPermissions";
+            this.chboxFullPermissions.Size = new System.Drawing.Size(35, 20);
+            this.chboxFullPermissions.TabIndex = 104;
+            this.chboxFullPermissions.Tag = "-1";
+            this.chboxFullPermissions.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chboxFullPermissions.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chboxFullPermissions.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.chboxFullPermissions.UncheckedState.InnerColor = System.Drawing.Color.White;
+            // 
+            // chboxPmanageLoginRegister
+            // 
+            this.chboxPmanageLoginRegister.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chboxPmanageLoginRegister.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chboxPmanageLoginRegister.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chboxPmanageLoginRegister.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.chboxPmanageLoginRegister.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.chboxPmanageLoginRegister.Location = new System.Drawing.Point(665, 511);
+            this.chboxPmanageLoginRegister.Name = "chboxPmanageLoginRegister";
+            this.chboxPmanageLoginRegister.Size = new System.Drawing.Size(35, 20);
+            this.chboxPmanageLoginRegister.TabIndex = 107;
+            this.chboxPmanageLoginRegister.Tag = "16";
+            this.chboxPmanageLoginRegister.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chboxPmanageLoginRegister.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chboxPmanageLoginRegister.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.chboxPmanageLoginRegister.UncheckedState.InnerColor = System.Drawing.Color.White;
+            // 
+            // chboxPmanageTransaction
+            // 
+            this.chboxPmanageTransaction.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chboxPmanageTransaction.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chboxPmanageTransaction.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chboxPmanageTransaction.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.chboxPmanageTransaction.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.chboxPmanageTransaction.Location = new System.Drawing.Point(665, 481);
+            this.chboxPmanageTransaction.Name = "chboxPmanageTransaction";
+            this.chboxPmanageTransaction.Size = new System.Drawing.Size(35, 20);
+            this.chboxPmanageTransaction.TabIndex = 108;
+            this.chboxPmanageTransaction.Tag = "8";
+            this.chboxPmanageTransaction.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chboxPmanageTransaction.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chboxPmanageTransaction.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.chboxPmanageTransaction.UncheckedState.InnerColor = System.Drawing.Color.White;
+            // 
             // UpdateUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 675);
+            this.Controls.Add(this.chboxPmanageTransaction);
+            this.Controls.Add(this.chboxPmanageLoginRegister);
+            this.Controls.Add(this.labFullPermissions);
+            this.Controls.Add(this.chboxFullPermissions);
+            this.Controls.Add(this.labPmanageLoginRegister);
+            this.Controls.Add(this.labPmanageTransaction);
+            this.Controls.Add(this.labPmanageUser);
+            this.Controls.Add(this.chboxPmanageUser);
+            this.Controls.Add(this.labClearP);
+            this.Controls.Add(this.chBoxClearP);
+            this.Controls.Add(this.labPmanageAccounts);
+            this.Controls.Add(this.chboxPmanageAccounts);
+            this.Controls.Add(this.labPermissionsTitle);
+            this.Controls.Add(this.labPmanageClient);
+            this.Controls.Add(this.chboxPmanageClient);
             this.Controls.Add(this.picSearchClient);
             this.Controls.Add(this.TbxFindUser);
             this.Controls.Add(this.TboxCreateDate);
@@ -433,6 +675,7 @@
             this.Controls.Add(this.BtnBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UpdateUser";
+            this.Tag = "";
             this.Text = "UpdateUser";
             ((System.ComponentModel.ISupportInitialize)(this.picImgeUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDeleteimageUser)).EndInit();
@@ -464,5 +707,20 @@
         private Guna.UI2.WinForms.Guna2PictureBox picSearchClient;
         private Guna.UI2.WinForms.Guna2TextBox TbxFindUser;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch chboxPmanageClient;
+        private System.Windows.Forms.Label labPmanageClient;
+        private System.Windows.Forms.Label labPermissionsTitle;
+        private System.Windows.Forms.Label labPmanageAccounts;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch chboxPmanageAccounts;
+        private System.Windows.Forms.Label labClearP;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch chBoxClearP;
+        private System.Windows.Forms.Label labPmanageUser;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch chboxPmanageUser;
+        private System.Windows.Forms.Label labPmanageTransaction;
+        private System.Windows.Forms.Label labPmanageLoginRegister;
+        private System.Windows.Forms.Label labFullPermissions;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch chboxFullPermissions;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch chboxPmanageLoginRegister;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch chboxPmanageTransaction;
     }
 }

@@ -38,7 +38,6 @@ namespace FullStackBankProject
                 BtnManageAccounts.Enabled = false;
             }
 
-
             if (!Form1.CheckPermissions(Form1.enMainMenuePermissions.pManageUsers))
             {
                 BtnManageUsers.Enabled = false;

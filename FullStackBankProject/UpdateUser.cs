@@ -41,6 +41,18 @@ namespace FullStackBankProject
                 TboxCreateDate.Text = User.CreateDate.ToString();
                 TboxPermissions.Text = User.Permissions.ToString();
 
+
+                chboxFullPermissions.Checked = (User.Permissions & Convert.ToInt32(chboxFullPermissions.Tag)) == Convert.ToInt32(chboxFullPermissions.Tag);
+                chboxPmanageClient.Checked = (User.Permissions & Convert.ToInt32(chboxPmanageClient.Tag)) == Convert.ToInt32(chboxPmanageClient.Tag);
+                chboxPmanageAccounts.Checked = (User.Permissions & Convert.ToInt32(chboxPmanageAccounts.Tag)) == Convert.ToInt32(chboxPmanageAccounts.Tag);
+                chboxPmanageUser.Checked = (User.Permissions & Convert.ToInt32(chboxPmanageUser.Tag)) == Convert.ToInt32(chboxPmanageUser.Tag);
+                chboxPmanageTransaction.Checked = (User.Permissions & Convert.ToInt32(chboxPmanageTransaction.Tag)) == Convert.ToInt32(chboxPmanageTransaction.Tag);
+                chboxPmanageLoginRegister.Checked = (User.Permissions & Convert.ToInt32(chboxPmanageLoginRegister.Tag)) == Convert.ToInt32(chboxPmanageLoginRegister.Tag);
+
+
+
+
+
                 if (!string.IsNullOrEmpty(User.Image) && File.Exists(User.Image))
                 {
                     picDeleteimageUser.Visible = true;
@@ -113,9 +125,50 @@ namespace FullStackBankProject
              User.LastName = TboxLastName.Text ;
              User.Email =  TboxEmail.Text ;
              User.Phone =  TboxPhone.Text  ;
-             //User.CreateDate =  DateTime.TryParse(TboxCreateDate.Text, out DateTime dob) ? dob : DateTime.MinValue;
+            //User.CreateDate =  DateTime.TryParse(TboxCreateDate.Text, out DateTime dob) ? dob : DateTime.MinValue;
             //User.Permissions =  Convert.ToInt32(TboxPermissions.Text);
 
+
+
+            if (chboxFullPermissions.Checked)
+            {
+                User.Permissions = Convert.ToInt32(chboxFullPermissions.Tag);
+            }
+
+
+            if (chboxPmanageClient.Checked)
+            {
+                //if (User.Permissions == 1)
+                //    User.Permissions = 1;
+                //else
+                User.Permissions  += Convert.ToInt32(chboxPmanageClient.Tag);
+            }
+
+            if (chboxPmanageAccounts.Checked)
+            {
+                User.Permissions += Convert.ToInt32(chboxPmanageAccounts.Tag);
+            }
+
+            if (chboxPmanageUser.Checked)
+            {
+                User.Permissions += Convert.ToInt32(chboxPmanageUser.Tag);
+            }
+
+            if (chboxPmanageTransaction.Checked)
+            {
+                User.Permissions += Convert.ToInt32(chboxPmanageTransaction.Tag);
+            }
+
+
+            if (chboxPmanageLoginRegister.Checked)
+            {
+                User.Permissions += Convert.ToInt32(chboxPmanageLoginRegister.Tag);
+            }
+
+            if (chBoxClearP.Checked)
+            {
+                User.Permissions = Convert.ToInt32(chBoxClearP.Tag);
+            }
 
 
             if (User.Save())
@@ -139,6 +192,16 @@ namespace FullStackBankProject
             }
             picImgeUser.Image = null;
             User.Image = "";
+        }
+
+        private void chboxPmanageClient_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chboxPmanageAccounts_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
