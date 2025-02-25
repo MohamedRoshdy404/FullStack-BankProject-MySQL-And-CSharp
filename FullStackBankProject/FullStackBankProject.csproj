@@ -145,6 +145,12 @@
     <Compile Include="GetAllClients.Designer.cs">
       <DependentUpon>GetAllClients.cs</DependentUpon>
     </Compile>
+    <Compile Include="GetAllTransactionLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetAllTransactionLog.Designer.cs">
+      <DependentUpon>GetAllTransactionLog.cs</DependentUpon>
+    </Compile>
     <Compile Include="GetAllUsers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GetAllClients.resx">
       <DependentUpon>GetAllClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetAllTransactionLog.resx">
+      <DependentUpon>GetAllTransactionLog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GetAllUsers.resx">
       <DependentUpon>GetAllUsers.cs</DependentUpon>

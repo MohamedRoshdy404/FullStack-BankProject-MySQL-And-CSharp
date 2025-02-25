@@ -164,6 +164,11 @@ namespace BankBusinessLayer
         }
 
 
+
+        public static DataTable GetAllTransactionLog()
+        {
+            return clsTransactionsDataAccessLayer.GetAllTransactionLog();
+        }
         public  bool AddTranferLog()
         {
             return clsTransactionsDataAccessLayer.AddTranferLog(this.TransactionDate, this.Amount, this.TransactionType, this.TransferFrom, this.TransferTo, this.UserID);

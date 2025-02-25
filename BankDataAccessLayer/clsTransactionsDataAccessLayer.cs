@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,46 @@ namespace BankDataAccessLayer
 {
     public class clsTransactionsDataAccessLayer
     {
+
+
+
+        public static DataTable GetAllTransactionLog()
+        {
+
+
+            DataTable dataTable = new DataTable();
+
+            using (SqlConnection connection = new SqlConnection(clsSettingsConnectoinStrinng.connectionString))
+            {
+                string query = @"SELECT * FROM Transactions ";
+
+
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+
+                    try
+                    {
+                        connection.Open();
+
+                        SqlDataReader reader = command.ExecuteReader();
+                        if (reader.HasRows)
+                        {
+                            dataTable.Load(reader);
+                        }
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error: {ex.Message}");
+                    }
+                }
+            }
+
+            return dataTable;
+        }
+
 
         public static bool GetAllInfoClient_Account(string AccountNumber, ref int ClientID , ref string FirstName, ref string LastName,  ref string Email, ref string Phone, ref string City, ref string Country,  ref string Image , ref int AccountBalance)
         {
@@ -54,8 +95,6 @@ namespace BankDataAccessLayer
 
 
 
-
-
         public static bool UpdateAccountBalance(string AccountNumber , int Amount)
         {
             int rowsAffected = 0;
@@ -96,9 +135,7 @@ namespace BankDataAccessLayer
 
             using (SqlConnection connection = new SqlConnection(clsSettingsConnectoinStrinng.connectionString))
             {
-                string query = @"
-                             
-                                INSERT INTO Transactions (TransactionDate , Amount , TransactionType , TransferFrom , TransferTo ,UserID)
+                string query = @" INSERT INTO Transactions (TransactionDate , Amount , TransactionType , TransferFrom , TransferTo ,UserID)
 					            VALUES (@TransactionDate ,@Amount , @TransactionType , @TransferFrom , @TransferTo ,@UserID )";
 
 

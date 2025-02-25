@@ -180,6 +180,7 @@
             this.BtnTransferLog.TabIndex = 8;
             this.BtnTransferLog.Text = "Transfer Log";
             this.BtnTransferLog.UseTransparentBackground = true;
+            this.BtnTransferLog.Click += new System.EventHandler(this.BtnTransferLog_Click);
             // 
             // labMainScreenTransactions
             // 

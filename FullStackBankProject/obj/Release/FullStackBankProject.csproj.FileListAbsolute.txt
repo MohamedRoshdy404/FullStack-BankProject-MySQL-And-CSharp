@@ -39,3 +39,4 @@ C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.DepositScreen.resources
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.WithdrawScreen.resources
 C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.TransferScreen.resources
+C:\Users\Programming\source\repos\FullStackBankProject\FullStackBankProject\obj\Release\FullStackBankProject.GetAllTransactionLog.resources
