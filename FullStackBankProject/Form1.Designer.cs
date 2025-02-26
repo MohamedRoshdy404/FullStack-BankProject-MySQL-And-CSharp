@@ -45,9 +45,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.picBoxMinimized = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLoadImgeUser)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMinimized)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -70,6 +72,7 @@
             // 
             // BtnLogout
             // 
+            this.BtnLogout.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnLogout.Animated = true;
             this.BtnLogout.BackColor = System.Drawing.Color.Transparent;
             this.BtnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -277,6 +280,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel2.Controls.Add(this.picBoxMinimized);
             this.panel2.Controls.Add(this.guna2Button5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(251, 0);
@@ -302,7 +306,7 @@
             this.guna2Button5.IndicateFocus = true;
             this.guna2Button5.Location = new System.Drawing.Point(964, 0);
             this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(47, 36);
+            this.guna2Button5.Size = new System.Drawing.Size(45, 35);
             this.guna2Button5.TabIndex = 8;
             this.guna2Button5.Text = "X";
             this.guna2Button5.UseTransparentBackground = true;
@@ -310,11 +314,25 @@
             // 
             // mainPanel
             // 
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mainPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mainPanel.BackgroundImage")));
+            this.mainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.mainPanel.Location = new System.Drawing.Point(251, 36);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(1011, 685);
             this.mainPanel.TabIndex = 2;
+            // 
+            // picBoxMinimized
+            // 
+            this.picBoxMinimized.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBoxMinimized.Image = ((System.Drawing.Image)(resources.GetObject("picBoxMinimized.Image")));
+            this.picBoxMinimized.Location = new System.Drawing.Point(913, 0);
+            this.picBoxMinimized.Name = "picBoxMinimized";
+            this.picBoxMinimized.Size = new System.Drawing.Size(45, 40);
+            this.picBoxMinimized.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxMinimized.TabIndex = 9;
+            this.picBoxMinimized.TabStop = false;
+            this.picBoxMinimized.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Form1
             // 
@@ -334,6 +352,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLoadImgeUser)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMinimized)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -355,6 +374,7 @@
         private System.Windows.Forms.Panel mainPanel;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button BtnLogout;
+        private System.Windows.Forms.PictureBox picBoxMinimized;
     }
 }
 

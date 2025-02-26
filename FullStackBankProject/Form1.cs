@@ -155,5 +155,10 @@ namespace FullStackBankProject
         {
             Form1.loadForm(new ManageTransactions());
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
