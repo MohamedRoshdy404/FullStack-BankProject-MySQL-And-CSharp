@@ -27,8 +27,7 @@ namespace FullStackBankProject
         }
         private void BtnBack_Click(object sender, EventArgs e)
         {
-            Form1 frm1 = new Form1();
-            frm1.ShowDialog();
+            Form1.loadForm(new ManageClients());
         }
     }
 }
