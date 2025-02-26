@@ -518,7 +518,7 @@
             this.chBoxClearP.Name = "chBoxClearP";
             this.chBoxClearP.Size = new System.Drawing.Size(35, 20);
             this.chBoxClearP.TabIndex = 96;
-            this.chBoxClearP.Tag = "1";
+            this.chBoxClearP.Tag = "0";
             this.chBoxClearP.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.chBoxClearP.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.chBoxClearP.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
@@ -557,7 +557,7 @@
             this.labPmanageTransaction.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labPmanageTransaction.AutoSize = true;
             this.labPmanageTransaction.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.labPmanageTransaction.Location = new System.Drawing.Point(483, 512);
+            this.labPmanageTransaction.Location = new System.Drawing.Point(483, 481);
             this.labPmanageTransaction.Name = "labPmanageTransaction";
             this.labPmanageTransaction.Size = new System.Drawing.Size(174, 19);
             this.labPmanageTransaction.TabIndex = 101;
@@ -568,7 +568,7 @@
             this.labPmanageLoginRegister.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labPmanageLoginRegister.AutoSize = true;
             this.labPmanageLoginRegister.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.labPmanageLoginRegister.Location = new System.Drawing.Point(483, 482);
+            this.labPmanageLoginRegister.Location = new System.Drawing.Point(483, 512);
             this.labPmanageLoginRegister.Name = "labPmanageLoginRegister";
             this.labPmanageLoginRegister.Size = new System.Drawing.Size(127, 19);
             this.labPmanageLoginRegister.TabIndex = 103;

@@ -25,7 +25,7 @@ namespace FullStackBankProject
             InitializeComponent();
 
             myPanel = mainPanel;
-            Form1.loadForm(new ManageClients());
+            //Form1.loadForm(new ManageClients());
             loadInfoUser();
 
             if (!Form1.CheckPermissions(Form1.enMainMenuePermissions.pManageClients))
@@ -70,8 +70,6 @@ namespace FullStackBankProject
                 return true;
             else
                 return false;
-
-
         }
 
 
