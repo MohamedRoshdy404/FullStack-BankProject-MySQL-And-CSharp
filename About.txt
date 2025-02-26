@@ -1,0 +1,55 @@
+A Banking System Built Using a 3-Tier Architecture
+
+The system is designed using a 3-tier architecture to structure and organize the project efficiently. This approach enhances code maintainability, scalability, and future expansion.
+
+The project was built from scratch, starting with the backend, where I designed the database and its relationships. Once the database structure was finalized, I implemented it practically and then moved on to constructing the project's layers, focusing on the frontend using C#.
+
+First Layer: Data Access Layer (DAL)
+The first layer I built in the frontend was the Data Access Layer (DAL), responsible for direct communication with the database. This layer contains all the query functions needed for retrieving, inserting, updating, and deleting data.
+
+The database itself is well-structured, with tables interconnected through relationships and references. I applied First Normal Form (1NF), Second Normal Form (2NF), and Third Normal Form (3NF) principles to ensure data integrity and avoid redundancy.
+
+I also followed database best practices, ensuring that:
+
+Each record has a unique identifier (Primary Key), meaning no record exists without a unique ID.
+No multivalued attributes were used to maintain data consistency and efficiency.
+Second Layer: Business Logic Layer (BLL)
+The second layer is the Business Logic Layer (BLL), which handles the core logic of the application on the frontend side using C#. This layer acts as a bridge between the Data Access Layer (DAL) and the Presentation Layer, ensuring data processing, validation, and business rules are applied correctly.
+
+Third Layer: Presentation Layer (PL)
+The final layer is the Presentation Layer (PL), which contains the user interface (UI) and simple logic to enhance the user experience.
+
+Key Features of the System:
+Client Management:
+
+Search for clients
+Add new clients
+Delete clients
+Update client details
+View all registered clients
+Account Management:
+
+Search for accounts
+Add accounts for clients
+Delete accounts
+Update account details
+View all accounts
+User Management (Admins & Employees):
+
+Search for users
+Add new users
+Delete users
+Update user details
+View all users
+Transaction Management:
+
+Deposit funds into an account
+Withdraw funds from an account
+Transfer funds from one account to another
+Ensure all necessary conditions are met for successful transactions
+System Activity & Permissions:
+
+Track all system activities
+Set and manage user permissions, allowing administrators to control user access levels
+Conclusion
+This banking system provides a fully functional, well-structured solution that ensures scalability, maintainability, and security. The 3-tier architecture allows for better organization, easy debugging, and smoother future enhancements. 🚀
