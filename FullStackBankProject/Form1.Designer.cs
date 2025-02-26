@@ -317,7 +317,7 @@
             this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button5.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2Button5.IndicateFocus = true;
-            this.guna2Button5.Location = new System.Drawing.Point(964, 0);
+            this.guna2Button5.Location = new System.Drawing.Point(967, 0);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Size = new System.Drawing.Size(45, 35);
             this.guna2Button5.TabIndex = 8;

@@ -53,6 +53,7 @@
             this.TboxLastName = new Guna.UI2.WinForms.Guna2TextBox();
             this.TboxFirstName = new Guna.UI2.WinForms.Guna2TextBox();
             this.BtnDelete = new Guna.UI2.WinForms.Guna2Button();
+            this.labDeleteUser = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picImgeUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -473,11 +474,23 @@
             this.BtnDelete.UseTransparentBackground = true;
             this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
+            // labDeleteUser
+            // 
+            this.labDeleteUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labDeleteUser.AutoSize = true;
+            this.labDeleteUser.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labDeleteUser.Location = new System.Drawing.Point(170, 70);
+            this.labDeleteUser.Name = "labDeleteUser";
+            this.labDeleteUser.Size = new System.Drawing.Size(151, 29);
+            this.labDeleteUser.TabIndex = 96;
+            this.labDeleteUser.Text = "Delete User";
+            // 
             // DeleteUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 675);
+            this.Controls.Add(this.labDeleteUser);
             this.Controls.Add(this.BtnDelete);
             this.Controls.Add(this.labPermissions);
             this.Controls.Add(this.labPassword);
@@ -533,5 +546,6 @@
         private Guna.UI2.WinForms.Guna2TextBox TboxLastName;
         private Guna.UI2.WinForms.Guna2TextBox TboxFirstName;
         private Guna.UI2.WinForms.Guna2Button BtnDelete;
+        private System.Windows.Forms.Label labDeleteUser;
     }
 }

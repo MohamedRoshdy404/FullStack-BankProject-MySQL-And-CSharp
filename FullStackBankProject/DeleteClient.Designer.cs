@@ -56,6 +56,7 @@
             this.TboxLastName = new Guna.UI2.WinForms.Guna2TextBox();
             this.TboxFirstName = new Guna.UI2.WinForms.Guna2TextBox();
             this.BtnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.labDeleteClient = new System.Windows.Forms.Label();
             this.MainPanelDelete.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImgeClient)).BeginInit();
             this.SuspendLayout();
@@ -69,6 +70,7 @@
             // 
             // MainPanelDelete
             // 
+            this.MainPanelDelete.Controls.Add(this.labDeleteClient);
             this.MainPanelDelete.Controls.Add(this.BtnSearchClient);
             this.MainPanelDelete.Controls.Add(this.BtnDelete);
             this.MainPanelDelete.Controls.Add(this.picImgeClient);
@@ -545,6 +547,17 @@
             this.BtnBack.UseTransparentBackground = true;
             this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
+            // labDeleteClient
+            // 
+            this.labDeleteClient.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labDeleteClient.AutoSize = true;
+            this.labDeleteClient.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labDeleteClient.Location = new System.Drawing.Point(198, 36);
+            this.labDeleteClient.Name = "labDeleteClient";
+            this.labDeleteClient.Size = new System.Drawing.Size(166, 29);
+            this.labDeleteClient.TabIndex = 2;
+            this.labDeleteClient.Text = "Delete Client";
+            // 
             // DeleteClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -589,5 +602,6 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox picImgeClient;
         private Guna.UI2.WinForms.Guna2Button BtnDelete;
         private Guna.UI2.WinForms.Guna2Button BtnSearchClient;
+        private System.Windows.Forms.Label labDeleteClient;
     }
 }

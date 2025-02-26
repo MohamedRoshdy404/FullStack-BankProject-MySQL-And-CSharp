@@ -141,7 +141,7 @@
             this.BtnExitLoginScreen.FillColor = System.Drawing.Color.Transparent;
             this.BtnExitLoginScreen.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnExitLoginScreen.ForeColor = System.Drawing.Color.Black;
-            this.BtnExitLoginScreen.Location = new System.Drawing.Point(1036, -1);
+            this.BtnExitLoginScreen.Location = new System.Drawing.Point(1099, -1);
             this.BtnExitLoginScreen.Name = "BtnExitLoginScreen";
             this.BtnExitLoginScreen.Size = new System.Drawing.Size(42, 40);
             this.BtnExitLoginScreen.TabIndex = 6;
@@ -194,7 +194,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1078, 599);
+            this.ClientSize = new System.Drawing.Size(1140, 675);
             this.Controls.Add(this.chkShowPassword);
             this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.guna2PictureBox1);

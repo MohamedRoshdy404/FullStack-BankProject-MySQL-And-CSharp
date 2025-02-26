@@ -485,7 +485,7 @@
             this.TboxAccountNumberto.Animated = true;
             this.TboxAccountNumberto.BorderRadius = 10;
             this.TboxAccountNumberto.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxAccountNumberto.DefaultText = "a100";
+            this.TboxAccountNumberto.DefaultText = "";
             this.TboxAccountNumberto.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TboxAccountNumberto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TboxAccountNumberto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -616,7 +616,7 @@
             this.TboxEnterdepositamount.Animated = true;
             this.TboxEnterdepositamount.BorderRadius = 10;
             this.TboxEnterdepositamount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxEnterdepositamount.DefaultText = "10";
+            this.TboxEnterdepositamount.DefaultText = "";
             this.TboxEnterdepositamount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TboxEnterdepositamount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TboxEnterdepositamount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -824,7 +824,7 @@
             this.TboxAccountNumberfrom.Animated = true;
             this.TboxAccountNumberfrom.BorderRadius = 10;
             this.TboxAccountNumberfrom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TboxAccountNumberfrom.DefaultText = "a110";
+            this.TboxAccountNumberfrom.DefaultText = "";
             this.TboxAccountNumberfrom.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TboxAccountNumberfrom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TboxAccountNumberfrom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));

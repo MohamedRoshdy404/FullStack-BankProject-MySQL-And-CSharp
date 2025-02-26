@@ -18,7 +18,43 @@ namespace FullStackBankProject
             InitializeComponent();
         }
 
+        public void ClearTboxAccountNumber()
+        {
+            TboxAccountNumber.Text = "";
+            TboxPasswordAccountNumber.Text = "";
+            TboxAccountBalance.Text = "";
+            TboxAccountCreationDate.Text = "";
+            TboxClientID.Text = "";
+        }
         private void BtnSerach_Click(object sender, EventArgs e)
+        {
+
+            string AccountNumber = TboxAccountNumber.Text;
+
+            clsAccountBusinessLayer Account = clsAccountBusinessLayer.FindAccountByAccountNumber(AccountNumber);
+
+
+            if (Account != null)
+            {
+                TboxPasswordAccountNumber.Text = Account.Password;
+                TboxAccountBalance.Text = Account.AccountBalance.ToString();
+                TboxAccountCreationDate.Text = Account.AccountCreationDate.ToString();
+                TboxClientID.Text = Account.ClientID.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Account data retrieval failed. Please enter a valid account number", "Error The account data retrieval process failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            Form1.loadForm(new ManageAccounts());
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
         {
             if (clsAccountBusinessLayer.isExist(TboxAccountNumber.Text))
             {
@@ -26,7 +62,8 @@ namespace FullStackBankProject
                 {
                     if (clsAccountBusinessLayer.DeleteAccount(TboxAccountNumber.Text))
                     {
-                        MessageBox.Show("The account has been successfully deleted." , "Done" , MessageBoxButtons.OK , MessageBoxIcon.Information);
+                        MessageBox.Show("The account has been successfully deleted.", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ClearTboxAccountNumber();
                     }
                     else
                     {
@@ -45,11 +82,17 @@ namespace FullStackBankProject
             {
                 MessageBox.Show($"The account does not exist. Please enter an existing account number. {TboxAccountNumber.Text} ?", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+
+
+
+
+
         }
 
-        private void BtnBack_Click(object sender, EventArgs e)
+        private void BtnClear_Click(object sender, EventArgs e)
         {
-            Form1.loadForm(new ManageAccounts());
+            ClearTboxAccountNumber();
         }
     }
 }
