@@ -138,9 +138,6 @@ namespace FullStackBankProject
 
             if (chboxPmanageClient.Checked)
             {
-                //if (User.Permissions == 1)
-                //    User.Permissions = 1;
-                //else
                 User.Permissions  += Convert.ToInt32(chboxPmanageClient.Tag);
             }
 

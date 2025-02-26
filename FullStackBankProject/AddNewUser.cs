@@ -35,7 +35,47 @@ namespace FullStackBankProject
             User.Email           = TboxEmail.Text;
             User.Phone           = TboxPhone.Text;
             User.CreateDate      = DateTime.Now;
-            User.Permissions     = -1;
+
+            if (chboxFullPermissions.Checked)
+            {
+                User.Permissions = Convert.ToInt32(chboxFullPermissions.Tag);
+            }
+
+
+            if (chboxPmanageClient.Checked)
+            {
+                User.Permissions += Convert.ToInt32(chboxPmanageClient.Tag);
+            }
+
+            if (chboxPmanageAccounts.Checked)
+            {
+                User.Permissions += Convert.ToInt32(chboxPmanageAccounts.Tag);
+            }
+
+            if (chboxPmanageUser.Checked)
+            {
+                User.Permissions += Convert.ToInt32(chboxPmanageUser.Tag);
+            }
+
+            if (chboxPmanageTransaction.Checked)
+            {
+                User.Permissions += Convert.ToInt32(chboxPmanageTransaction.Tag);
+            }
+
+
+            if (chboxPmanageLoginRegister.Checked)
+            {
+                User.Permissions += Convert.ToInt32(chboxPmanageLoginRegister.Tag);
+            }
+
+            if (chBoxClearP.Checked)
+            {
+                User.Permissions = Convert.ToInt32(chBoxClearP.Tag);
+            }
+
+
+
+
 
             if (User.Save())
             {
@@ -85,5 +125,17 @@ namespace FullStackBankProject
             }
 
         }
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
