@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsAccountsDataAccessLayer.cs" />
+    <Compile Include="clsLoginRegisterDataAccessLayer.cs" />
     <Compile Include="clsSettingsConnectoinStrinng.cs" />
     <Compile Include="clsClientDataAccess.cs" />
     <Compile Include="clsTransactionsDataAccessLayer.cs" />

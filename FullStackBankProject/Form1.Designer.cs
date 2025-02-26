@@ -43,9 +43,9 @@
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.picBoxMinimized = new System.Windows.Forms.PictureBox();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.picBoxMinimized = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLoadImgeUser)).BeginInit();
             this.panel2.SuspendLayout();
@@ -121,6 +121,7 @@
             this.BtnManageLoginRegister.TabIndex = 7;
             this.BtnManageLoginRegister.Text = "Login Register";
             this.BtnManageLoginRegister.UseTransparentBackground = true;
+            this.BtnManageLoginRegister.Click += new System.EventHandler(this.BtnManageLoginRegister_Click);
             // 
             // BtnManageTransactionScreen
             // 
@@ -288,6 +289,18 @@
             this.panel2.Size = new System.Drawing.Size(1011, 36);
             this.panel2.TabIndex = 1;
             // 
+            // picBoxMinimized
+            // 
+            this.picBoxMinimized.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBoxMinimized.Image = ((System.Drawing.Image)(resources.GetObject("picBoxMinimized.Image")));
+            this.picBoxMinimized.Location = new System.Drawing.Point(913, 0);
+            this.picBoxMinimized.Name = "picBoxMinimized";
+            this.picBoxMinimized.Size = new System.Drawing.Size(45, 40);
+            this.picBoxMinimized.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxMinimized.TabIndex = 9;
+            this.picBoxMinimized.TabStop = false;
+            this.picBoxMinimized.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // guna2Button5
             // 
             this.guna2Button5.Animated = true;
@@ -321,18 +334,6 @@
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(1011, 685);
             this.mainPanel.TabIndex = 2;
-            // 
-            // picBoxMinimized
-            // 
-            this.picBoxMinimized.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBoxMinimized.Image = ((System.Drawing.Image)(resources.GetObject("picBoxMinimized.Image")));
-            this.picBoxMinimized.Location = new System.Drawing.Point(913, 0);
-            this.picBoxMinimized.Name = "picBoxMinimized";
-            this.picBoxMinimized.Size = new System.Drawing.Size(45, 40);
-            this.picBoxMinimized.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBoxMinimized.TabIndex = 9;
-            this.picBoxMinimized.TabStop = false;
-            this.picBoxMinimized.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Form1
             // 

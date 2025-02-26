@@ -29,8 +29,16 @@ namespace FullStackBankProject
             string UserName = TboxUserName.Text;
             string Password = TboxPassword.Text;
 
-
             clsUserBusinessLayer User = clsUserBusinessLayer.FindUserByUserNameAndPassword(UserName, Password);
+            clsLoginRegisterBusinessLayer AddRowLoginRegister = new clsLoginRegisterBusinessLayer();
+
+            AddRowLoginRegister.DateLogin = DateTime.Now;
+            AddRowLoginRegister.UserID = User.UserID;
+            AddRowLoginRegister.UserName = UserName;
+            AddRowLoginRegister.Password = Password;
+            AddRowLoginRegister.Permissions = User.Permissions;
+            AddRowLoginRegister.Save();
+
 
             if (User != null)
             {

@@ -99,20 +99,43 @@ namespace FullStackBankProject
 
 
         }
-        
+
 
         public static void loadForm(Form form)
         {
             if (form == null)
                 return;
 
-            myPanel.Controls.Clear();
+            // لو الفورم المفتوح هو نفسه الفورم اللي عايز تفتحه متعملش حاجة
+            if (myPanel.Controls.Count > 0 && myPanel.Controls[0].GetType() == form.GetType())
+                return;
+
+            if (myPanel.Controls.Count > 0)
+            {
+                myPanel.Controls[0].Dispose();
+                myPanel.Controls.Clear();
+            }
+
             form.TopLevel = false;
             form.Dock = DockStyle.Fill;
             myPanel.Controls.Add(form);
             myPanel.Tag = form;
             form.Show();
         }
+
+
+        //public static void loadForm(Form form)
+        //{
+        //    if (form == null)
+        //        return;
+
+        //    myPanel.Controls.Clear();
+        //    form.TopLevel = false;
+        //    form.Dock = DockStyle.Fill;
+        //    myPanel.Controls.Add(form);
+        //    myPanel.Tag = form;
+        //    form.Show();
+        //}
         private void guna2Button5_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -159,6 +182,11 @@ namespace FullStackBankProject
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void BtnManageLoginRegister_Click(object sender, EventArgs e)
+        {
+            Form1.loadForm(new GetAllLoginRegister());
         }
     }
 }
